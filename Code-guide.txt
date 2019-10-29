@@ -1,4 +1,6 @@
-### Code-guide for MultiKEY ###
+#################################################
+
+### Code-guide for MultiKEY -EN ###
 
 #Language
 Should always be English
@@ -7,7 +9,7 @@ Should always be English
 Comments are written in Danish
 
 #Syntax
-function() 
+function()
 {
 // Some code
 };
@@ -18,7 +20,7 @@ function() {
 // Some code
 };
 
-#Space between stuff
+#Space between code
 There should always be 1 "ENTER" between functions
 
 #Variables
@@ -32,5 +34,46 @@ ex. tinyGoodVariable
 
 #Comment first
 First write the comment for what the code will do, and then you can start coding it
+
+#################################################
+
+
+
+#################################################
+
+### Kode-guide for MultiKEY - DA ###
+
+#Sprog
+Skal altid være engelsk
+
+#Kommentarer
+Kommentarer er skrevet på dansk
+
+#Syntax
+function()
+{
+// Noget kode
+};
+
+vs
+
+function() {
+// Some code
+};
+
+#Afstand mellem kode
+Der skal altid være 1 "ENTER" mellem funktioner
+
+#Variabler
+Beskrivende navne for variabler
+
+#Camel case
+Man skriver variabler og funktioner med camel case. Dette betyder at det første ord altid starter med småt, og de resterende med stort.
+Eks. tinyGoodVariable
+
+#INGEN var PLEASE!
+
+#Kommentar først
+Først skriver du kommentaren til hvad koden gør, bagefter koder du det så.
 
 #################################################
