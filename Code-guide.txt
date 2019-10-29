@@ -1,6 +1,6 @@
 #################################################
 
-### Code-guide for MultiKEY -EN ###
+### Code-guide for MultiKEY - EN ###
 
 #Language
 Should always be English
