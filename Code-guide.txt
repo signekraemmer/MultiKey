@@ -6,16 +6,10 @@
 Should always be English
 
 #Comments
-Comments are written in Danish
+Comments are written in Danish, maximum 1 sentence.
+Headlines for sections are in caps lock.
 
 #Syntax
-function()
-{
-// Some code
-};
-
-vs
-
 function() {
 // Some code
 };
@@ -47,16 +41,10 @@ First write the comment for what the code will do, and then you can start coding
 Skal altid være engelsk
 
 #Kommentarer
-Kommentarer er skrevet på dansk
+Kommentarer er skrevet på dansk, og fylder maks. 1 sætning.
+Overskrifter til sektioner er i caps lock.
 
 #Syntax
-function()
-{
-// Noget kode
-};
-
-vs
-
 function() {
 // Some code
 };
