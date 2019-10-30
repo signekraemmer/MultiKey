@@ -2,3 +2,26 @@
   margin: 0;
   padding: 0;
 }
+
+/* SIGN UP SECTION */
+form {
+
+}
+
+input {
+  display: block;
+  width: 200px;
+  margin: 0px 5px 10px 5px;
+  border: 3px solid #0549FF;
+  border-radius: 25px;
+  padding: 5px;
+}
+
+label {
+  display: block;
+}
+
+form label {
+  margin: 5px 5px 0px 5px;
+}
+/* SIGN UP SECTION END */
