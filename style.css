@@ -1,7 +1,25 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: Lato; /* Fonten skal linkes på en anden måde */
 }
+/* TOP W. TITLE */
+.top {
+  height: 70px;
+  width: 375px;
+  background-color: #1C0029;
+}
+h2 {
+  color: #FDFFFC;
+  font-size: 18px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+/* Jeg har brug for hjælp til placering her.. */
+
+}
+/* TOP W. TITLE END */
 
 /* SIGN UP SECTION */
 .signup_wrapper h1 {
@@ -46,3 +64,43 @@ label {
     border-radius:25px;
 }
 /* SIGN UP SECTION END */
+
+
+/* FAQ / HELP SECTION */
+.faqLine {
+  font-size: 32px;
+  font-weight: bold;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  width: 355px;
+  overflow: hidden;
+}
+.collapsible {
+  display: flex;
+  flex-direction: column;
+  background-color: #D8D8D8;
+  color: #170517;
+  cursor: pointer;
+  padding: 18px 10px;
+  width: 375px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #0706AF;
+  color: #FDFFFC;
+}
+
+.content {
+  padding: 10px 10px;
+  display: none;
+  overflow-x: hidden;
+  background-color: #FDFFFC;
+  width: 350px;
+}
+
+/* FAQ / HELP SECTION END */
