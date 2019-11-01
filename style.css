@@ -3,6 +3,29 @@
   padding: 0;
 }
 
+/* LOGIN SECTION */
+.loginback {
+  width: 100%;
+  height: 100vh;
+  color: #ffffff;
+  background: linear-gradient(-45deg, #170517, #170517, #580990, #BF00BF);
+  background-size: 300% 400%;
+  position: relative;
+  animation: change 7s ease-in-out infinite;
+}
+
+@keyframes change {
+  0%{
+    background-position: 0 50%
+  }
+  50%{
+    background-position: 100% 50%
+  }
+  100%{
+    background-position: 0 50%
+  }
+}
+
 /* SIGN UP SECTION */
 .signup_wrapper h1 {
   text-align: center;
