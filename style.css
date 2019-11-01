@@ -8,17 +8,18 @@
 .top {
   height: 70px;
   width: 375px;
-  background-color: #1C0029;
+  background-color: #000000; /* Black */
 }
-
+.arrowback {
+  padding-top: 25px;
+  padding-left: 25px;
+}
 h2 {
   color: #FDFFFC;
   font-size: 18px;
   font-weight: 400;
   display: block;
   text-align: center;
-  padding-top: 40px;
-/* Jeg har brug for hjælp til placering her.. */
 }
 
 /* TOP W. TITLE END */
@@ -198,8 +199,8 @@ label {
 .collapsible {
   display: flex;
   flex-direction: column;
-  background-color: #D8D8D8;
-  color: #170517;
+  background-color: #D8D8D8; /* Lysegrå */
+  color: #000000; /* Sort */
   cursor: pointer;
   padding: 18px 10px;
   width: 375px;
@@ -210,15 +211,15 @@ label {
 }
 
 .active, .collapsible:hover {
-  background-color: #0706AF;
-  color: #FDFFFC;
+  background-color: #808080; /* Mellemgrå */
+  color: #FFFFFF; /* Hvid */
 }
 
 .content {
   padding: 10px 10px;
   display: none;
   overflow-x: hidden;
-  background-color: #FDFFFC;
+  background-color: #FFFFFF; /* Hvid */
   width: 350px;
 }
 
