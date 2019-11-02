@@ -202,7 +202,7 @@ label {
   background-color: #D8D8D8; /* Lysegrå */
   color: #000000; /* Sort */
   cursor: pointer;
-  padding: 18px 10px;
+  padding: 10px 18px 0 18px;
   width: 375px;
   border: none;
   text-align: left;
@@ -223,4 +223,7 @@ label {
   width: 350px;
 }
 
+.arrowfaq {
+  padding: -10px 5px 8px 10px;
+}
 /* FAQ / HELP SECTION END */
