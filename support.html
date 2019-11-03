@@ -9,6 +9,9 @@
   <body>
     <!-- TOP BANNER -->
     <div class="top">
+      <button type="button" name="buttonback"> <!-- Knappen skal sendes tilbage til forsiden HJÆLP -->
+        <img src="images/arrowback.png" alt="arrow left" class="arrowback">
+      </button>
       <h2>MultiKEY</h2>
     </div>
 
@@ -29,23 +32,41 @@
     <div class="content">
       <p>A key can easily be unshared, by selecting the shared key from the key selection menu, and then select the share button, after which you can choose to stop sharing that key.</p>
     </div>
-<!-- Skal der være script i ét dokument eller i html'en?-->
-    <script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}
-</script>
+    <button type="button" class="collapsible"> Frequently Asked Question</button>
+    <div class="content">
+      <p> Response </p>
+    </div>
+    <button type="button" class="collapsible"> Frequently Asked Question <img src="images/arrowdown.png" alt="Push to open box" class="arrowfaq"> </button>
+    <div class="content">
+      <p> Response </p>
+    </div>  <button type="button" class="collapsible"> Frequently Asked Question</button>
+      <div class="content">
+        <p> Response </p>
+      </div>  <button type="button" class="collapsible"> Frequently Asked Question</button>
+        <div class="content">
+          <p> Response </p>
+        </div>
+        <button type="button" class="collapsible"> Frequently Asked Question</button>
+        <div class="content">
+          <p> Response </p>
+        </div>
+        <button type="button" class="collapsible"> Frequently Asked Question</button>
+        <div class="content">
+          <p> Response </p>
+        </div>
+        <button type="button" class="collapsible"> Frequently Asked Question</button>
+        <div class="content">
+          <p> Response </p>
+        </div>
+        <button type="button" class="collapsible"> Frequently Asked Question</button>
+        <div class="content">
+          <p> Response </p>
+        </div>
+        <button type="button" class="collapsible"> Frequently Asked Question</button>
+        <div class="content">
+          <p> Response </p>
+        </div>
+<script src="javascript.js"></script>
 
   </body>
 </html>
