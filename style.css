@@ -8,7 +8,7 @@
 .top {
   height: 70px;
   width: 375px;
-  background-color: #000000; /* Black */
+  background-color: #2B2B2B; 
 }
 .arrowback {
   padding-top: 25px;
@@ -36,6 +36,7 @@ nav {
 .navFlex {
   display: flex;
   justify-content: space-evenly;
+  margin-top: 1.5vh;
 }
 
 .line1, .line2, .line3 { /* The three lines in a burger menu */
@@ -76,7 +77,8 @@ nav {
   background-color: #2B2B2B;
 }
 .sidenav a {
-  padding: 8px 8px 10px 55px;
+  padding: 12px;
+  margin-left: 50px;
   text-decoration: none;
   font-size: 23px;
   color: #ffffff;
