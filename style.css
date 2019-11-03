@@ -137,16 +137,29 @@ nav {
     background-position: 0 50%
   }
 }
+/* LOGIN SECTION END */
 
 /* SIGN UP SECTION */
+.signup_top {
+    height: 20vh;
+}
+
 .signup_top h1 {
   text-align: center;
-  margin: 10px 0px;
+  padding: 10px 0px;
+  font-size: 32px;
 }
 
 .signup_top img {
-max-width: 100%;
-max-height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 10px auto;
 }
 
 #profilePicture {
@@ -158,13 +171,18 @@ max-height: 100%;
   border-radius: 5px;
 }
 
-
 .signup_content {
   display: block;
   margin: 15% auto 15% auto;
 }
 
 .inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -190,16 +208,34 @@ label {
   left: 50vw;
   transform: translateX(-50%);
   margin: auto auto 10vh auto;
+  text-align: center;
 }
 
-#nextButton {
-    padding: 10px 5vw;
-    background-color: #FFFFFF;
-    border: 1px solid #000000;
-    border-radius:25px;
+a:link {
+  color: white;
+  text-decoration: none;
 }
 
-#signupButton {
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+a:active {
+  color: white;
+  text-decoration: none;
+}
+
+#forgotPassword {
+  color: #B5B5B5;
+}
+
+.button {
     padding: 10px 5vw;
     background-color: #b5b5b5;
     border: 1px solid #000000;
