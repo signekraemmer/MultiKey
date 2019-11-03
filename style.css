@@ -8,7 +8,7 @@
 .top {
   height: 70px;
   width: 375px;
-  background-color: #2B2B2B; 
+  background-color: #2B2B2B;
 }
 .arrowback {
   padding-top: 25px;
@@ -95,17 +95,22 @@ nav {
   position: relative;
   width: 3px;
   height: 25px;
-  left: 50%;
+  left: 49%;
   background-color: #ffffff;
 }
 .line5{
   position: relative;
   width: 25px;
   height: 3px;
-  top: -50%;
+  top: -51%;
   background-color: #ffffff;
 }
 .plus{
+  width: 25px;
+  height: 25px;
+}
+
+.home img {
   width: 25px;
   height: 25px;
 }
@@ -219,3 +224,21 @@ label {
   padding: -10px 5px 8px 10px;
 }
 /* FAQ / HELP SECTION END */
+
+/* KEY CARD */
+
+.newaddkey {
+  height: 25vh;
+  width: 90vw;
+  margin-top: 3vh;
+  border-radius: 30px;
+  background-color: #D8D8D8;
+  border: 3px dashed #808080;
+}
+
+.keycard {
+  height: 25vh;
+  width: 90vw;
+}
+
+/* KEY CARD END*/

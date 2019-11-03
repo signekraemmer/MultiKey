@@ -1,4 +1,4 @@
-//Til burger menu
+//FOR BURGER MENU
 function myFunction(x) {
   x.classList.toggle("change");
     openNav();
