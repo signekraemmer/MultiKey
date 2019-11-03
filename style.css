@@ -61,10 +61,10 @@ nav {
 
 /* FOLD UD SIDENAV */
 .sidenav {
-  height: 92vh;
+  height: 82.55vh;
   width: 70%;
   position: fixed;
-  top: 0px;
+  top: 8.55vh;
   z-index: 1;
   right: 0;
   background-color: #2B2B2B;
@@ -77,17 +77,26 @@ nav {
   background-color: #2B2B2B;
 }
 .sidenav a {
-  padding: 12px;
+  padding: 10px;
   margin-left: 50px;
   text-decoration: none;
-  font-size: 23px;
+  font-size: 20px;
   color: #ffffff;
   display: block;
   transition: 0.3s;
 }
+
+.toptext {
+  display: block;
+}
+
+.middletext{
+  justify-content: center;
+}
+
 .bottomtext{
   position: fixed;
-  bottom: 12px;
+  bottom: 3vh;
 }
 
 /* Plus sign */
