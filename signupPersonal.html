@@ -1,32 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title></title>
-  </head>
-  <body>
 
-<div class="signup_wrapper">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title></title>
+</head>
 
-<h1>Profile</h1>
+<body>
 
-<img id="profilePicture" src="images/testpp.jpg" alt="Your profile picture">
+  <div class="signup_top">
 
-<form action="index.html" method="post">
-    <label for="firstName">First name</label>
-    <input id="firstName" type="text" name="write here" value="first name">
-    <label for="lastName">Last name</label>
-    <input id="lastName" type="text" name="write here" value="last name">
-    <label for="username">Username</label>
-    <input id="username" type="text" name="write here" value="username">
-    <button id="signupButton" type="button" name="Sign up">Sign up</button>
-</form>
-</div>
+    <h1>Profile</h1>
+
+    <div id="profilePicture">
+
+      <img src="images/testpp.jpg" alt="Your profile picture">
+
+    </div>
+
+  </div>
 
 
-<!-- <h2>Bruger informationer</h2>
+  <div class="signup_content">
+
+    <div class="inputs">
+
+      <label for="firstName">First name</label>
+      <input id="firstName" type="text" name="write here" value="">
+      <label for="lastName">Last name</label>
+      <input id="lastName" type="text" name="write here" value="">
+      <label for="username">Username</label>
+      <input id="username" type="text" name="write here" value="">
+
+    </div>
+
+  </div>
+
+  <div class="signup_bottom">
+
+    <button onclick="location.href='signupSecurity.html'" id="nextButton" type="button" name="Sign up">Next</button>
+
+  </div>
+
+
+  <!-- <h2>Bruger informationer</h2>
 
   Full name:  <input type="text" name="fullname" pattern="[a-å]{3}" required>
   </form>
@@ -39,5 +58,6 @@
   Password:  <input type="password" name="password" pattern="[a-å,1-9]{8}" required>
   </form> -->
 
-  </body>
+</body>
+
 </html>

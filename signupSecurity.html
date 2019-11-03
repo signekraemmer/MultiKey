@@ -1,33 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title></title>
-  </head>
-  <body>
 
-<div class="signup_wrapper">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title></title>
+</head>
 
-<h1>Profile</h1>
+<body>
 
-<img id="profilePicture" src="images/testpp.jpg" alt="Your profile picture">
+  <div class="signup_top">
 
-<form action="index.html" method="post">
-    <label for="phone">Phone number</label>
-    <input id="phone" type="text" name="write here" value="phoner number">
-    <label for="email">Email</label>
-    <input id="email" type="text" name="write here" value="email">
-    <label for="password">Password</label>
-    <input id="password" type="text" name="write here" value="abc123">
-    <label for="confirmPassword">Confirm password</label>
-    <input id="confirmPassword" type="text" name="write here" value="abc123">
-</form>
-</div>
+    <h1>Profile</h1>
+
+    <div id="profilePicture">
+
+      <img src="images/testpp.jpg" alt="Your profile picture">
+
+    </div>
+
+  </div>
 
 
-<!-- <h2>Bruger informationer</h2>
+  <div class="signup_content">
+
+    <div class="inputs">
+
+      <label for="phone">Phone number</label>
+      <input id="phone" type="text" name="write here" value="">
+      <label for="email">Email</label>
+      <input id="email" type="text" name="write here" value="">
+      <label for="password">Password</label>
+      <input id="password" type="text" name="write here" value="">
+      <label for="confirmPassword">Confirm password</label>
+      <input id="confirmPassword" type="text" name="write here" value="">
+
+    </div>
+
+  </div>
+
+  <div class="signup_bottom">
+
+    <button onclick="location.href='login.html'" id="signupButton" type="button" name="Sign up">Sign up</button>
+
+  </div>
+
+
+  <!-- <h2>Bruger informationer</h2>
 
   Full name:  <input type="text" name="fullname" pattern="[a-å]{3}" required>
   </form>
@@ -40,5 +60,6 @@
   Password:  <input type="password" name="password" pattern="[a-å,1-9]{8}" required>
   </form> -->
 
-  </body>
+</body>
+
 </html>
