@@ -1,44 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title></title>
-  </head>
-  <body>
-    <nav>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title></title>
+</head>
+
+<body>
+  <nav>
+
+    <div class="navFlex">
+
+      <!-- NOTIFIGATION MENU !-->
+      <div class="plus">
+        <div class="line4"></div>
+        <div class="line5"></div>
+      </div>
+
+      <!-- PLUS MENU !-->
+      <div class="plus">
+        <div class="line4"></div>
+        <div class="line5"></div>
+      </div>
+
       <!-- Burger Menu !-->
       <div class="burger" onclick="myFunction(this)">
         <div class="line1"></div>
         <div class="line2"></div>
         <div class="line3"></div>
       </div>
+    </div>
 
-      <div class="plus">
-        <div class="line4"></div>
-        <div class="line5"></div>
+    <!-- Fold ud tekst i menu !-->
+    <div id="mySidenav" class="sidenav ">
+
+      <a href="#">Shere key</a>
+      <a href="#">Add key</a>
+      <a href="#">Delete key</a>
+      <a href="#">Profil</a>
+
+
+      <div class="bottomtext">
+        <a href="#">Support</a>
+        <a href="#">Contakt</a>
+        <a href="#">Settings</a>
+        <a href="#">Log out</a>
       </div>
+    </div>
 
-      <!-- Fold ud tekst i menu !-->
-      <div id="mySidenav" class="sidenav ">
+    <script src="javascript.js"></script>
+  </nav>
 
-          <a href="#">Shere key</a>
-          <a href="#">Add key</a>
-          <a href="#">Delete key</a>
-          <a href="#">Profil</a>
+</body>
 
-
-        <div class="bottomtext">
-          <a href="#">Support</a>
-          <a href="#">Contakt</a>
-          <a href="#">Settings</a>
-          <a href="#">Log out</a>
-        </div>
-      </div>
-
-      <script src="javascript.js"></script>
-    </nav>
-
-  </body>
 </html>
