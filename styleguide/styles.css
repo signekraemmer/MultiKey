@@ -19,6 +19,14 @@ h2 {
   font-weight: bold;
 }
 
+h3 {
+  font-size: 40px;
+}
+
+p {
+  font-size: 25px;
+}
+
 /* NAVIGATIONS BAR */
 .navwrapper {
   height: 100%;
@@ -59,17 +67,17 @@ ul li:hover{
 }
 
 .colorSection, .buttonSection, .iconSection, .navigationSection,
-.typographySection, .formsSection, .languageSection, h2, h3 {
+.typographySection, .formsSection, .languageSection {
   width: 100%;
   height: auto;
-  margin-top: 5vh;
+  margin-top: 20vh;
   margin-left: 3vw;
 }
 
 .logoSection {
   width: 100%;
   height: auto;
-  margin-top: 10vh;
+  margin-top: 20vh;
 }
 
 .logoSection h2, .logoSection h3 {
@@ -142,6 +150,10 @@ ul li:hover{
   width: 250px;
   border-radius: 30px;
   background-color: #580990;
+}
+
+.button a {
+  color: #ffffff;
 }
 
 .codeBox {
