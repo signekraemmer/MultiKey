@@ -1,30 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title></title>
-  </head>
-  <body>
-    <section class="loginback">
 
-    </section>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title></title>
+  <script src="javascript.js" defer>
 
-    <div class="signup_wrapper">
+  </script>
+</head>
+
+<body>
+  <section class="loginback">
+
+<div class="signup_top">
 
     <h1>MultiKEY</h1>
 
-    <img id="profilePicture" src="images/testpp.jpg" alt="Your profile picture">
+<div id="logo">
 
-    <form action="index.html" method="post">
+    <img src="images/logo.png" alt="multikey logo">
+
+  </div>
+
+  </div>
+
+    <div class="signup_content">
+
+
+      <form id="loginData" action="frontpage.html">
+
         <label for="phoneNumber">Phone number</label>
-        <input id="phoneNumber" type="text" name="write here" value="Phone number">
+        <input id="phoneNumber" type="text" name="uphone" value="12341234">
         <label for="password">Password</label>
-        <input id="password" type="text" name="write here" value="Password">
-        <button id="loginButton" type="button" name="Login">Login</button>
-    </form>
+        <input id="password" type="text" name="upass" value="Duck">
+        <a id="forgotPassword" href="forgotPassword.html">Forgot password?</a>
+
+      </form>
+
+
     </div>
 
-  </body>
+    <div class="signup_bottom">
+
+      <button id="loginButton" class="button" type="button" name="Login">Login</button>
+
+      <a href="signupPersonal.html"><br><br>Sign up</a>
+
+    </div>
+
+  </section>
+</body>
+
 </html>
