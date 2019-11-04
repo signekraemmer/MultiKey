@@ -36,7 +36,7 @@ p {
   justify-content: center;
   display: flex;
   flex-direction: column;
-  background-color: #170517;
+  background-color: #262C50;
 }
 
 ul {
@@ -54,7 +54,10 @@ ul li a {
 }
 
 ul li:hover{
-  background-color: #BF00BF;
+  background-color: #65C2C8;
+}
+
+ul li a:hover {
   color: #000000;
 }
 

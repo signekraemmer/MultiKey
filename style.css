@@ -307,7 +307,7 @@ a:active {
 .newaddkey {
   height: 25vh;
   width: 90vw;
-  margin-top: 3vh;
+  justify-content: space-evenly;
   border-radius: 30px;
   background-color: #D8D8D8;
   border: 3px dashed #808080;
