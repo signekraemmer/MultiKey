@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
 * {
   margin: 0;
   padding: 0;
-  font-family: Lato; /* Fonten skal linkes på en anden måde */
+  font-family: 'Lato';
 }
 
 /* TOP W. TITLE */
@@ -201,8 +203,11 @@ section {
   border-radius: 5px;
 }
 
+#here {
+  text-decoration: underline;
+}
+
 .signup_content {
-  display: block;
   margin: 15% auto 15% auto;
   flex: 1;
 }
@@ -273,6 +278,7 @@ a:active {
     border-radius:25px;
     min-width: 100px;
     max-width: 150px;
+    font-size: 18px;
 }
 /* SIGN UP SECTION END */
 
