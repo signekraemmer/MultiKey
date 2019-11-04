@@ -6,14 +6,21 @@
 
 /* TOP W. TITLE */
 .top {
-  height: 70px;
-  width: 375px;
+  height: 8.56vh;
+  width: 100%;
   background-color: #2B2B2B;
 }
 .arrowback {
   padding-top: 25px;
   padding-left: 25px;
 }
+
+.top h2 {
+  position: fixed;
+  top: 6vh;
+  text-align: center;
+}
+
 h2 {
   color: #FDFFFC;
   font-size: 18px;
