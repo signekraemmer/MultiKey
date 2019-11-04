@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
 * {
   margin: 0;
   padding: 0;
-  font-family: Lato; /* Fonten skal linkes på en anden måde */
+  font-family: 'Lato';
 }
 
 /* TOP W. TITLE */
@@ -165,13 +167,22 @@ a img {
 /* LOGIN SECTION END */
 
 /* SIGN UP SECTION */
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+#topAir {
+  flex: 0.3;
+}
+
 .signup_top {
-    height: 20vh;
+    flex: 1;
 }
 
 .signup_top h1 {
   text-align: center;
-  padding: 10px 0px;
+  padding: 20px 0px;
   font-size: 32px;
 }
 
@@ -196,15 +207,20 @@ a img {
   border-radius: 5px;
 }
 
+#here {
+  text-decoration: underline;
+}
+
 .signup_content {
-  display: block;
   margin: 15% auto 15% auto;
+  flex: 1;
 }
 
 .inputs {
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 
 form {
@@ -216,11 +232,13 @@ form {
 input {
   display: block;
   width: 200px;
-  margin: 0px 0px  10px 0px ;
+  margin: 0px 0px  20px 0px ;
   border: 3px solid #000000;
   border-radius: 10px;
   padding: 5px;
   text-align: center;
+  background-position: 5% 50%;
+  background-repeat: no-repeat;
 }
 
 label {
@@ -229,11 +247,7 @@ label {
 }
 
 .signup_bottom {
-  position: absolute;
-  bottom: 0vh;
-  left: 50vw;
-  transform: translateX(-50%);
-  margin: auto auto 10vh auto;
+  flex: 1;
   text-align: center;
 }
 
@@ -258,7 +272,7 @@ a:active {
 }
 
 #forgotPassword {
-  color: #B5B5B5;
+  color: #dbdbdb;
 }
 
 .button {
@@ -266,6 +280,9 @@ a:active {
     background-color: #b5b5b5;
     border: 1px solid #000000;
     border-radius:25px;
+    min-width: 100px;
+    max-width: 150px;
+    font-size: 18px;
 }
 /* SIGN UP SECTION END */
 
@@ -308,7 +325,12 @@ a:active {
 }
 
 .arrowfaq {
-  padding: -10px 5px 8px 10px;
+  position: absolute;
+  margin-left: 80vw;
+}
+
+.arrowturn {
+  transform: rotate(180deg);
 }
 /* FAQ / HELP SECTION END */
 
@@ -334,3 +356,9 @@ a:active {
 }
 
 /* KEY CARD END*/
+
+@media only screen and (max-width: 320px) {
+  #topAir {
+    flex: 0;
+  }
+}

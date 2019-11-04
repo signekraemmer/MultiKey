@@ -5,7 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title></title>
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png"/>
+  <title>Login</title>
   <script src="javascript.js" defer>
 
   </script>
@@ -14,13 +15,15 @@
 <body>
   <section class="loginback">
 
+    <div id="topAir"></div>
+
 <div class="signup_top">
 
     <h1>MultiKEY</h1>
 
 <div id="logo">
 
-    <img src="images/logo.png" alt="multikey logo">
+    <img src="images/logo/logoturq.png" alt="multikey logo">
 
   </div>
 
@@ -31,10 +34,8 @@
 
       <form id="loginData" action="frontpage.html">
 
-        <label for="phoneNumber">Phone number</label>
-        <input id="phoneNumber" type="text" name="uphone" placeholder="12341234">
-        <label for="password">Password</label>
-        <input id="password" type="text" name="upass" placeholder="Duck">
+        <input id="phoneNumber" type="text" name="uphone" placeholder="Phone number" style="background-image: url(images/icons/user.png);">
+        <input id="password" type="text" name="upass" placeholder="Password" style="background-image: url(images/icons/password.png);">
         <a id="forgotPassword" href="forgotPassword.html">Forgot password?</a>
 
       </form>
@@ -46,7 +47,7 @@
 
       <button id="loginButton" class="button" type="button" name="Login">Login</button>
 
-      <a href="signupPersonal.html"><br><br>Sign up</a>
+      <a href="signupPersonal.html"><br><br>Sign up <span id="here">here</span> </a>
 
     </div>
 
