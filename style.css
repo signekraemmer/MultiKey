@@ -97,14 +97,18 @@ a img {
 }
 
 .toptext {
-  display: block;
+  position: fixed;
+  bottom: 45vh;
 }
 
 .middletext{
-  justify-content: center;
+  padding-top: 5vh;
+  position: fixed;
+  bottom: 30vh;
 }
 
-.bottomtext{
+.bottomtext {
+  padding-top: 5vh;
   position: fixed;
   bottom: 3vh;
 }
