@@ -298,7 +298,12 @@ a:active {
 }
 
 .arrowfaq {
-  padding: -10px 5px 8px 10px;
+  position: absolute;
+  margin-left: 80vw;
+}
+
+.arrowturn {
+  transform: rotate(180deg);
 }
 /* FAQ / HELP SECTION END */
 
