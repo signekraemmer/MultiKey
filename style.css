@@ -16,17 +16,16 @@
 }
 
 .top h2 {
-  position: fixed;
   top: 6vh;
-  text-align: center;
 }
 
 h2 {
   color: #FDFFFC;
   font-size: 18px;
   font-weight: 400;
-  display: block;
-  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* TOP W. TITLE END */
@@ -216,7 +215,7 @@ input {
 
 label {
   margin: 5px 5px 0px 5px;
-  padding: 5px; 
+  padding: 5px;
 }
 
 .signup_bottom {
@@ -308,10 +307,14 @@ a:active {
 .newaddkey {
   height: 25vh;
   width: 90vw;
-  margin-top: 3vh;
+  justify-content: space-evenly;
   border-radius: 30px;
   background-color: #D8D8D8;
   border: 3px dashed #808080;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 2vh auto;
 }
 
 .keycard {
