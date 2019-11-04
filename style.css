@@ -84,12 +84,16 @@ nav {
 }
 .sidenav a {
   padding: 10px;
-  margin-left: 50px;
+  margin-left: 30px;
   text-decoration: none;
   font-size: 20px;
   color: #ffffff;
   display: block;
   transition: 0.3s;
+}
+
+a img {
+  padding-right: 15px;
 }
 
 .toptext {
@@ -315,6 +319,7 @@ a:active {
   border: 3px dashed #808080;
   position: absolute;
   left: 50%;
+  z-index: -100;
   transform: translateX(-50%);
   margin: 2vh auto;
 }
