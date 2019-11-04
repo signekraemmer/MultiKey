@@ -110,14 +110,16 @@ nav {
   position: relative;
   width: 3px;
   height: 25px;
-  left: 49%;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: #ffffff;
 }
 .line5{
   position: relative;
   width: 25px;
   height: 3px;
-  top: -51%;
+  bottom: 50%;
+  transform: translateY(-50%);
   background-color: #ffffff;
 }
 .plus{
