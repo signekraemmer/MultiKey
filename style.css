@@ -173,12 +173,12 @@ section {
 }
 
 .signup_top {
-    flex: 1;
+    flex: 1.2;
 }
 
 .signup_top h1 {
   text-align: center;
-  padding: 10px 0px;
+  padding: 20px 0px;
   font-size: 32px;
 }
 
