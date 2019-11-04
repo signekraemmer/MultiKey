@@ -307,10 +307,13 @@ a:active {
 .newaddkey {
   height: 25vh;
   width: 90vw;
-  margin-top: 3vh;
   border-radius: 30px;
   background-color: #D8D8D8;
   border: 3px dashed #808080;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 2vh auto;
 }
 
 .keycard {
