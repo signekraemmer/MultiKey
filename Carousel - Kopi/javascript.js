@@ -10,11 +10,11 @@ function slide(wrapper, items) {
       posX2 = 0,
       posInitial,
       posFinal,
-      threshold = 200,
+      threshold = 100,
       slides = items.getElementsByClassName('slide'),
       slidesLength = slides.length,
       // Gets the width of the object
-      slideSize = items.getElementsByClassName('slide')[0].offsetHeight,
+      slideSize = items.getElementsByClassName('slide')[0].offsetWidth,
       firstSlide = slides[0],
       lastSlide = slides[slidesLength - 1],
       // Creates a clone of the object
@@ -50,14 +50,14 @@ function slide(wrapper, items) {
     e = e || window.event;
     // Cancels event if possible
     e.preventDefault();
-    // Read-only - Returns the offsetTop of the top left corner of the object
-    posInitial = items.offsetTop;
+    // Read-only - Returns the offsetLeft of the top left corner of the object
+    posInitial = items.offsetLeft;
 
     // .type checks what type it is?
     if (e.type == 'touchstart') {
-      posX1 = e.touches[0].clientY;
+      posX1 = e.touches[0].clientX;
     } else {
-      posX1 = e.clientY;
+      posX1 = e.clientX;
       document.onmouseup = dragEnd;
       document.onmousemove = dragAction;
     }
@@ -67,23 +67,23 @@ function slide(wrapper, items) {
     e = e || window.event;
 
     if (e.type == 'touchmove') {
-      posX2 = posX1 - e.touches[0].clientY;
-      posX1 = e.touches[0].clientY;
+      posX2 = posX1 - e.touches[0].clientX;
+      posX1 = e.touches[0].clientX;
     } else {
-      posX2 = posX1 - e.clientY;
-      posX1 = e.clientY;
+      posX2 = posX1 - e.clientX;
+      posX1 = e.clientX;
     }
-    items.style.top = (items.offsetTop - posX2) + "px";
+    items.style.left = (items.offsetLeft - posX2) + "px";
   }
 
   function dragEnd (e) {
-    posFinal = items.offsetTop;
+    posFinal = items.offsetLeft;
     if (posFinal - posInitial < -threshold) {
       shiftSlide(1, 'drag');
     } else if (posFinal - posInitial > threshold) {
       shiftSlide(-1, 'drag');
     } else {
-      items.style.top = (posInitial) + "px";
+      items.style.left = (posInitial) + "px";
     }
 
     document.onmouseup = null;
@@ -94,13 +94,13 @@ function slide(wrapper, items) {
     items.classList.add('shifting');
 
     if (allowShift) {
-      if (!action) { posInitial = items.offsetTop; }
+      if (!action) { posInitial = items.offsetLeft; }
 
       if (dir == 1) {
-        items.style.top = (posInitial - slideSize) + "px";
+        items.style.left = (posInitial - slideSize) + "px";
         index++;
       } else if (dir == -1) {
-        items.style.top = (posInitial + slideSize) + "px";
+        items.style.left = (posInitial + slideSize) + "px";
         index--;
       }
     };
@@ -112,12 +112,12 @@ function slide(wrapper, items) {
     items.classList.remove('shifting');
 
     if (index == -1) {
-      items.style.top = -(slidesLength * slideSize) + "px";
+      items.style.left = -(slidesLength * slideSize) + "px";
       index = slidesLength - 1;
     }
 
     if (index == slidesLength) {
-      items.style.top = -(1 * slideSize) + "px";
+      items.style.left = -(1 * slideSize) + "px";
       index = 0;
     }
 
