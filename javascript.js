@@ -61,7 +61,7 @@ function validateUser() {
 function validateUser() {
   let checkboxInputs = document.getElementById("checkContainer");
 
-  if (checkboxInputs[0].value == "checkbox") {
+  if (checkboxInputs[0].value == "checked") {
     console.log("successfull");
     window.location.href = "login.html";
   }
