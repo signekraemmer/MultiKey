@@ -34,7 +34,7 @@ h2 {
 /*FLIPCARD START*/
 /*Dette er kollonen til flip-kortene*/
 .column{
-  margin-top: 8vh;
+  margin-top: 5vh;
   display: inline-block;
   justify-content: center;
   flex-wrap: wrap;
