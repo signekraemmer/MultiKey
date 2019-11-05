@@ -32,15 +32,7 @@ for (i = 0; i < coll.length; i++) {
 }
 
 // Listen for clicks on "login button"
-try {
-  document.getElementById("loginButton").addEventListener("click", validateUser);
-} catch (e) {
-  console.log(e);
-
-} finally {
-  console.log("no login button");
-
-}
+document.getElementById("loginButton").addEventListener("click", validateUser);
 // Validates the username and password
 function validateUser() {
   let userInputs = document.getElementById("loginData");
@@ -53,21 +45,4 @@ function validateUser() {
   else {
     window.alert("Wrong username or password");
   }
-}
-
-try {
-  document.getElementById("notificationBell").addEventListener("click", activateNotification);
-} catch (e) {
-  console.log(e);
-
-} finally {
-  console.log("no comprende");
-
-}
-
-// Notifcation Bell
-function activateNotification() {
-  let containerSlide = document.getElementsByClassName("notificationContainer");
-  containerSlide[0].classList.toggle("slideUp");
-  console.log("notification activated");
 }

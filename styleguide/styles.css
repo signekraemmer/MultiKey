@@ -199,8 +199,14 @@ ul li a:hover {
 }
 
 .grid-item {
+<<<<<<< HEAD
   padding: 30px;
   font-size: 18px;
+=======
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 50px;
+  font-size: 30px;
+>>>>>>> parent of 48eb646... Merge branch 'master' of https://github.com/signekraemmer/MultiKey
   text-align: center;
   background-color: white;
 
