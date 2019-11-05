@@ -160,13 +160,14 @@ ul li a:hover {
 /*  BUTTON SECTION */
 .gridbutton {
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 30% 50%;
   text-align: left;
 }
 
 .button {
   height: 47px;
   width: 250px;
+  margin-top: 10px;
   padding-top: 23px;
   border-radius: 30px;
   background-color: #65C2C8;
@@ -183,8 +184,9 @@ ul li a:hover {
 
 .codeBox {
   width: 90%;
-  height: 100px;
+  height: auto;
   border: 2px solid;
+  padding: 20px;
 }
 
 /*ICON START*/
