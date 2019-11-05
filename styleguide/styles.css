@@ -187,6 +187,28 @@ ul li a:hover {
   border: 2px solid;
 }
 
+/*ICON START*/
+.grid-box1, .grid-box3 {
+  display: inline-grid;
+  grid-template-columns: auto;
+  background-color: white;
+}
+
+.grid-box2{
+  display: inline-grid;
+  grid-template-columns: auto;
+  background-color: black;
+}
+
+.grid-item {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 50px;
+  font-size: 30px;
+  text-align: center;
+}
+
+/*ICON END*/
+
 /* NAVIGATION FELT */
 .navistyle {
   width: 375px;
