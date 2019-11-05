@@ -223,6 +223,7 @@ nav {
   transition: 0.5s;
   transform: translateX(100%);
 }
+
 .sidenav.active {
   transform: translateX(0%);
   background-color: #262C50;
