@@ -83,10 +83,13 @@ ul li a:hover {
   margin-top: 20vh;
 }
 
-.logoSection h2, .logoSection h3 {
-  margin-left: 6vw;
+.logoSection h2, .logoSection p {
+  margin-left: 3vw;
 }
 
+.languageSection{
+  margin-bottom: 30vh;
+}
 
 /* COLOR SECTION */
 
@@ -157,13 +160,14 @@ ul li a:hover {
 /*  BUTTON SECTION */
 .gridbutton {
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 30% 50%;
   text-align: left;
 }
 
 .button {
   height: 47px;
   width: 250px;
+  margin-top: 10px;
   padding-top: 23px;
   border-radius: 30px;
   background-color: #65C2C8;
@@ -180,8 +184,100 @@ ul li a:hover {
 
 .codeBox {
   width: 90%;
-  height: 100px;
+  height: auto;
   border: 2px solid;
+  padding: 20px;
+}
+
+/*ICON START*/
+.grid-box {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  background-color: white;
+  padding-right: 125px;
+  padding-left: 2.5vw;
+}
+
+.grid-item {
+  padding: 30px;
+  font-size: 18px;
+  text-align: center;
+  background-color: white;
+
+}
+
+.grid-items {
+  padding: 30px;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+  background-color: #262C50;
+}
+/*ICON END*/
+
+/* NAVIGATION FELT */
+.navistyle {
+  width: 375px;
+  height: 9vh;
+}
+
+.navistyle nav {
+  width: 100%;
+  height: 9vh;
+  background-color: #262C50;
+}
+
+.navFlex {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 10px;
+}
+
+.line1, .line2, .line3 { /* The three lines in a burger menu */
+  z-index: 1;
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.change .line1 { /* First line in burger menu is rotatet */
+  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.change .line2 { /* Second line in burger menu is gone */
+  opacity: 0;
+}
+.change .line3 { /* Threed line in burger menu is rotatet */
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+/* Plus sign */
+.line4 {
+  position: relative;
+  width: 3px;
+  height: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffffff;
+}
+.line5{
+  position: relative;
+  width: 25px;
+  height: 3px;
+  bottom: 50%;
+  transform: translateY(-50%);
+  background-color: #ffffff;
+}
+.plus{
+  width: 25px;
+  height: 25px;
+}
+
+.home img {
+  width: 25px;
+  height: 25px;
 }
 
 /* FORMS */

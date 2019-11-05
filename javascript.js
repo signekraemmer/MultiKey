@@ -32,7 +32,15 @@ for (i = 0; i < coll.length; i++) {
 }
 
 // Listen for clicks on "login button"
-document.getElementById("loginButton").addEventListener("click", validateUser);
+try {
+  document.getElementById("loginButton").addEventListener("click", validateUser);
+} catch (e) {
+  console.log(e);
+
+} finally {
+  console.log("no login button");
+
+}
 // Validates the username and password
 function validateUser() {
   let userInputs = document.getElementById("loginData");
@@ -47,15 +55,19 @@ function validateUser() {
   }
 }
 
-// Profile
+try {
+  document.getElementById("notificationBell").addEventListener("click", activateNotification);
+} catch (e) {
+  console.log(e);
 
-let butt = document.getElementsByClassName('button');
+} finally {
+  console.log("no comprende");
 
-butt[0].addEventListener("click", showPopup);
+}
 
-function showPopup() {
-  console.log("active");
-let main = document.getElementsByClassName('popupMain');
-
-main[0].classList.toggle("popupActive");
+// Notifcation Bell
+function activateNotification() {
+  let containerSlide = document.getElementsByClassName("notificationContainer");
+  containerSlide[0].classList.toggle("slideUp");
+  console.log("notification activated");
 }
