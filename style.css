@@ -175,6 +175,7 @@ h2 {
 
 /* NAVIGATIONS BAR */
 nav {
+  z-index: 2;
   width: 100%;
   position: fixed;
   bottom: 0px;
@@ -286,52 +287,47 @@ nav {
 }
 
 /* NOTIFICATION MENU */
-<<<<<<< HEAD
 .notificationContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: #262C50;
+  width: 100vw;
+  height: 25vh;
+  bottom: 8.9vh;
+  transition: 1s ease;
+  transform: translateY(100%);
+}
 
+.slideUp {
+    transform: translateY(0%);
 }
 
 .notificationCard {
-
+  display: flex;
+  position: relative;
+  flex: 1;
+  background-color: #E0E3E6;
+  margin: 8px;
+  max-height: 60px;
 }
 
 .notificationImage {
-
+  position: relative;
+  margin: 5px;
+  max-height: 50px;
 }
 
 .notificationText {
-
-<<<<<<< HEAD
+  position: relative;
+  flex: 1;
+  vertical-align: middle;
+  line-height: 50px;
+  margin: 5px;
+  max-height: 60px;
 }
-=======
-.notificationContainer {}
-
-.notificationCard {}
-
-.notificationImage {
-  width: 25px;
-  height: 25px;
-=======
->>>>>>> parent of 3368811... Merge branch 'master' of https://github.com/signekraemmer/MultiKey
-}
-
-.notificationText {}
-
->>>>>>> parent of 48eb646... Merge branch 'master' of https://github.com/signekraemmer/MultiKey
 /* NOTIFICATION MENU END */
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> parent of 5f07972... ret menu bare ikoner
-=======
-
->>>>>>> parent of 5f07972... ret menu bare ikoner
-=======
-
->>>>>>> parent of 3368811... Merge branch 'master' of https://github.com/signekraemmer/MultiKey
 /* LOGIN SECTION */
 .loginback {
   width: 100%;
