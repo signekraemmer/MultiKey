@@ -529,4 +529,41 @@ height: 15.56vh;
 width: 100%;
 background-color: #262C50;
 }
+
+.profilePen {
+  position: relative;
+  margin-left: 75vw;
+}
+#profilePicturePro {
+  display: block;
+  margin: 10px auto;
+  width: 150px;
+  height: 150px;
+  border: 5px solid #000000;
+  border-radius: 20px;
+  margin-top: -6vh;
+}
+
+.profileBox {
+  background-color: blue;
+  opacity: 0%;
+}
+.profileInputs {
+  display: block;
+  width: 200px;
+  margin: 0px 20px  20px 15vw ;
+  padding: 10px;
+  text-align: left;
+}
+.profileContent {
+  margin: 10% auto 10% auto;
+  flex: 1;
+}
+
+.profileHeadline {
+  color: blue;
+  margin-left: -30vw;
+  text-align: left;
+  margin-left: 1vw;
+}
 /* PROFILE END*/
