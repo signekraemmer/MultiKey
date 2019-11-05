@@ -286,19 +286,27 @@ nav {
 }
 
 /* NOTIFICATION MENU */
-.notificationContainer {}
+.notificationContainer {
 
-.notificationCard {}
-
-.notificationImage {
-  width: 25px;
-  height: 25px;
 }
 
-.notificationText {}
+.notificationCard {
 
+}
+
+.notificationImage {
+
+}
+
+.notificationText {
+
+}
 /* NOTIFICATION MENU END */
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> parent of 5f07972... ret menu bare ikoner
 /* LOGIN SECTION */
 .loginback {
   width: 100%;
