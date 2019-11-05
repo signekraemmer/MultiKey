@@ -545,8 +545,11 @@ background-color: #262C50;
 }
 
 .profileBox {
+  z-index: 0;
   background-color: blue;
-  opacity: 0%;
+  opacity: 100%;
+  width: 100vw;
+  height: 80vw;
 }
 .profileInputs {
   display: block;
