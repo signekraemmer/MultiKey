@@ -71,3 +71,17 @@ function activateNotification() {
   containerSlide[0].classList.toggle("slideUp");
   console.log("notification activated");
 }
+
+
+// PROFILE
+
+let butt = document.getElementsByClassName('button');
+
+butt[0].addEventListener("click", showPopup);
+
+function showPopup() {
+  console.log("active");
+let main = document.getElementsByClassName('popupMain');
+
+main[0].classList.toggle("popupActive");
+}

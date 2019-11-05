@@ -194,8 +194,15 @@ nav {
   width: 25px;
   height: 3px;
   background-color: #ffffff;
-  margin: 6px 0;
   transition: 0.4s;
+}
+
+.line1 {
+  margin-top: 3px;
+}
+
+.line2 {
+  margin: 6px 0px;
 }
 .change .line1 { /* First line in burger menu is rotatet */
   -webkit-transform: rotate(-45deg) translate(-5px, 6px);
@@ -566,6 +573,312 @@ a:active {
 }
 
 /* PROFILE */
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato';
+}
+
+/* TOP W. TITLE */
+.top {
+  height: 8.56vh;
+  width: 100%;
+  background-color: #262C50;
+}
+.arrowback {
+  padding-top: 25px;
+  padding-left: 25px;
+}
+
+.top h2 {
+  top: 6vh;
+}
+
+h2 {
+  color: #FDFFFC;
+  font-size: 18px;
+  font-weight: 400;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* TOP W. TITLE END */
+
+/* NAVIGATIONS BAR */
+nav {
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  height: 9vh;
+  background-color: #262C50;
+}
+
+.navFlex {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1.5vh;
+}
+
+.line1, .line2, .line3 { /* The three lines in a burger menu */
+  z-index: 1;
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.change .line1 { /* First line in burger menu is rotatet */
+  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.change .line2 { /* Second line in burger menu is gone */
+  opacity: 0;
+}
+.change .line3 { /* Threed line in burger menu is rotatet */
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+/* FOLD UD SIDENAV */
+.sidenav {
+  height: 82.55vh;
+  width: 60%;
+  position: fixed;
+  top: 8.55vh;
+  z-index: 1;
+  right: 0;
+  background-color: #262C50;
+  overflow-x: hidden;
+  transition: 0.5s;
+  transform: translateX(100%);
+}
+
+.sidenav.active {
+  transform: translateX(0%);
+  background-color: #262C50;
+}
+.sidenav a {
+  padding: 10px;
+  margin-left: 30px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+
+.menubar {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: fixed;
+  bottom: 0px;
+}
+
+/* ICON FOR FOLDOUT MENU */
+.sidenav .menubar a img {
+  padding-right: 15px;
+}
+
+/* LINJE IMELLEM SLIDEUD MENU */
+.spaceline {
+  width: 100%;
+  height: 1px;
+  background-color: #ffffff;
+  margin-left: 30px;
+}
+
+/* Plus sign */
+.line4 {
+  position: relative;
+  width: 3px;
+  height: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffffff;
+}
+.line5{
+  position: relative;
+  width: 25px;
+  height: 3px;
+  bottom: 50%;
+  transform: translateY(-50%);
+  background-color: #ffffff;
+}
+.plus{
+  width: 25px;
+  height: 25px;
+}
+
+.home img {
+  width: 25px;
+  height: 25px;
+}
+
+/* LOGIN SECTION */
+.loginback {
+  width: 100%;
+  height: 100vh;
+  color: #ffffff;
+  background: linear-gradient(-45deg, #000000, #000000, #313131, #646262, #938E8E);
+  background-size: 400% 400%;
+  position: relative;
+  animation: change 7s ease-in-out infinite;
+}
+
+@keyframes change {
+  0%{
+    background-position: 0 50%
+  }
+  50%{
+    background-position: 50% 90%
+  }
+  100%{
+    background-position: 0 50%
+  }
+}
+/* LOGIN SECTION END */
+
+/* SIGN UP SECTION */
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+#topAir {
+  flex: 0.3;
+}
+
+.signup_top {
+    flex: 1;
+    align-content: center;
+}
+
+.signup_top h1 {
+  text-align: center;
+  padding: 20px 0px;
+  font-size: 32px;
+  top: 20%;
+
+}
+
+#frontPageHeader {
+  margin-top: 3vh;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.signup_top img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 10%;
+}
+
+#profilePicture {
+  display: block;
+  margin: 10px auto;
+  width: 150px;
+  height: 150px;
+  border: 5px solid #000000;
+  border-radius: 20px;
+}
+
+#here {
+  text-decoration: underline;
+}
+
+.signup_content {
+  margin: 10% auto 15% auto;
+  flex: 1;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  display: block;
+  width: 200px;
+  margin: 0px 0px  20px 0px ;
+  border: 3px solid #000000;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  background-position: 5% 50%;
+  background-repeat: no-repeat;
+}
+
+label {
+  margin: 5px 5px 0px 5px;
+  padding: 5px;
+}
+
+.signup_bottom {
+  flex: 1;
+  text-align: center;
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+a:active {
+  color: white;
+  text-decoration: none;
+}
+
+#forgotPassword {
+  color: #dbdbdb;
+}
+
+#passwordText {
+  text-align: center;
+  margin: 15px 10vw;
+}
+
+.button {
+    padding: 10px 5vw;
+    background-color: #b5b5b5;
+    border: 1px solid #000000;
+    border-radius:25px;
+    min-width: 100px;
+    max-width: 150px;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+/* SIGN UP SECTION END */
+
+/* PROFILE */
 
 .top1 {
 height: 15.56vh;
@@ -588,9 +901,11 @@ background-color: #262C50;
 }
 
 .profileBox {
+  position: absolute;
+  top: 34%;
   z-index: 0;
   background-color: blue;
-  opacity: 100%;
+  opacity: 0%;
   width: 100vw;
   height: 80vw;
 }
@@ -611,5 +926,70 @@ background-color: #262C50;
   margin-left: -30vw;
   text-align: left;
   margin-left: 1vw;
+}
+.popupMain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  margin: 0 auto;
+  height: 100vh;
+  width: 100vw;
+  display: none;
+}
+/* Hvordan kommer det i midten?*/
+#overlay {
+  position: absolute;
+  background: black;
+  top: 0; left: 0; right: 0; bottom: 0;
+  opacity: 20%;
+  height: 100%;
+}
+
+#popup {
+  width:84%;
+  z-index: 10px;
+  background: white;
+  border-radius: 8px;
+  margin:0 auto;
+  text-align: center;
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#popup h3 {
+  margin: 20px 0 0 0;
+  padding: 0;
+}
+
+#popup p {
+  margin: 15px;
+  padding: 0;
+}
+
+#popup .button-holder a {
+  color: #007AFF;
+  text-decoration: none;
+  line-height:45px;
+  font-weight:bold;
+  display: block;
+  border-top: 1px solid #BABABA;
+}
+
+#popup .two-button a{
+  width: 50%;
+  float: left;
+  box-sizing: border-box
+}
+
+#popup .two-button a:first-child {
+  border-right: 1px solid #BABABA;
+}
+
+.popupActive {
+  display: block;
 }
 /* PROFILE END*/
