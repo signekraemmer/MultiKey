@@ -46,3 +46,16 @@ function validateUser() {
     window.alert("Wrong username or password");
   }
 }
+
+// Profile
+
+let butt = document.getElementsByClassName('button');
+
+butt[0].addEventListener("click", showPopup);
+
+function showPopup() {
+  console.log("active");
+let main = document.getElementsByClassName('popupMain');
+
+main[0].classList.toggle("popupActive");
+}
