@@ -33,7 +33,7 @@ h2 {
 
 /*FLIPCARD START*/
 /*Dette er kollonen til flip-kortene*/
-.column{
+.cardcolumn{
   margin-top: 5vh;
   display: inline-block;
   justify-content: center;
@@ -111,7 +111,7 @@ h2 {
 }
 
 /*Dette er knapperme på kort*/
-.button {
+.cardbutton {
     background-color: white; /* Green */
     border: 2px solid turquoise;
     border-radius: 10px;
@@ -128,46 +128,40 @@ h2 {
     cursor: pointer;
   }
 
-  .button {
-    background-color: white;
-    color: black;
-    border: 2px solid turquoise;
-  }
-
-  .button:hover {
+  .cardbutton:hover {
     background-color: turquoise;
     color: white;
   }
 
-  .button2 {
+  .cardbutton2 {
     background-color: white;
     color: black;
     border: 2px solid navy;
   }
 
-  .button2:hover {
+  .cardbutton2:hover {
     background-color: navy;
     color: white;
   }
 
-  .button3 {
+  .cardbutton3 {
     background-color: white;
     color: black;
     border: 2px solid navy;
   }
 
-  .button3:hover {
+  .cardbutton3:hover {
     background-color: navy;
     color: white;
   }
 
-  .button4 {
+  .cardbutton4 {
     background-color: white;
     color: black;
     border: 2px solid turquoise;
   }
 
-  .button4:hover {
+  .cardbutton4:hover {
     background-color: turquoise;
     color: white;
   }
