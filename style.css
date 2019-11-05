@@ -301,6 +301,7 @@ nav {
 
 .notificationText {
 
+<<<<<<< HEAD
 }
 =======
 .notificationContainer {}
@@ -310,6 +311,8 @@ nav {
 .notificationImage {
   width: 25px;
   height: 25px;
+=======
+>>>>>>> parent of 3368811... Merge branch 'master' of https://github.com/signekraemmer/MultiKey
 }
 
 .notificationText {}
@@ -319,12 +322,16 @@ nav {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> parent of 5f07972... ret menu bare ikoner
 =======
 
 >>>>>>> parent of 5f07972... ret menu bare ikoner
+=======
+
+>>>>>>> parent of 3368811... Merge branch 'master' of https://github.com/signekraemmer/MultiKey
 /* LOGIN SECTION */
 .loginback {
   width: 100%;
