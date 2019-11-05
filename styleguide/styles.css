@@ -190,14 +190,15 @@ ul li a:hover {
 }
 
 /*ICON START*/
-.grid-box {
+.grid-box1, .grid-box3 {
   display: inline-grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto;
   background-color: white;
   padding-right: 125px;
   padding-left: 2.5vw;
 }
 
+<<<<<<< HEAD
 .grid-item {
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -213,15 +214,25 @@ ul li a:hover {
   text-align: center;
   background-color: white;
 
+=======
+.grid-box2{
+  display: inline-grid;
+  grid-template-columns: auto;
+  background-color: black;
+>>>>>>> parent of 6c62925... ikoner, justeringer
 }
 
-.grid-items {
+.grid-item {
   padding: 30px;
-  font-size: 18px;
+  font-size: 30px;
   text-align: center;
+<<<<<<< HEAD
   color: white;
   background-color: #262C50;
+=======
+>>>>>>> parent of 6c62925... ikoner, justeringer
 }
+
 /*ICON END*/
 
 /* NAVIGATION FELT */
