@@ -55,6 +55,24 @@ function validateUser() {
   }
 }
 
+
+// Validates sign up checkbox //
+
+function validateUser() {
+  let checkboxInputs = document.getElementById("checkContainer");
+
+  if (checkboxInputs[0].value == "checkbox") {
+    console.log("successfull");
+    window.location.href = "login.html";
+  }
+
+  else {
+    window.alert("You forgot to agree with terms");
+  }
+}
+
+// Sign up END //
+
 try {
   document.getElementById("notificationBell").addEventListener("click", activateNotification);
 } catch (e) {
