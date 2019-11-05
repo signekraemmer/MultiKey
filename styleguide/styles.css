@@ -203,8 +203,7 @@ ul li a:hover {
 }
 
 .grid-item {
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 50px;
+  padding: 30px;
   font-size: 30px;
   text-align: center;
 }
