@@ -190,24 +190,27 @@ ul li a:hover {
 }
 
 /*ICON START*/
-.grid-box1, .grid-box3 {
+.grid-box {
   display: inline-grid;
-  grid-template-columns: auto;
+  grid-template-columns: auto auto auto;
   background-color: white;
-}
-
-.grid-box2{
-  display: inline-grid;
-  grid-template-columns: auto;
-  background-color: black;
 }
 
 .grid-item {
   padding: 30px;
-  font-size: 30px;
+  font-size: 18px;
   text-align: center;
+  background-color: lightgrey;
+
 }
 
+.grid-items {
+  padding: 30px;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+  background-color: black;
+}
 /*ICON END*/
 
 /* NAVIGATION FELT */
