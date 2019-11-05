@@ -190,51 +190,29 @@ ul li a:hover {
 }
 
 /*ICON START*/
-.grid-box1, .grid-box3 {
+.grid-box {
   display: inline-grid;
-  grid-template-columns: auto;
+  grid-template-columns: auto auto auto;
   background-color: white;
+  padding-right: 125px;
+  padding-left: 2.5vw;
 }
 
-<<<<<<< HEAD
 .grid-item {
-<<<<<<< HEAD
-<<<<<<< HEAD
   padding: 30px;
   font-size: 18px;
-=======
-=======
->>>>>>> parent of 48eb646... Merge branch 'master' of https://github.com/signekraemmer/MultiKey
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 50px;
-  font-size: 30px;
->>>>>>> parent of 48eb646... Merge branch 'master' of https://github.com/signekraemmer/MultiKey
   text-align: center;
-  background-color: lightgrey;
+  background-color: white;
 
-=======
-.grid-box2{
-  display: inline-grid;
-  grid-template-columns: auto;
-  background-color: black;
->>>>>>> parent of 6c62925... ikoner, justeringer
 }
 
-.grid-item {
+.grid-items {
   padding: 30px;
-  font-size: 30px;
+  font-size: 18px;
   text-align: center;
-<<<<<<< HEAD
   color: white;
-<<<<<<< HEAD
   background-color: #262C50;
-=======
->>>>>>> parent of 6c62925... ikoner, justeringer
-=======
-  background-color: black;
->>>>>>> parent of 73454e4... færdiglav grid med ikoner og pas de rigtige ikoner sammen
 }
-
 /*ICON END*/
 
 /* NAVIGATION FELT */
