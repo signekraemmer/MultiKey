@@ -286,6 +286,7 @@ nav {
 }
 
 /* NOTIFICATION MENU */
+<<<<<<< HEAD
 .notificationContainer {
 
 }
@@ -301,6 +302,19 @@ nav {
 .notificationText {
 
 }
+=======
+.notificationContainer {}
+
+.notificationCard {}
+
+.notificationImage {
+  width: 25px;
+  height: 25px;
+}
+
+.notificationText {}
+
+>>>>>>> parent of 48eb646... Merge branch 'master' of https://github.com/signekraemmer/MultiKey
 /* NOTIFICATION MENU END */
 
 <<<<<<< HEAD
