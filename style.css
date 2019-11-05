@@ -333,6 +333,7 @@ section {
 }
 
 #frontPageHeader {
+  margin-top: 3vh;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -347,7 +348,7 @@ section {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 5%;
+  top: 10%;
 }
 
 #profilePicture {
@@ -364,7 +365,7 @@ section {
 }
 
 .signup_content {
-  margin: 15% auto 15% auto;
+  margin: 10% auto 15% auto;
   flex: 1;
 }
 
