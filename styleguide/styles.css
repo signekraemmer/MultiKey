@@ -239,19 +239,15 @@ ul li a:hover {
   width: 25px;
   height: 3px;
   background-color: #ffffff;
-  margin: 6px 0;
   transition: 0.4s;
 }
-.change .line1 { /* First line in burger menu is rotatet */
-  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
-  transform: rotate(-45deg) translate(-5px, 6px);
+
+.line1 {
+  margin-top: 3px;
 }
-.change .line2 { /* Second line in burger menu is gone */
-  opacity: 0;
-}
-.change .line3 { /* Threed line in burger menu is rotatet */
-  -webkit-transform: rotate(45deg) translate(-6px, -8px);
-  transform: rotate(45deg) translate(-6px, -8px);
+
+.line2 {
+  margin: 6px 0px;
 }
 
 /* Plus sign */
