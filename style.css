@@ -194,8 +194,15 @@ nav {
   width: 25px;
   height: 3px;
   background-color: #ffffff;
-  margin: 6px 0;
   transition: 0.4s;
+}
+
+.line1 {
+  margin-top: 3px;
+}
+
+.line2 {
+  margin: 6px 0px;
 }
 .change .line1 { /* First line in burger menu is rotatet */
   -webkit-transform: rotate(-45deg) translate(-5px, 6px);
@@ -986,3 +993,72 @@ background-color: #262C50;
   display: block;
 }
 /* PROFILE END*/
+
+
+/*SIGN UP CHECKBOX START*/
+
+/* The container with text */
+#checkContainer {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+}
+
+/* Der er 2 checkbokse,
+denne gør at laget over(som bliver til checkmarket),
+bliver gemt, indtil der trykkes på den?) */
+#checkContainer input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* ved hover, bliver boxen blå */
+#checkContainer:hover input ~ .checkmark {
+  background-color: #4155E0;
+}
+
+/* When the checkbox is checked, add a blue background */
+#checkContainer input:checked ~ .checkmark {
+  background-color: #65C2C8;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+#checkContainer input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+#checkContainer .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/*SIGN UP CHECKBOX END*/

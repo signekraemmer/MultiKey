@@ -6,7 +6,7 @@
 
 main {
   margin-left: 17vw;
-  width: 80vw;
+  width: 74vw;
 }
 
 h1 {
@@ -67,6 +67,7 @@ ul li a:hover {
   margin-top: 35vh;
   justify-content: center;
   text-align: center;
+  padding-left: 3.1vw;
 }
 
 .colorSection, .buttonSection, .iconSection, .navigationSection,
@@ -160,7 +161,7 @@ ul li a:hover {
 /*  BUTTON SECTION */
 .gridbutton {
   display: grid;
-  grid-template-columns: 30% 50%;
+  grid-template-columns: 30% 60%;
   text-align: left;
 }
 
@@ -168,7 +169,7 @@ ul li a:hover {
   height: 47px;
   width: 250px;
   margin-top: 10px;
-  padding-top: 23px;
+  padding-top: 20px;
   border-radius: 30px;
   background-color: #65C2C8;
   text-align: center;
@@ -194,7 +195,7 @@ ul li a:hover {
   display: inline-grid;
   grid-template-columns: auto auto auto;
   background-color: white;
-  padding-right: 125px;
+  padding-right: 8vw;
   padding-left: 2.5vw;
 }
 
