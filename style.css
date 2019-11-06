@@ -783,7 +783,7 @@ bliver gemt, indtil der trykkes på den?) */
 .addkey_content {
   flex: 1;
   text-align: center;
-  margin: 0 10vw;
+  margin: 1vh 10vw;
 }
 
 .scancard {
@@ -842,14 +842,5 @@ bliver gemt, indtil der trykkes på den?) */
   font-size: 16px;
   border: none;
   border-radius: 10px;
-}
-
-.undertext{
-  font-size: 12px;
-}
-
-.undertexten{
-  margin-top: -2.3vh;
-  font-size: 12px;
 }
 /* Add Key Side END */
