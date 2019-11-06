@@ -4,6 +4,10 @@
   font-family: 'Lato', sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 main {
   margin-left: 17vw;
   width: 80vw;
@@ -172,6 +176,7 @@ ul li a:hover {
   border-radius: 30px;
   background-color: #65C2C8;
   text-align: center;
+  line-height: 20px;
 }
 
 .button a {
