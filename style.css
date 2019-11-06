@@ -789,7 +789,8 @@ bliver gemt, indtil der trykkes på den?) */
 
 .scancard {
   padding: 2vh;
-  background-color: #65C2C8;
+  background-color: #4155E0;
+  color: white;
   font-size: 14px;
   font-style: bold;
   border-radius: 10px;
@@ -801,7 +802,7 @@ bliver gemt, indtil der trykkes på den?) */
   max-height: 200px;
   color: black;
   border-radius: 10px;
-  border: solid 1px black
+  box-shadow: 0 0 10px 0;
 }
 
 .contentKey {
@@ -812,20 +813,36 @@ bliver gemt, indtil der trykkes på den?) */
   align: left;
   display: inline-block;
   display: grid;
+  justify-content: space-between;
+
 }
 
 .keyname {
-
+  align:left;
+  justify: left;
+  justify-content: left;
+  margin-top: -1vh;
 }
 
 .approve {
-  background-color: green;
-  padding: 1vh;
+  background-color: #4155E0;
+  color: white;
+  padding: 2vh;
+  width: 58vw;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 1vh;
 }
 
 .decline {
-  background-color: red;
-  padding: 1vh;
+  background-color: #262C50;
+  color: white;
+  padding: 2vh;
+  width: 58vw;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
 }
 
 /* Add Key Side END */
