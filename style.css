@@ -788,11 +788,11 @@ bliver gemt, indtil der trykkes på den?) */
 }
 
 .scancard {
-  padding: 2vh;
+  height: 5vh;
+  width: 58vw;
   background-color: #4155E0;
   color: white;
-  font-size: 14px;
-  font-style: bold;
+  font-size: 15px;
   border-radius: 10px;
   border: none;
 }
@@ -827,7 +827,7 @@ bliver gemt, indtil der trykkes på den?) */
 .approve {
   background-color: #4155E0;
   color: white;
-  padding: 2vh;
+  height: 5vh;
   width: 58vw;
   font-size: 16px;
   border: none;
@@ -838,11 +838,19 @@ bliver gemt, indtil der trykkes på den?) */
 .decline {
   background-color: #262C50;
   color: white;
-  padding: 2vh;
+  height: 5vh;
   width: 58vw;
   font-size: 16px;
   border: none;
   border-radius: 10px;
 }
 
+.undertext{
+  font-size: 12px;
+}
+
+.undertexten{
+  margin-top: -2.3vh;
+  font-size: 12px;
+}
 /* Add Key Side END */
