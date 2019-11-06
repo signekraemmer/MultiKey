@@ -55,6 +55,35 @@ function validateUser() {
   }
 }
 
+try {
+  document.getElementById("notificationBell").addEventListener("click", activateNotification);
+} catch (e) {
+  console.log(e);
+
+} finally {
+  console.log("no comprende");
+
+}
+
+// Notifcation Bell
+function activateNotification() {
+  let containerSlide = document.getElementsByClassName("notificationContainer");
+  containerSlide[0].classList.toggle("slideUp");
+  console.log("notification activated");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Validates sign up checkbox //
 
 try {
@@ -107,28 +136,12 @@ function validateCheckbox() {
 // Sign up END //
 
 try {
-  document.getElementById("notificationBell").addEventListener("click", activateNotification);
+  document.getElementById("buttButton").addEventListener("click", showPopup);
 } catch (e) {
   console.log(e);
-
 } finally {
-  console.log("no comprende");
-
+  console.log("no sign up");
 }
-
-// Notifcation Bell
-function activateNotification() {
-  let containerSlide = document.getElementsByClassName("notificationContainer");
-  containerSlide[0].classList.toggle("slideUp");
-  console.log("notification activated");
-}
-
-
-// PROFILE
-
-let butt = document.getElementsByClassName('button');
-
-butt[0].addEventListener("click", showPopup);
 
 function showPopup() {
   console.log("active");
