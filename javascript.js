@@ -55,13 +55,46 @@ function validateUser() {
   }
 }
 
-
 // Validates sign up checkbox //
 
-function validateUser() {
-  let checkboxInputs = document.getElementById("checkContainer");
+try {
+  document.getElementById("checkboxen").addEventListener("click", checkboxChecked);
+} catch (e) {
+  console.log(e);
 
-  if (checkboxInputs[0].value == "checked") {
+} finally {
+  console.log("no sign up button");
+}
+
+function checkboxChecked() {
+  console.log("checkboxChecked running");
+let checkedboxen = document.getElementById("checkboxen");
+
+if (checkedboxen.value == "checked") {
+  checkedboxen.value = ""
+}
+else {
+  checkedboxen.value = "checked"
+}
+}
+
+
+
+try {
+  document.getElementById("signupButton").addEventListener("click", validateCheckbox);
+} catch (e) {
+  console.log(e);
+
+} finally {
+  console.log("no sign up");
+}
+
+
+function validateCheckbox() {
+  console.log("validateCheckbox RUNNING");
+  let checkboxInputs = document.getElementById("checkboxen");
+
+  if (checkboxInputs.value == "checked") {
     console.log("successfull");
     window.location.href = "login.html";
   }
