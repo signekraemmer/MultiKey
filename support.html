@@ -1,152 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>SUPPORT/HELP</title>
-  </head>
-  <body>
-    <!-- TOP BANNER -->
-    <div class="top">
-      <button type="button" name="buttonback"> <!-- Knappen skal sendes tilbage til forsiden HJÆLP -->
-        <img src="images/arrowback.png" alt="arrow left" class="arrowback">
-      </button>
-      <h2>MultiKEY</h2>
-    </div>
-    <!-- MENU BAR -->
-    <nav>
 
-      <div class="navFlex">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>SUPPORT/HELP</title>
+</head>
 
-        <!-- HOME MENU !-->
-        <div class="home">
-          <a href="frontpage.html"><img src="images/home-min.png" alt="home button"></a>
+<body>
+  <!-- TOP BANNER -->
+  <div class="top">
+    <button type="button" name="buttonback">
+      <!-- Knappen skal sendes tilbage til forsiden HJÆLP -->
+      <img src="images/arrowback.png" alt="arrow left" class="arrowback">
+    </button>
+    <h2>MultiKEY</h2>
+  </div>
+  <!-- MENU BAR -->
+  <nav>
+
+    <div class="navFlex">
+
+      <!-- HOME MENU !-->
+      <div class="home">
+        <a href="frontpage.html"><img src="images/home-min.png" alt="home button"></a>
+      </div>
+
+      <!-- NOTIFICATION MENU !-->
+      <div class="home">
+        <img id="notificationBell" src="images/alert.png" alt="notifigation button">
+      </div>
+
+      <!-- PLUS MENU !-->
+      <a href="addkey.html">
+        <div class="plus">
+          <div class="line4"></div>
+          <div class="line5"></div>
         </div>
+      </a>
 
-        <!-- NOTIFICATION MENU !-->
-          <div class="home">
-            <img id="notificationBell" src="images/alert.png" alt="notifigation button">
-          </div>
-
-        <!-- PLUS MENU !-->
-        <a href="addkey.html">
-          <div class="plus">
-            <div class="line4"></div>
-            <div class="line5"></div>
-          </div>
-        </a>
-
-        <!-- BURGER MENU !-->
-        <div class="burger" onclick="myFunction(this)">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
-      </div>
-
-      <!-- FOLD UD TEKST I BURGER MENU !-->
-
-      <div id="mySidenav" class="sidenav">
-
-        <div class="menubar">
-          <div class="toptext">
-            <a href="addkey.html"><img src="images/add.png" alt="add key button">Add key</a>
-            <a href="sharekey.html"><img src="images/share.png" alt="share key button">Share key</a>
-            <a href="profil.html"><img src="images/profile.png" alt="profile button">Profile</a>
-          </div>
-
-          <div class="spaceline"></div>
-
-          <div class="middletext">
-            <a href="https://www.instagram.com"><img src="images/instagram.png" alt="instagram button">Instagram</a>
-            <a href="https://www.facebook.com"><img src="images/facebook.png" alt="facebook button">Facebook</a>
-          </div>
-
-          <div class="spaceline"></div>
-
-          <div class="bottomtext">
-            <a href="support.html"><img src="images/help.png" alt="support button">Support</a>
-            <a href="contact.html"><img src="images/contact.png" alt="contact button">Contact</a>
-            <a href="settings.html"><img src="images/settings.png" alt="settings button">Settings</a>
-            <a href="login.html"><img src="images/export.png" alt="logout button">Log out</a>
-          </div>
-
-        </div>
-
-      </div>
-
-      <script src="javascript.js"></script>
-    </nav>
-
-    <!-- Notification slider -->
-    <div class="notificationContainer">
-      <div class="notificationCard">
-        <img class="notificationImage" src="images/miniUCL.png" alt="Miniature card">
-        <p class="notificationText">Your school key ran out</p>
-      </div>
-      <div class="notificationCard">
-        <img class="notificationImage" src="images/miniFitness.png" alt="Miniature card">
-        <p class="notificationText">Fitness World sent you a card</p>
-      </div>
-      <div class="notificationCard">
-        <img class="notificationImage" src="images/miniRejsekort.png" alt="Miniature card">
-        <p class="notificationText">Your funds are low</p>
+      <!-- BURGER MENU !-->
+      <div class="burger" onclick="myFunction(this)">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
       </div>
     </div>
 
-    <p class="faqLine">FAQ</p>
-    <button type="button" class="collapsible">Can the App contain all my keys and access <br> cards?<img src="images/arrowdown.png" alt="Push to open box" class="arrowfaq"> </button>
-    <div class="content">
-      <p>The app supports all electronic RFID applications and cards, and can contain ass many of these as the user wants.</p>
+    <!-- FOLD UD TEKST I BURGER MENU !-->
+
+    <div id="mySidenav" class="sidenav">
+
+      <div class="menubar">
+        <div class="toptext">
+          <a href="addkey.html"><img src="images/add.png" alt="add key button">Add key</a>
+          <a href="sharekey.html"><img src="images/share.png" alt="share key button">Share key</a>
+          <a href="profil.html"><img src="images/profile.png" alt="profile button">Profile</a>
+        </div>
+
+        <div class="spaceline"></div>
+
+        <div class="middletext">
+          <a href="https://www.instagram.com"><img src="images/instagram.png" alt="instagram button">Instagram</a>
+          <a href="https://www.facebook.com"><img src="images/facebook.png" alt="facebook button">Facebook</a>
+        </div>
+
+        <div class="spaceline"></div>
+
+        <div class="bottomtext">
+          <a href="support.html"><img src="images/help.png" alt="support button">Support</a>
+          <a href="contact.html"><img src="images/contact.png" alt="contact button">Contact</a>
+          <a href="settings.html"><img src="images/settings.png" alt="settings button">Settings</a>
+          <a href="login.html"><img src="images/export.png" alt="logout button">Log out</a>
+        </div>
+
+      </div>
+
     </div>
-    <button type="button" class="collapsible">Can I have multiple keys active at once?<img src="images/arrowdown.png" alt="Push to open box" class="arrowfaq"></button>
-    <div class="content">
-      <p>For security reasons, the app is limited to one active key at any moment.</p>
+
+  </nav>
+
+  <!-- Notification slider -->
+  <div class="notificationContainer">
+    <div class="notificationCard">
+      <img class="notificationImage" src="images/miniUCL.png" alt="Miniature card">
+      <p class="notificationText">Your school key ran out</p>
     </div>
-    <button type="button" class="collapsible">What if I loose my phone or sticker? <img src="images/arrowdown.png" alt="Push to open box" class="arrowfaq"> </button>
-    <div class="content">
-      <p>If you lose your phone or key chip, you can go to our website and temporarily suspend your account until you get a new chip. This way the keys cannot be used on your old chip.</p>
+    <div class="notificationCard">
+      <img class="notificationImage" src="images/miniFitness.png" alt="Miniature card">
+      <p class="notificationText">Fitness World sent you a card</p>
     </div>
-    <button type="button" class="collapsible">What if I accidentally share a key with the <br> wrong person?<img src="images/arrowdown.png" alt="Push to open box" class="arrowfaq"> </button>
-    <div class="content">
-      <p>A key can easily be unshared, by selecting the shared key from the key selection menu, and then select the share button, after which you can choose to stop sharing that key. </p>
+    <div class="notificationCard">
+      <img class="notificationImage" src="images/miniRejsekort.png" alt="Miniature card">
+      <p class="notificationText">Your funds are low</p>
     </div>
-    <button type="button" class="collapsible"> Frequently Asked Question<img src="images/arrowdown.png" alt="Push to open box" class="arrowfaq"> </button>
-    <div class="content">
-      <p> Response </p>
-    </div>
-    <button type="button" class="collapsible"> Frequently Asked Question <img src="images/arrowdown.png" alt="Push to open box" class="arrowfaq"> </button>
-    <div class="content">
-      <p> Response </p>
-    </div>  <button type="button" class="collapsible"> Frequently Asked Question<img src="images/arrowdown.png" alt="Push to open box" class="arrowfaq"> </button>
-      <div class="content">
-        <p> Response </p>
-      </div>  <button type="button" class="collapsible"> Frequently Asked Question<img src="images/arrowdown.png" alt="Push to open box" class="arrowfaq"> </button>
-        <div class="content">
-          <p> Response </p>
-        </div>
-        <button type="button" class="collapsible"> Frequently Asked Question<img src="images/arrowdown.png" alt="Push to open box" class="arrowfaq"> </button>
-        <div class="content">
-          <p> Response </p>
-        </div>
-        <button type="button" class="collapsible"> Frequently Asked Question<img src="images/arrowdown.png" alt="Push to open box" class="arrowfaq"> </button>
-        <div class="content">
-          <p> Response </p>
-        </div>
-        <button type="button" class="collapsible"> Frequently Asked Question<img src="images/arrowdown.png" alt="Push to open box" class="arrowfaq"> </button>
-        <div class="content">
-          <p> Response </p>
-        </div>
-        <button type="button" class="collapsible"> Frequently Asked Question<img src="images/arrowdown.png" alt="Push to open box" class="arrowfaq"> </button>
-        <div class="content">
-          <p> Response </p>
-        </div>
-        <button type="button" class="collapsible"> Frequently Asked Question<img src="images/arrowdown.png" alt="Push to open box" class="arrowfaq"> </button>
-        <div class="content">
-          <p> Response </p>
-        </div>
+  </div>
+
+</body>
+
+</html>
+
+<p class="faqLine">FAQ</p>
+
+<div class="questionContainer">
+
+  <button type="button" class="collapsible">Can the App contain all my keys and access <br> cards?<img src="images/arrowdown.png" alt="Push to open box" class="arrowfaq"> </button>
+  <div class="content">
+    <p>The app supports all electronic RFID applications and cards, and can contain ass many of these as the user wants.</p>
+  </div>
+  <button type="button" class="collapsible">Can I have multiple keys active at once?<img src="images/arrowdown.png" alt="Push to open box" class="arrowfaq"></button>
+  <div class="content">
+    <p>For security reasons, the app is limited to one active key at any moment.</p>
+  </div>
+  <button type="button" class="collapsible">What if I loose my phone or sticker? <img src="images/arrowdown.png" alt="Push to open box" class="arrowfaq"> </button>
+  <div class="content">
+    <p>If you lose your phone or sticker, you can go to our website and temporarily suspend your account until you get a new chip. This way the keys cannot be used on your old chip.</p>
+  </div>
+  <button type="button" class="collapsible">What if I accidentally share a key with the <br> wrong person?<img src="images/arrowdown.png" alt="Push to open box" class="arrowfaq"> </button>
+  <div class="content">
+    <p>A key can easily be unshared, by selecting the shared key from the key selection menu, and then select the share button, after which you can choose to stop sharing that key. </p>
+  </div>
+  <button type="button" class="collapsible">Why can't I share share my key?<img src="images/arrowdown.png" alt="Push to open box" class="arrowfaq"> </button>
+  <div class="content">
+    <p>Because not all organisations allow their keys to be shared, due to security reasons.</p>
+  </div>
+  <button type="button" class="collapsible">How do I activate my key?<img src="images/arrowdown.png" alt="Push to open box" class="arrowfaq"> </button>
+  <div class="content">
+    <p> Response </p>
+  </div> <button type="button" class="collapsible">How do I delete my key?<img src="images/arrowdown.png" alt="Push to open box" class="arrowfaq"> </button>
+  <div class="content">
+    <p> Response </p>
+  </div> <button type="button" class="collapsible">How do I share my key?<img src="images/arrowdown.png" alt="Push to open box" class="arrowfaq"> </button>
+  <div class="content">
+    <p> Response </p>
+  </div>
+
+
+</div>
+
 <script src="javascript.js"></script>
 
-  </body>
+</body>
+
 </html>
