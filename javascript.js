@@ -72,18 +72,6 @@ function activateNotification() {
   console.log("notification activated");
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 // Validates sign up checkbox //
 
 try {
@@ -106,8 +94,6 @@ else {
   checkedboxen.value = "checked"
 }
 }
-
-
 
 try {
   document.getElementById("signupButton").addEventListener("click", validateCheckbox);
@@ -133,7 +119,7 @@ function validateCheckbox() {
   }
 }
 
-// Sign up END //
+// Sign up END
 
 // PROFILE
 try {
@@ -141,7 +127,7 @@ try {
   let butt = document.getElementById("buttButton");
 
   butt.addEventListener("click", showPopup);
-  
+
 } catch (e) {
   console.log(e);
 } finally {
@@ -154,3 +140,5 @@ let main = document.getElementsByClassName('popupMain');
 
 main[0].classList.toggle("popupActive");
 }
+
+// PROFILE END
