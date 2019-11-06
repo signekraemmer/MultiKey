@@ -100,6 +100,14 @@ h2 {
 	transform: rotateX(180deg);
 }
 
+.flipcardBack img {
+  height: 23px;
+  width: auto;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+}
+
 .contentcard{
   max-width: 400px;
   max-height: 200px;
@@ -110,7 +118,7 @@ h2 {
 
 /*Dette er knapperme på kort*/
 .cardbutton {
-    background-color: white; /* Green */
+    background-color: white;
     border: 2px solid turquoise;
     border-radius: 10px;
     color: black;
@@ -124,6 +132,8 @@ h2 {
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
+    position: relative;
+    top: 60px;
   }
 
   .cardbutton:hover {
@@ -621,7 +631,7 @@ background-color: #262C50;
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 6;
   margin: 0 auto;
   height: 100vh;
   width: 100vw;
@@ -633,8 +643,9 @@ background-color: #262C50;
   position: absolute;
   background: black;
   top: 0; left: 0; right: 0; bottom: 0;
-  opacity: 20%;
-  height: 100%;
+  background opacity: 50%;
+  height: 100vh;
+  width: 100vw;
 }
 
 #popup {
@@ -762,3 +773,17 @@ bliver gemt, indtil der trykkes på den?) */
     flex: 0;
   }
 }
+
+/*  Add Key Side START */
+
+.addkey_content {
+  margin: 10% auto 15% auto;
+  flex: 1;
+}
+
+#addkey_text {
+  text-align: center;
+  margin: 15px 10vw;
+}
+
+/* Add Key Side END */
