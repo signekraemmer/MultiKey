@@ -844,3 +844,25 @@ bliver gemt, indtil der trykkes på den?) */
   border-radius: 10px;
 }
 /* Add Key Side END */
+
+
+/* CONTACT SITE */
+
+.contactbox {
+  width: 85%;
+  height: 80%;
+  margin-left: 7vw;
+}
+
+.contactbox img {
+  width: auto;
+  height: 17px;
+  margin-right: 20px;
+}
+.hoursopen {
+  display: flex;
+}
+
+.hoursopen1 {
+  margin-right: 20px;
+}
