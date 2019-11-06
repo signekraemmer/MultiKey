@@ -6,6 +6,10 @@
   font-family: 'Lato';
 }
 
+body {
+  overflow: hidden;
+}
+
 /* TOP W. TITLE */
 .top {
   height: 8.56vh;
