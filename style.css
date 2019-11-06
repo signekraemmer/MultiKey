@@ -762,3 +762,17 @@ bliver gemt, indtil der trykkes på den?) */
     flex: 0;
   }
 }
+
+/*  Add Key Side START */
+
+.addkey_content {
+  margin: 10% auto 15% auto;
+  flex: 1;
+}
+
+#addkey_text {
+  text-align: center;
+  margin: 15px 10vw;
+}
+
+/* Add Key Side END */
