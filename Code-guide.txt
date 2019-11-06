@@ -2,8 +2,9 @@
 
 ### Code-guide for MultiKEY - EN ###
 
-#One Guy To Merge
+#Branching - One Guy To Merge
 One person merges the code, kind of like a code review
+Use branching
 
 #Language
 Should always be English
