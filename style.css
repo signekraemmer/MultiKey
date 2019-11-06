@@ -725,11 +725,12 @@ bliver gemt, indtil der trykkes på den?) */
   height: 25px;
   width: 25px;
   background-color: #eee;
+  border-radius: 5px;
 }
 
 /* ved hover, bliver boxen blå */
 #checkContainer:hover input ~ .checkmark {
-  background-color: #4155E0;
+  background-color: #262C50;
 }
 
 /* When the checkbox is checked, add a blue background */
@@ -772,3 +773,17 @@ bliver gemt, indtil der trykkes på den?) */
     flex: 0;
   }
 }
+
+/*  Add Key Side START */
+
+.addkey_content {
+  margin: 10% auto 15% auto;
+  flex: 1;
+}
+
+#addkey_text {
+  text-align: center;
+  margin: 15px 10vw;
+}
+
+/* Add Key Side END */
