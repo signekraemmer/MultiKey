@@ -786,4 +786,10 @@ bliver gemt, indtil der trykkes på den?) */
   margin: 15px 10vw;
 }
 
+.scancard {
+  padding: 2vh;
+  background-color: lightblue;
+  border-radius: 10px;
+  border: none;
+}
 /* Add Key Side END */
