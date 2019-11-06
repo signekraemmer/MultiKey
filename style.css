@@ -204,6 +204,7 @@ nav {
 .line2 {
   margin: 6px 0px;
 }
+
 .change .line1 { /* First line in burger menu is rotatet */
   -webkit-transform: rotate(-45deg) translate(-5px, 6px);
   transform: rotate(-45deg) translate(-5px, 6px);
