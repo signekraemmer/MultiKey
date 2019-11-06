@@ -135,8 +135,13 @@ function validateCheckbox() {
 
 // Sign up END //
 
+// PROFILE
 try {
-  document.getElementById("buttButton").addEventListener("click", showPopup);
+
+  let butt = document.getElementById("buttButton");
+
+  butt.addEventListener("click", showPopup);
+  
 } catch (e) {
   console.log(e);
 } finally {
