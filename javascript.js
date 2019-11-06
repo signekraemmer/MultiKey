@@ -125,7 +125,6 @@ function activateNotification() {
 
 
 // PROFILE
-
 let butt = document.getElementsByClassName('button');
 
 butt[0].addEventListener("click", showPopup);
