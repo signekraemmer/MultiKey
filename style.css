@@ -422,7 +422,7 @@ section {
   width: 150px;
   height: 150px;
   border: 5px solid #000000;
-  border-radius: 20px;
+  border-radius: 25px;
 }
 
 #here {
@@ -598,7 +598,7 @@ background-color: #262C50;
   width: 150px;
   height: 150px;
   border: 5px solid #000000;
-  border-radius: 20px;
+  border-radius: 25px;
   margin-top: -6vh;
 }
 
