@@ -12,6 +12,35 @@
       <h2>MultiKEY</h2>
     </div>
 
+
+
+    <div class="signup_content">
+
+      <div id="passwordText">
+
+        <h3>Forgot password?</h3>
+        <br>
+        <p>Enter the email you used to register your account with, and we'll send you information to recover your password.</p>
+        <br>
+
+      </div>
+
+      <div class="inputs">
+
+        <input id="email" type="text" name="write here" placeholder="Email" style="background-image: url(images/icons/mail.png);">
+
+        <button onclick="location.href='login.html'" class="button" type="button" name="Login">Send email</button>
+
+      </div>
+
+    </div>
+
+
+
+
+
+
+
     <!-- MENU BAR -->
     <nav>
 
@@ -22,16 +51,18 @@
           <a href="frontpage.html"><img src="images/home-min.png" alt="home button"></a>
         </div>
 
-        <!-- NOTIFIGATION MENU !-->
-        <div class="home">
-          <a href="frontpage.html"><img src="images/alert.png" alt="notifigation button"></a>
-        </div>
+        <!-- NOTIFICATION MENU !-->
+          <div class="home">
+            <img id="notificationBell" src="images/alert.png" alt="notifigation button">
+          </div>
 
         <!-- PLUS MENU !-->
-        <a href="addkey.html"><div class="plus">
-          <div class="line4"></div>
-          <div class="line5"></div>
-        </div> </a>
+        <a href="addkey.html">
+          <div class="plus">
+            <div class="line4"></div>
+            <div class="line5"></div>
+          </div>
+        </a>
 
         <!-- BURGER MENU !-->
         <div class="burger" onclick="myFunction(this)">
@@ -42,29 +73,55 @@
       </div>
 
       <!-- FOLD UD TEKST I BURGER MENU !-->
-      <div id="mySidenav" class="sidenav ">
 
-        <div class="toptext">
-          <a href="addkey.html"><img src="images/add.png" alt="add key button">Add key</a>
-          <a href="sharekey.html"><img src="images/share.png" alt="share key button">Share key</a>
-          <a href="profil.html"><img src="images/profile.png" alt="profile button">Profil</a>
+      <div id="mySidenav" class="sidenav">
+
+        <div class="menubar">
+          <div class="toptext">
+            <a href="addkey.html"><img src="images/add.png" alt="add key button">Add key</a>
+            <a href="sharekey.html"><img src="images/share.png" alt="share key button">Share key</a>
+            <a href="profil.html"><img src="images/profile.png" alt="profile button">Profile</a>
+          </div>
+
+          <div class="spaceline"></div>
+
+          <div class="middletext">
+            <a href="https://www.instagram.com"><img src="images/instagram.png" alt="instagram button">Instagram</a>
+            <a href="https://www.facebook.com"><img src="images/facebook.png" alt="facebook button">Facebook</a>
+          </div>
+
+          <div class="spaceline"></div>
+
+          <div class="bottomtext">
+            <a href="support.html"><img src="images/help.png" alt="support button">Support</a>
+            <a href="contact.html"><img src="images/contact.png" alt="contact button">Contact</a>
+            <a href="settings.html"><img src="images/settings.png" alt="settings button">Settings</a>
+            <a href="login.html"><img src="images/export.png" alt="logout button">Log out</a>
+          </div>
+
         </div>
-        <div class="middletext">
-          <a href="https://www.instagram.com"><img src="images/instagram.png" alt="instagram button">Instagram</a>
-          <a href="https://www.facebook.com"><img src="images/facebook.png" alt="facebook button">Facebook</a>
-        </div>
-        <div class="bottomtext">
-          <a href="support.html"><img src="images/help.png" alt="support button">Support</a>
-          <a href="contact.html"><img src="images/contact.png" alt="contact button">Contact</a>
-          <a href="settings.html"><img src="images/settings.png" alt="settings button">Settings</a>
-          <a href="login.html"><img src="images/export.png" alt="logout button">Log out</a>
-        </div>
+
       </div>
 
       <script src="javascript.js"></script>
     </nav>
 
-    add new key
+    <!-- Notification slider -->
+    <div class="notificationContainer">
+      <div class="notificationCard">
+        <img class="notificationImage" src="images/miniUCL.png" alt="Miniature card">
+        <p class="notificationText">Your school key ran out</p>
+      </div>
+      <div class="notificationCard">
+        <img class="notificationImage" src="images/miniFitness.png" alt="Miniature card">
+        <p class="notificationText">Fitness World sent you a card</p>
+      </div>
+      <div class="notificationCard">
+        <img class="notificationImage" src="images/miniRejsekort.png" alt="Miniature card">
+        <p class="notificationText">Your funds are low</p>
+      </div>
+    </div>
 
   </body>
-</html>
+
+  </html>
