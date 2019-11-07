@@ -772,6 +772,15 @@ bliver gemt, indtil der trykkes på den?) */
 }
 /* CAROUSEL SECTION END */
 
+/* Card classes */
+
+.mainCard {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
 /*FLIPCARD START*/
 
 /*Dette er flip-kortene*/
