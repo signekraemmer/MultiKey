@@ -888,7 +888,7 @@ bliver gemt, indtil der trykkes på den?) */
   display: inline-block;
   width: 48px;
   height: 25px;
-  margin: 0.8vh;
+  margin: 0.9vh;
   float: right;
   margin-right: 4vw;
   }
@@ -916,8 +916,8 @@ bliver gemt, indtil der trykkes på den?) */
   content: "";
   height: 30px;
   width: 30px;
-  left: 0.2vw;
-  bottom: 0.4vh;
+  left: 0.19vw;
+  bottom: 0.30vh;
   background-color: white;
   -webkit-transition: .4s;
   transition: .4s;
