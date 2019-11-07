@@ -86,8 +86,8 @@
           <div class="contentcard">
             <h4 class="cardname">UCL</h4>
             <img src="images/icons/penBlack.png" alt="Edit icon">
-            <button class="cardbutton">Activate</button>
-            <button id="buttButton" class="cardbutton">Delete</button>
+            <button id="buttButton" class="cardbutton">Share</button>
+            <button class="cardbutton">Delete</button>
 
           </div>
         </div>
@@ -95,17 +95,22 @@
     </div>
   </article>
 
-<!-- POP UP FOR DELETE KEY-->
+<!-- POP UP SHARE KEY-->
   <div class="popupMain">
-    <div id="overlay"></div>
-    <div id="popup">
-      <h3>Delete key</h3>
-      <p>Are you sure you want to delete key?</p>
-      <div class="button-holder two-button">
-        <a href="frontpage.html">Yes</a>
-        <a href="frontpage.html">No</a>
-        <div style="clear: both"></div>
+    <div id="sharelay"></div>
+    <div id="shareup">
+      <div class="contentcard1">
+
+        <h4 class="cardname">UCL</h4>
+        <h3>Share you key with:</h3>
+        <input id="phone" type="text" name="write here" placeholder="12 34 56 78" style="background-image: url(images/icons/phone.png);">
+        <label class="slideSwitch">
+          <input type="checkbox">
+          <span class="pullRight round"></span>
+        </label>
+
       </div>
+
     </div>
   </div>
 

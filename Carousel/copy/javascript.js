@@ -142,3 +142,61 @@ main[0].classList.toggle("popupActive");
 }
 
 // PROFILE END
+
+
+
+
+
+
+
+
+
+
+
+
+// CAROUSEL
+
+let arrows = document.getElementsByClassName("arrow");
+
+// checks which arrow was clicked - If this don't work jsut use ID's
+if (arrows[0] == true) {
+  arrows[0].addEventListener("click", movePosTMain)
+}
+
+else if (arrows[1] == true) {
+  arrows[1].addEventListener("click", movePosBMain)
+}
+
+// Gives the new main card the bigger values
+function mainValues () {
+
+}
+
+
+// Circle up
+// posAT to posBT
+
+// posBT to HIDDEN
+
+// HIDDEN to posBB
+
+// posBB to posAB
+
+// posAB to posMain
+
+// posMain to posAT
+
+
+
+// Circle down
+// posBT to posAT
+
+// posAT to posMain
+
+// posMain to posAB
+
+// posAB to posBB
+
+// posBB to HIDDEN
+
+// HIDDEN to posBT
