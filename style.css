@@ -977,42 +977,33 @@ input:checked + .slider:before {
 }
 
 #shareup {
-  width:84%;
-  height: 80vh;
+  width: 90vw;
+	height: 27vh;
+  border-radius: 10px;
+  margin: 0 5% 0 5%;
   z-index: 10;
   background: white;
-  border-radius: 8px;
-  margin:0 auto;
   text-align: center;
   box-sizing: border-box;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 35%;
 }
-
-#shareup .button-holder a {
-  width: 30vw;
-  color: #007AFF;
-  text-decoration: none;
-  line-height:45px;
-  font-weight:bold;
-  display: block;
-  align-items: center;
-  border-top: 1px solid #BABABA;
+.contentcard1 {
+  max-width: 400px;
+  max-height: 300px;
+	padding: 2vh;
+  font-size: 12px;
+  align: left;
 }
-
-
 
 /* SLIDE ACCEPT ON SHARE  */
 .slideSwitch {
   position: relative;
   display: inline-block;
   justify-content: center;
-  width: 75vw;
+  width: 79vw;
   height: 7vh;
-  margin: 0.9vh;
-  margin-right: 4vw;
+  justify-content: center;
   }
 
 .slideSwitch input {
@@ -1038,7 +1029,7 @@ input:checked + .slider:before {
   content: "";
   height: 62px;
   width: 62px;
-  left: 0.4vw;
+  left: 0.5vw;
   bottom: 0.30vh;
   background-color: white;
   -webkit-transition: .4s;
@@ -1054,9 +1045,9 @@ input:focus + .pullRight {
 }
 
 input:checked + .pullRight:before {
-  -webkit-transform: translateX(60vw);
-  -ms-transform: translateX(60vw);
-  transform: translateX(60vw);
+  -webkit-transform: translateX(64vw);
+  -ms-transform: translateX(64vw);
+  transform: translateX(64vw);
 }
 
 /* Rounded sliders */
