@@ -118,7 +118,6 @@ function validateCheckbox() {
     window.alert("You forgot to agree with terms");
   }
 }
-
 // Sign up END
 
 // PROFILE
