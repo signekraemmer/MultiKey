@@ -772,6 +772,30 @@ bliver gemt, indtil der trykkes på den?) */
 }
 /* CAROUSEL SECTION END */
 
+/* Card classes */
+
+.posMain {
+  width: 400px !important;
+  top: 50%;
+}
+
+.posAT {
+  top: 30%;
+}
+
+.posBT {
+  top: 10%;
+}
+
+.posAB {
+  top: 54%;
+}
+
+.posBB {
+  top: 75%;
+}
+
+
 /*FLIPCARD START*/
 
 /*Dette er flip-kortene*/
@@ -780,6 +804,8 @@ bliver gemt, indtil der trykkes på den?) */
 	width: 200px;
 	height: 13.5vh;
   border-radius: 10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .flipcard img {
