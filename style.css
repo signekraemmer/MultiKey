@@ -873,15 +873,15 @@ bliver gemt, indtil der trykkes på den?) */
 .boxSwipe {
   width: 100%;
   height: 6vh;
-  background-color: grey;
+  background-color: lightgrey;
 }
 
 .swipeText{
   margin-top: 1.7vh;
   float: left;
-  margin-left: 3vw;
+  margin-left: 4vw;
   font-size: 16px;
-}
+  }
 
 .swipeSwitch {
   position: relative;
@@ -906,7 +906,7 @@ bliver gemt, indtil der trykkes på den?) */
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: lightgrey;
+  background-color: grey;
   -webkit-transition: .4s;
   transition: .4s;
 }
