@@ -947,3 +947,20 @@ input:checked + .slider:before {
 }
 
 /* Setting END */
+
+
+/* FLUEBEN ANIMARION */
+
+.flueani {
+  width: 300px;
+  height: 300px;
+  background: url('images/flueben.png') 0 0 no-repeat;
+  animation: play 1s steps(30);
+}
+
+@keyframes play {
+  0%{background-position: 0px}
+  100%{background-position: -9000px}
+}
+
+/* FLUEBEN ANIMARION END */
