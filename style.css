@@ -865,3 +865,101 @@ bliver gemt, indtil der trykkes på den?) */
 .hoursopen1 {
   margin-right: 20px;
 }
+
+
+/* Setting START */
+
+.boxSwipe {
+  width: 100%;
+  height: 6vh;
+  background-color: lightgrey;
+}
+
+.swipeText{
+  margin-top: 1.7vh;
+  float: left;
+  margin-left: 4vw;
+  font-size: 16px;
+  }
+
+.swipeSwitch {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 25px;
+  margin: 0.9vh;
+  float: right;
+  margin-right: 4vw;
+  }
+
+.swipeSwitch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: grey;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 30px;
+  left: 0.19vw;
+  bottom: 0.30vh;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #4155E0;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #4155E0;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* Setting END */
+
+
+/* FLUEBEN ANIMARION */
+
+.flueani {
+  width: 300px;
+  height: 300px;
+  background: url('images/flueben.png') 0 0 no-repeat;
+  animation: play 1s steps(30);
+}
+
+@keyframes play {
+  0%{background-position: 0px}
+  100%{background-position: -9000px}
+}
+
+/* FLUEBEN ANIMARION END */
