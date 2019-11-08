@@ -172,8 +172,9 @@ function mainValues () {
 
 }
 
+// What lies at position X?
 
-// Circle up
+// Slide up
 // posAT to posBT
 
 // posBT to HIDDEN
@@ -188,7 +189,7 @@ function mainValues () {
 
 
 
-// Circle down
+// Slide down
 // posBT to posAT
 
 // posAT to posMain
