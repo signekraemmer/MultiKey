@@ -875,12 +875,46 @@ bliver gemt, indtil der trykkes på den?) */
   background-color: lightgrey;
 }
 
-.swipeText{
+.swipeText {
   margin-top: 1.7vh;
   float: left;
   margin-left: 4vw;
   font-size: 16px;
   }
+
+.swipeArrow {
+  transform: scaleX(-1);
+    margin-left: 65vw;
+    margin-top: 1.8vh;
+}
+
+.swipeArrow1 {
+  transform: scaleX(-1);
+    position: absolute;
+    margin-left: 51.5vw;
+    margin-top: 1.8vh;
+}
+
+.swipeArrow2 {
+    transform: scaleX(-1);
+    position: absolute;
+    margin-left: 52.8vw;
+    margin-top: 1.9vh;
+  }
+
+.swipeArrow3 {
+    transform: scaleX(-1);
+    position: absolute;
+    margin-left: 25.6vw;
+    margin-top: 1.9vh;
+  }
+
+.swipeArrow4 {
+    transform: scaleX(-1);
+    position: absolute;
+    margin-left: 63.2vw;
+    margin-top: 1.9vh;
+}
 
 .swipeSwitch {
   position: relative;
