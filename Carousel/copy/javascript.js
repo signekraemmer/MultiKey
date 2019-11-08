@@ -223,7 +223,7 @@ posMT[0].classList.remove("posMT");
 function posOT_posHidden() {
 let posOT = document.getElementsByClassName("posOT");
 
-posHidden_posOB();
+// posHidden_posOB();
 
 posOT[0].classList.add("posHidden");
 posOT[0].classList.remove("posOT");
