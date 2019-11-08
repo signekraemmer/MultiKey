@@ -814,7 +814,10 @@ bliver gemt, indtil der trykkes på den?) */
 }
 
 .posHidden {
-  
+  z-index: 1;
+  width: 240px;
+  height: 140px;
+  top: 200%;
 }
 
 .testCard {
