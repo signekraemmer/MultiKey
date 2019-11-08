@@ -193,19 +193,49 @@ posOB[0].classList.remove("posOB");
 function posMB_posMain() {
 let posMB = document.getElementsByClassName("posMB");
 
-// posMain_posMT();
+posMain_posMT();
 
 posMB[0].classList.add("posMain");
 posMB[0].classList.remove("posMB");
 }
 
 // posMain -> posMT
+function posMain_posMT() {
+let posMain = document.getElementsByClassName("posMain");
+
+posMT_posOT();
+
+posMain[0].classList.add("posMT");
+posMain[0].classList.remove("posMain");
+}
 
 // posMT -> posOT
+function posMT_posOT() {
+let posMT = document.getElementsByClassName("posMT");
+
+posOT_posHidden();
+
+posMT[0].classList.add("posOT");
+posMT[0].classList.remove("posMT");
+}
 
 // posOT -> posHidden
+function posOT_posHidden() {
+let posOT = document.getElementsByClassName("posOT");
 
-// posHidden -> posOB
+posHidden_posOB();
+
+posOT[0].classList.add("posHidden");
+posOT[0].classList.remove("posOT");
+}
+
+// // posHidden -> posOB
+// function posHidden_posOB() {
+// let posHidden = document.getElementsByClassName("posHidden");
+//
+// posHidden[0].classList.add("posOB");
+// posHidden[0].classList.remove("posHidden");
+// }
 
 
 
