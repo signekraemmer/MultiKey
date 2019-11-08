@@ -156,7 +156,7 @@ main[0].classList.toggle("popupActive");
 
 // CAROUSEL
 
-let arrows = document.getElementsByClassName("arrow");
+var arrows = document.getElementsByClassName("arrow");
 
 // checks which arrow was clicked - If this don't work jsut use ID's
 if (arrows[0] == true) {
@@ -167,37 +167,58 @@ else if (arrows[1] == true) {
   arrows[1].addEventListener("click", movePosBMain)
 }
 
-// Gives the new main card the bigger values
-function mainValues () {
+// Main card functionality
+function mainFunctionality () {
 
 }
 
 // What lies at position X?
 
+document.getElementById("testbtn").addEventListener("click", posOB_posMB);
+
 // Slide up
-// posAT to posBT
+function slideUP() {
+  posOB_posMB();
+}
 
-// posBT to HIDDEN
 
-// HIDDEN to posBB
+// posOB -> posMB
+function posOB_posMB() {
 
-// posBB to posAB
+// Get current pos for this
+let posOB = document.getElementsByClassName("posOB");
+// let posMB = document.getElementsByClassName("posMB");
 
-// posAB to posMain
+console.log("posOB");
+console.log(posOB);
 
-// posMain to posAT
+posMB_posMain();
+
+posOB[0].classList.add("posMB");
+posOB[0].classList.remove("posOB");
+
+}
+// posMB -> posMain
+
+// posMain -> posMT
+
+// posMT -> posOT
+
+// posOT -> posHidden
+
+// posHidden -> posOB
 
 
 
 // Slide down
-// posBT to posAT
+// posOB -> posHidden
 
-// posAT to posMain
+// posHidden -> posOT
 
-// posMain to posAB
+// posOT -> posMT
 
-// posAB to posBB
+// posMT -> posMain
 
-// posBB to HIDDEN
+// posMain -> posMB
 
-// HIDDEN to posBT
+// posMB -> posOB

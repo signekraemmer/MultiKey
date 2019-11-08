@@ -813,6 +813,10 @@ bliver gemt, indtil der trykkes på den?) */
   top: 80%;
 }
 
+.posHidden {
+  
+}
+
 .testCard {
   position: absolute;
   border-radius: 10px;
