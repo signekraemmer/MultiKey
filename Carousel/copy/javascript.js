@@ -152,17 +152,14 @@ main[0].classList.toggle("popupActive");
 
 
 
-
-
+// THOMAS: Hvorfor virker det ikke med let
 // CAROUSEL
-
 var arrows = document.getElementsByClassName("arrow");
 
 // checks which arrow was clicked - If this don't work jsut use ID's
 if (arrows[0] == true) {
   arrows[0].addEventListener("click", movePosTMain)
 }
-
 else if (arrows[1] == true) {
   arrows[1].addEventListener("click", movePosBMain)
 }
@@ -172,9 +169,9 @@ function mainFunctionality () {
 
 }
 
-// What lies at position X?
 
-document.getElementById("testbtn").addEventListener("click", posOB_posMB);
+// THOMAS: just why
+document.getElementById("arrowDown").addEventListener("click", posOB_posMB);
 
 // Slide up
 function slideUP() {
@@ -184,21 +181,23 @@ function slideUP() {
 
 // posOB -> posMB
 function posOB_posMB() {
-
-// Get current pos for this
 let posOB = document.getElementsByClassName("posOB");
-// let posMB = document.getElementsByClassName("posMB");
-
-console.log("posOB");
-console.log(posOB);
 
 posMB_posMain();
 
 posOB[0].classList.add("posMB");
 posOB[0].classList.remove("posOB");
-
 }
+
 // posMB -> posMain
+function posMB_posMain() {
+let posMB = document.getElementsByClassName("posMB");
+
+// posMain_posMT();
+
+posMB[0].classList.add("posMain");
+posMB[0].classList.remove("posMB");
+}
 
 // posMain -> posMT
 
