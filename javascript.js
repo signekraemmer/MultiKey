@@ -141,3 +141,52 @@ main[0].classList.toggle("popupActive");
 }
 
 // PROFILE END
+
+// DELETE KEY
+try {
+
+  let del = document.getElementsByClassName("deleteKey");
+
+for (var i = 0; i < del.length; i++) {
+  del[i].addEventListener("click", insertTitleDescription);
+}
+  del[0].addEventListener("click", insertTitleDescription);
+  del[1].addEventListener("click", insertTitleDescription);
+  del[2].addEventListener("click", insertTitleDescription);
+  del[3].addEventListener("click", insertTitleDescription);
+
+} catch (e) {
+  console.log(e);
+} finally {
+  console.log("no delete key button on card");
+}
+
+var deleteKeys = [
+  {
+  "title": "DELETE FitnessWorld",
+  "description": "Are you sure you want to delete your FitnessWorld key?"
+  },
+
+  {
+  "title": "DELETE Rejsekort",
+  "description": "Are you sure you want to delete your Rejsekort key?"
+  },
+
+  {
+  "title": "DELETE UCL",
+  "description": "Are you sure you want to delete your UCL key?"
+  },
+]
+
+//Enter title & description by delete key
+function insertTitleDescription() {
+
+document.getElementById("titleDelete").innerHTML = deleteKeys[0].title;
+document.getElementById("sureNameDelete").innerHTML = deleteKeys[0].description;
+
+showPopup();
+}
+
+
+
+// DELETE KEY END

@@ -30,7 +30,7 @@
             <h4 class="cardname">Fitnessworld</h4>
             <button class="cardbutton">Activate</button>
             <img src="images/icons/penBlack.png" alt="Edit icon">
-            <button class="cardbutton cardbutton4">Delete</button>
+            <button class="cardbutton deleteKey">Delete</button>
 
           </div>
         </div>
@@ -49,7 +49,7 @@
             <h4 class="cardname">Rejsekort</h4>
             <img src="images/icons/penBlack.png" alt="Edit icon">
             <button class="cardbutton">Activate</button>
-            <button class="cardbutton cardbutton4">Delete</button>
+            <button class="cardbutton deleteKey">Delete</button>
 
           </div>
         </div>
@@ -68,7 +68,7 @@
             <h4 class="cardname">Fitness Would</h4>
             <img src="images/icons/penBlack.png" alt="Edit icon">
             <button class="cardbutton">Activate</button>
-            <button class="cardbutton cardbutton4">Delete</button>
+            <button class="cardbutton deleteKey">Delete</button>
 
           </div>
         </div>
@@ -86,8 +86,8 @@
           <div class="contentcard">
             <h4 class="cardname">UCL</h4>
             <img src="images/icons/penBlack.png" alt="Edit icon">
-            <button id="buttButton" class="cardbutton">Share</button>
-            <button class="cardbutton">Delete</button>
+            <button class="cardbutton" style="background-color: gray">Share</button>
+            <button class="cardbutton deleteKey">Delete</button>
 
           </div>
         </div>
@@ -95,7 +95,21 @@
     </div>
   </article>
 
+  <div class="popupMain">
+    <div id="overlay"></div>
+    <div id="popup">
+      <h3 id="titleDelete">DELETE KEY</h3>
+      <p id="sureNameDelete">Are you sure you want to delete your UCL key?</p>
+      <div class="button-holder two-button">
+        <a href="frontpage.html">Yes</a>
+        <a href="frontpage.html">No</a>
+        <div style="clear: both"></div>
+      </div>
+    </div>
+  </div>
+
 <!-- POP UP SHARE KEY-->
+<!--
   <div class="popupMain">
     <div id="sharelay"></div>
     <div id="shareup">
@@ -113,6 +127,7 @@
 
     </div>
   </div>
+!-->
 
   <!-- MENU BAR -->
   <nav>
