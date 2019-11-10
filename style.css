@@ -544,8 +544,8 @@ a:active {
 .collapsible {
   display: flex;
   flex-direction: column;
-  background-color: #D8D8D8; /* Lysegrå */
-  color: #000000; /* Sort */
+  background-color: #262C50; /* mørk blå */
+  color: white; /* hvid */
   cursor: pointer;
   padding: 15px 18px 15px 18px;
   width: 375px;
@@ -556,8 +556,8 @@ a:active {
 }
 
 .active, .collapsible:hover {
-  background-color: #808080; /* Mellemgrå */
-  color: #FFFFFF; /* Hvid */
+  background-color: #65C2C8; /* Mellemgrå */
+  color: black; /* Hvid */
 }
 
 .content {
@@ -806,13 +806,14 @@ bliver gemt, indtil der trykkes på den?) */
   flex: 1;
   text-align: center;
   margin: 1vh 10vw;
+  color: white;
 }
 
 .scancard {
   height: 5vh;
   width: 58vw;
-  background-color: #4155E0;
-  color: white;
+  background-color: #65C2C8;
+  color: black;
   font-size: 15px;
   border-radius: 10px;
   border: none;
@@ -821,9 +822,8 @@ bliver gemt, indtil der trykkes på den?) */
 .existingKey {
   max-width: 400px;
   max-height: 200px;
-  color: black;
+  color: white;
   border-radius: 10px;
-  box-shadow: 0 0 10px 0;
 }
 
 .contentKey {
@@ -835,7 +835,9 @@ bliver gemt, indtil der trykkes på den?) */
   display: inline-block;
   display: grid;
   justify-content: space-between;
-
+  background-color: #262C50;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 0;
 }
 
 .keyname {
@@ -846,8 +848,8 @@ bliver gemt, indtil der trykkes på den?) */
 }
 
 .approve {
-  background-color: #4155E0;
-  color: white;
+  background-color: #65C2C8;
+  color: black;
   height: 5vh;
   width: 58vw;
   font-size: 16px;
@@ -857,7 +859,7 @@ bliver gemt, indtil der trykkes på den?) */
 }
 
 .decline {
-  background-color: #262C50;
+  background-color: #17163E;
   color: white;
   height: 5vh;
   width: 58vw;
