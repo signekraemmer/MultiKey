@@ -152,17 +152,7 @@ main[0].classList.toggle("popupActive");
 
 
 
-// THOMAS: Hvorfor virker det ikke med let
 // CAROUSEL
-var arrows = document.getElementsByClassName("arrow");
-
-// checks which arrow was clicked - If this don't work jsut use ID's
-if (arrows[0] == true) {
-  arrows[0].addEventListener("click", movePosTMain)
-}
-else if (arrows[1] == true) {
-  arrows[1].addEventListener("click", movePosBMain)
-}
 
 // Main card functionality
 function mainFunctionality () {
@@ -170,11 +160,12 @@ function mainFunctionality () {
 }
 
 
-document.getElementById("arrowDown").addEventListener("click", slideUp);
+document.getElementById("arrowDown").addEventListener("click",carouselUp);
 
 // Slide up
-function slideUp() {
+function carouselUp() {
   posOB_posMB();
+  console.log("carouselUp ran");
 }
 
 
@@ -239,23 +230,72 @@ posHidden[0].classList.add("posOB");
 posHidden[0].classList.remove("posHidden");
 }
 
-
-
-document.getElementById("arrowDown").addEventListener("click", posOB_posMB);
-
-// Slide down
-function slideDown() {
-  posOB_posHidden();
-}
-
-// posOB -> posHidden
-
-// posHidden -> posOT
-
-// posOT -> posMT
-
-// posMT -> posMain
-
-// posMain -> posMB
-
-// posMB -> posOB
+//
+//
+// document.getElementById("arrowUp").addEventListener("click", slideDown);
+//
+// // Slide down
+// function slideDown() {
+//   posOB_posHidden();
+// }
+//
+// // posOB -> posHidden
+// function posOB_posHidden() {
+// let addIdentifier = document.getElementsByClassName("posOB");
+// addIdentifier[0].classList.add("startIdentifier");
+//
+// posHidden_posOT();
+//
+// let posOB = document.getElementsByClassName("startIdentifier");
+// posOB[0].classList.add("posHidden");
+// posOB[0].classList.remove("posOB");
+// posOB[0].classList.remove("startIdentifier");
+// }
+//
+// // posHidden -> posOT
+// function posHidden_posOT() {
+// let posHidden = document.getElementsByClassName("posHidden");
+//
+// posOT_posMT();
+//
+// posHidden[0].classList.add("posOT");
+// posHidden[0].classList.remove("posHidden");
+// }
+//
+// // posOT -> posMT
+// function posOT_posMT() {
+// let posOT = document.getElementsByClassName("posOT");
+//
+// posMT_posMain();
+//
+// posOT[0].classList.add("posMT");
+// posOT[0].classList.remove("posOT");
+// }
+//
+// // posMT -> posMain
+// function posMT_posMain() {
+// let posMT = document.getElementsByClassName("posMT");
+//
+// posMain_posMB();
+//
+// posMT[0].classList.add("posMain");
+// posMT[0].classList.remove("posMT");
+// }
+//
+// // posMain -> posMB
+// function posMain_posMB() {
+// let posMain = document.getElementsByClassName("posMain");
+//
+// posMB_posOB();
+//
+// posMain[0].classList.add("posMB");
+// posMain[0].classList.remove("MainsMain");
+// }
+//
+// // posMB -> posOB
+// function posMB_posOB() {
+// let posMB = document.getElementsByClassName("posMB");
+//
+// posMB[0].classList.add("posOB");
+// posMB[0].classList.remove("posMB");
+// }
