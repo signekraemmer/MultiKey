@@ -170,23 +170,25 @@ function mainFunctionality () {
 }
 
 
-// THOMAS: just why
-document.getElementById("arrowDown").addEventListener("click", posOB_posMB);
+document.getElementById("arrowDown").addEventListener("click", slideUp);
 
 // Slide up
-function slideUP() {
+function slideUp() {
   posOB_posMB();
 }
 
 
 // posOB -> posMB
 function posOB_posMB() {
-let posOB = document.getElementsByClassName("posOB");
+let addIdentifier = document.getElementsByClassName("posOB");
+addIdentifier[0].classList.add("startIdentifier");
 
 posMB_posMain();
 
+let posOB = document.getElementsByClassName("startIdentifier");
 posOB[0].classList.add("posMB");
 posOB[0].classList.remove("posOB");
+posOB[0].classList.remove("startIdentifier");
 }
 
 // posMB -> posMain
@@ -223,23 +225,29 @@ posMT[0].classList.remove("posMT");
 function posOT_posHidden() {
 let posOT = document.getElementsByClassName("posOT");
 
-// posHidden_posOB();
+posHidden_posOB();
 
 posOT[0].classList.add("posHidden");
 posOT[0].classList.remove("posOT");
 }
 
-// // posHidden -> posOB
-// function posHidden_posOB() {
-// let posHidden = document.getElementsByClassName("posHidden");
-//
-// posHidden[0].classList.add("posOB");
-// posHidden[0].classList.remove("posHidden");
-// }
+// posHidden -> posOB
+function posHidden_posOB() {
+let posHidden = document.getElementsByClassName("posHidden");
+
+posHidden[0].classList.add("posOB");
+posHidden[0].classList.remove("posHidden");
+}
 
 
+
+document.getElementById("arrowDown").addEventListener("click", posOB_posMB);
 
 // Slide down
+function slideDown() {
+  posOB_posHidden();
+}
+
 // posOB -> posHidden
 
 // posHidden -> posOT
