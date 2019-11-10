@@ -8,6 +8,7 @@
 
 body {
   overflow: hidden;
+  background-color: #17163E;
 }
 
 /* TOP W. TITLE */
@@ -538,6 +539,7 @@ a:active {
   justify-content: center;
   width: 355px;
   overflow: hidden;
+  color: white;
 }
 .collapsible {
   display: flex;
@@ -893,7 +895,7 @@ bliver gemt, indtil der trykkes på den?) */
 .boxSwipe {
   width: 100%;
   height: 6vh;
-  background-color: lightgrey;
+  background-color: #262C50;
 }
 
 .swipeText {
@@ -901,6 +903,7 @@ bliver gemt, indtil der trykkes på den?) */
   float: left;
   margin-left: 4vw;
   font-size: 16px;
+  color: white;
   }
 
 .swipeArrow {
@@ -960,7 +963,7 @@ bliver gemt, indtil der trykkes på den?) */
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: grey;
+  background-color: #17163E;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -978,11 +981,11 @@ bliver gemt, indtil der trykkes på den?) */
 }
 
 input:checked + .slider {
-  background-color: #4155E0;
+  background-color: #65C2C8;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #4155E0;
+  box-shadow: 0 0 1px #65C2C8;
 }
 
 input:checked + .slider:before {
