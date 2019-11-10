@@ -142,18 +142,14 @@ main[0].classList.toggle("popupActive");
 
 // PROFILE END
 
-
-
-
-
-
-
-
 try {
 
   let checkCont = document.getElementById("termsConditions");
 
   checkCont.addEventListener("click", showTerms);
+
+  document.getElementById("closeTermsButton").addEventListener("click", showTerms);
+
 
 } catch (e) {
   console.log(e);
