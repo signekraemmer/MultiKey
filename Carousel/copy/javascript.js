@@ -160,14 +160,15 @@ function mainFunctionality () {
 }
 
 
-document.getElementById("arrowDown").addEventListener("click",carouselUp);
+document.getElementById("arrowDown").addEventListener("click", carouselUp);
 
 // Slide up
 function carouselUp() {
+  let = i;
   posOB_posMB();
-  console.log("carouselUp ran");
+  console.log("carouselUp ran" + i);
+  i++;
 }
-
 
 // posOB -> posMB
 function posOB_posMB() {
