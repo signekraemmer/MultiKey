@@ -8,6 +8,7 @@
 
 body {
   overflow: hidden;
+  background-color: #17163E;
 }
 
 /* TOP W. TITLE */
@@ -355,10 +356,10 @@ nav {
   width: 100%;
   height: 100vh;
   color: #ffffff;
-  background: linear-gradient(-45deg, #262C50, #262C50, #4155E0, #4155E0, #65C2C8);
+  background: linear-gradient(-45deg, #17163E, #17163E, #4155E0 ,#4155E0, white);
   background-size: 200% 400%;
   position: relative;
-  animation: change 5s ease-in-out infinite;
+  animation: change 4s ease-in-out infinite;
 }
 
 @keyframes change {
@@ -538,12 +539,13 @@ a:active {
   justify-content: center;
   width: 355px;
   overflow: hidden;
+  color: white;
 }
 .collapsible {
   display: flex;
   flex-direction: column;
-  background-color: #D8D8D8; /* Lysegrå */
-  color: #000000; /* Sort */
+  background-color: #262C50; /* mørk blå */
+  color: white; /* hvid */
   cursor: pointer;
   padding: 15px 18px 15px 18px;
   width: 375px;
@@ -554,8 +556,8 @@ a:active {
 }
 
 .active, .collapsible:hover {
-  background-color: #808080; /* Mellemgrå */
-  color: #FFFFFF; /* Hvid */
+  background-color: #65C2C8; /* Mellemgrå */
+  color: black; /* Hvid */
 }
 
 .content {
@@ -804,13 +806,14 @@ bliver gemt, indtil der trykkes på den?) */
   flex: 1;
   text-align: center;
   margin: 1vh 10vw;
+  color: white;
 }
 
 .scancard {
   height: 5vh;
   width: 58vw;
-  background-color: #4155E0;
-  color: white;
+  background-color: #65C2C8;
+  color: black;
   font-size: 15px;
   border-radius: 10px;
   border: none;
@@ -819,9 +822,8 @@ bliver gemt, indtil der trykkes på den?) */
 .existingKey {
   max-width: 400px;
   max-height: 200px;
-  color: black;
+  color: white;
   border-radius: 10px;
-  box-shadow: 0 0 10px 0;
 }
 
 .contentKey {
@@ -833,7 +835,9 @@ bliver gemt, indtil der trykkes på den?) */
   display: inline-block;
   display: grid;
   justify-content: space-between;
-
+  background-color: #262C50;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 0;
 }
 
 .keyname {
@@ -844,8 +848,8 @@ bliver gemt, indtil der trykkes på den?) */
 }
 
 .approve {
-  background-color: #4155E0;
-  color: white;
+  background-color: #65C2C8;
+  color: black;
   height: 5vh;
   width: 58vw;
   font-size: 16px;
@@ -855,7 +859,7 @@ bliver gemt, indtil der trykkes på den?) */
 }
 
 .decline {
-  background-color: #262C50;
+  background-color: #17163E;
   color: white;
   height: 5vh;
   width: 58vw;
@@ -872,6 +876,7 @@ bliver gemt, indtil der trykkes på den?) */
   width: 85%;
   height: 80%;
   margin-left: 7vw;
+  color: white;
 }
 
 .contactbox img {
@@ -893,7 +898,7 @@ bliver gemt, indtil der trykkes på den?) */
 .boxSwipe {
   width: 100%;
   height: 6vh;
-  background-color: lightgrey;
+  background-color: #262C50;
 }
 
 .swipeText {
@@ -901,6 +906,7 @@ bliver gemt, indtil der trykkes på den?) */
   float: left;
   margin-left: 4vw;
   font-size: 16px;
+  color: white;
   }
 
 .swipeArrow {
@@ -960,7 +966,7 @@ bliver gemt, indtil der trykkes på den?) */
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: grey;
+  background-color: #17163E;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -978,11 +984,11 @@ bliver gemt, indtil der trykkes på den?) */
 }
 
 input:checked + .slider {
-  background-color: #4155E0;
+  background-color: #65C2C8;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #4155E0;
+  box-shadow: 0 0 1px #65C2C8;
 }
 
 input:checked + .slider:before {
