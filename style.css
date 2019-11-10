@@ -8,14 +8,15 @@
 
 body {
   overflow: hidden;
-  background-color: #17163E;
+  background-image: url(images/backgrounds/backgroundDarkBlueLogo.png);
+  background-size: 375px 812px;
 }
 
 /* TOP W. TITLE */
 .top {
   height: 8.56vh;
   width: 100%;
-  background-color: #262C50;
+  background-color: #17163E;
 }
 .arrowback {
   padding-top: 25px;
@@ -124,7 +125,7 @@ h2 {
 /*Dette er knapperme på kort*/
 .cardbutton {
     background-color: white;
-    border: 2px solid turquoise;
+    border: 2px solid #65C2C8;
     border-radius: 10px;
     color: black;
     width: 28vw;
@@ -142,40 +143,40 @@ h2 {
   }
 
   .cardbutton:hover {
-    background-color: turquoise;
+    background-color: #65C2C8;
     color: white;
   }
 
   .cardbutton2 {
     background-color: white;
     color: black;
-    border: 2px solid navy;
+    border: 2px solid #262C50;
   }
 
   .cardbutton2:hover {
-    background-color: navy;
+    background-color: #262C50;
     color: white;
   }
 
   .cardbutton3 {
     background-color: white;
     color: black;
-    border: 2px solid navy;
+    border: 2px solid #262C50;
   }
 
   .cardbutton3:hover {
-    background-color: navy;
+    background-color: #262C50;
     color: white;
   }
 
   .cardbutton4 {
     background-color: white;
     color: black;
-    border: 2px solid turquoise;
+    border: 2px solid #65C2C8;
   }
 
   .cardbutton4:hover {
-    background-color: turquoise;
+    background-color: #65C2C8;
     color: white;
   }
 
@@ -195,7 +196,7 @@ nav {
   position: fixed;
   bottom: 0px;
   height: 9vh;
-  background-color: #262C50;
+  background-color: #17163E;
 }
 
 .navFlex {
@@ -240,7 +241,7 @@ nav {
   top: 8.55vh;
   z-index: 1;
   right: 0;
-  background-color: #262C50;
+  background-color: #17163E;
   overflow-x: hidden;
   transition: 0.5s;
   transform: translateX(100%);
@@ -248,7 +249,7 @@ nav {
 
 .sidenav.active {
   transform: translateX(0%);
-  background-color: #262C50;
+  background-color: #17163E;
 }
 .sidenav a {
   padding: 10px;
