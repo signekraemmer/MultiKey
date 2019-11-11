@@ -557,12 +557,12 @@ a:active {
 .collapsible {
   display: flex;
   flex-direction: column;
-  background-color: #262C50;
+  background-color: #17163E;
   /* mørk blå */
   color: white;
   /* hvid */
   cursor: pointer;
-  padding: 15px 18px 15px 18px;
+  padding: 15px 70px 15px 18px;
   width: 375px;
   border: none;
   text-align: left;
@@ -573,10 +573,16 @@ a:active {
 .active, .collapsible:hover {
   background-color: #65C2C8;
   color: black;
+  font-weight: bold;
+}
+
+.arrowfaq:hover {
+  transform: scaleY(-1);
+
 }
 
 .content {
-  padding: 10px 10px;
+  padding: 15px 7px 15px 18px;
   display: none;
   overflow-x: hidden;
   background-color: #FFFFFF;
@@ -587,6 +593,7 @@ a:active {
 .arrowfaq {
   position: absolute;
   margin-left: 80vw;
+  transform: none;
 }
 
 .arrowturn {
@@ -618,7 +625,7 @@ a:active {
 .top1 {
   height: 16vh;
   width: 100%;
-  background-color: #262C50;
+  background-color: #17163E;
 }
 
 .profilePen {
