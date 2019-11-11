@@ -1139,7 +1139,6 @@ input:checked+.pullRight:before {
 
 /* CAROUSEL SECTION */
 .carouselContainer {
-  z-index: 15;
   height: 82vh;
   width: 100vw;
   position: absolute;
