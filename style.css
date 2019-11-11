@@ -245,7 +245,7 @@ nav {
   width: 60%;
   position: fixed;
   top: 8.55vh;
-  z-index: 1;
+  z-index: 10;
   right: 0;
   background-color: #17163E;
   overflow-x: hidden;
