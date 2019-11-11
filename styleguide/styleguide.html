@@ -411,9 +411,12 @@
         <h2>Typography</h2><br>
         <article class="">
           <h3>Lato - regular</h3> <br>
-          <p>Lato is used for all text in the app: headlines, subtext and body text.</p><br>
+          <p>Lato is used for all text in the app: headlines, inputs and bodytext.</p><br>
+          <p style="font-size: 32px">Headlins - 32px</p> <br>
+          <p style="font-size: 18px">Inputs - 18px</p> <br>
+          <p style="font-size: 16px">Bodytext - 16px</p> <br>
 
-          <div class="button"><a style="color:black;" href="https://fonts.google.com/specimen/Lato">DOWNLOAD LATO HERE</a>
+          <div class="button"><a style="color:black;" target="_blank" href="https://fonts.google.com/specimen/Lato">DOWNLOAD LATO HERE</a>
           </div>
         </article>
       </section>
@@ -423,24 +426,50 @@
       <section class="formsSection" id="formsSection">
         <h2>Input/Forms</h2><br>
           <p>Here are two examples of forms in the MultiKEY app</p><br>
-          <p>Example of phone number and password</p>
-          <div class="signup_content">
-            <form action="frontpage.html">
-              <input type="text" name="uphone" placeholder="Phone number" style="background-image: url(phone1.png);">
-              <input type="text" name="upass" placeholder="Password" style="background-image: url(password1.png);">
-            </form>
-          </div> <br><br>
 
-          <p>Example of a checkbox (try it)</p> <br>
+          <article class="gridbutton">
 
-          <label id="checkContainer" action="login.html">Agree to terms
-            <input type="checkbox">
-            <span class="checkmark"></span>
-          </label>
+            <div>
+              <p>Forms example</p>
+              <form action="frontpage.html">
+                <input type="text" name="uphone" placeholder="Phone number" style="background-image: url(phone1.png);">
+                <input type="text" name="upass" placeholder="Password" style="background-image: url(password1.png);">
+              </form>
+            </div>
 
-          </div>
+            <div>
+              <p>Code to forms</p>
+              <div class="codeBox">
+                <p>&ltform action="frontpage.html">
+                  &ltinput type="text" name="..." placeholder="..." style="background-image: url(picture);">
+                &lt/form></p>
+              </div>
+            </div>
 
-        </article>
+          </article> <br> <br>
+
+          <article class="gridbutton">
+
+            <div>
+              <p>Example of a checkbox (try it)</p> <br>
+              <label id="checkContainer" action="login.html">Agree to terms
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+
+            <div>
+              <p>Code to forms</p>
+              <div class="codeBox">
+                <p>&ltlabel id="checkContainer" action="login.html">Agree to terms
+                  &ltinput type="checkbox">
+                  &ltspan class="checkmark"></span>
+                &lt/label></p>
+              </div>
+            </div>
+
+          </article>
+
       </section>
 
       <!-- LANGUAGE SECTION -->
