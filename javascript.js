@@ -179,10 +179,7 @@ document.getElementById("arrowDown").addEventListener("click", carouselUp);
 
 // Slide up
 function carouselUp() {
-  let = i;
   posOB_posMB();
-  console.log("carouselUp ran" + i);
-  i++;
 }
 
 // posOB -> posMB
@@ -315,3 +312,18 @@ let posMB = document.getElementsByClassName("posMB");
 posMB[0].classList.add("posOB");
 posMB[0].classList.remove("posMB");
 }
+
+// FLIP CARD
+document.getElementById("ghettoButton").addEventListener("click", flipCard);
+
+function flipCard() {
+  let card = document.getElementsByClassName("posMain")[0];
+  card.classList.toggle("rotateCard");
+}
+
+
+//DELETE KEY
+
+
+
+//SHARE KEY
