@@ -1,6 +1,0 @@
-JS funktioner vi kunne forestille os at have i appen
-
-- Burger menu
-- Key "Slide" option
-- Key Menu dropdown
-- 
