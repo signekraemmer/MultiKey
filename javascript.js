@@ -162,3 +162,156 @@ let sign = document.getElementsByClassName('popupSign');
 
 sign[0].classList.toggle("popupActive");
 }
+
+
+
+
+
+// CAROUSEL
+
+// Main card functionality
+function mainFunctionality () {
+
+}
+
+
+document.getElementById("arrowDown").addEventListener("click", carouselUp);
+
+// Slide up
+function carouselUp() {
+  let = i;
+  posOB_posMB();
+  console.log("carouselUp ran" + i);
+  i++;
+}
+
+// posOB -> posMB
+function posOB_posMB() {
+let addIdentifier = document.getElementsByClassName("posOB");
+addIdentifier[0].classList.add("startIdentifier");
+
+posMB_posMain();
+
+let posOB = document.getElementsByClassName("startIdentifier");
+posOB[0].classList.add("posMB");
+posOB[0].classList.remove("posOB");
+posOB[0].classList.remove("startIdentifier");
+}
+
+// posMB -> posMain
+function posMB_posMain() {
+let posMB = document.getElementsByClassName("posMB");
+
+posMain_posMT();
+
+posMB[0].classList.add("posMain");
+posMB[0].classList.remove("posMB");
+}
+
+// posMain -> posMT
+function posMain_posMT() {
+let posMain = document.getElementsByClassName("posMain");
+
+posMT_posOT();
+
+posMain[0].classList.add("posMT");
+posMain[0].classList.remove("posMain");
+}
+
+// posMT -> posOT
+function posMT_posOT() {
+let posMT = document.getElementsByClassName("posMT");
+
+posOT_posHidden();
+
+posMT[0].classList.add("posOT");
+posMT[0].classList.remove("posMT");
+}
+
+// posOT -> posHidden
+function posOT_posHidden() {
+let posOT = document.getElementsByClassName("posOT");
+
+posHidden_posOB();
+
+posOT[0].classList.add("posHidden");
+posOT[0].classList.remove("posOT");
+}
+
+// posHidden -> posOB
+function posHidden_posOB() {
+let posHidden = document.getElementsByClassName("posHidden");
+
+posHidden[0].classList.add("posOB");
+posHidden[0].classList.remove("posHidden");
+}
+
+
+
+document.getElementById("arrowUp").addEventListener("click", slideDown);
+
+// Slide down
+function slideDown() {
+  posOB_posHidden();
+}
+
+// posOB -> posHidden
+function posOB_posHidden() {
+let addIdentifier = document.getElementsByClassName("posOB");
+addIdentifier[0].classList.add("startIdentifier");
+
+posHidden_posOT();
+
+let posOB = document.getElementsByClassName("startIdentifier");
+posOB[0].classList.add("posHidden");
+posOB[0].classList.remove("posOB");
+posOB[0].classList.remove("startIdentifier");
+}
+
+// posHidden -> posOT
+function posHidden_posOT() {
+let posHidden = document.getElementsByClassName("posHidden");
+
+posOT_posMT();
+
+posHidden[0].classList.add("posOT");
+posHidden[0].classList.remove("posHidden");
+}
+
+// posOT -> posMT
+function posOT_posMT() {
+let posOT = document.getElementsByClassName("posOT");
+
+posMT_posMain();
+
+posOT[0].classList.add("posMT");
+posOT[0].classList.remove("posOT");
+}
+
+// posMT -> posMain
+function posMT_posMain() {
+let posMT = document.getElementsByClassName("posMT");
+
+posMain_posMB();
+
+posMT[0].classList.add("posMain");
+posMT[0].classList.remove("posMT");
+}
+
+// posMain -> posMB
+function posMain_posMB() {
+let posMain = document.getElementsByClassName("posMain");
+
+posMB_posOB();
+
+posMain[0].classList.add("posMB");
+posMain[0].classList.remove("posMain");
+}
+
+// posMB -> posOB
+function posMB_posOB() {
+let posMB = document.getElementsByClassName("posMB");
+
+posMB[0].classList.add("posOB");
+posMB[0].classList.remove("posMB");
+}
