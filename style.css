@@ -16,7 +16,7 @@ body {
 .top {
   height: 8.56vh;
   width: 100%;
-  background-color: #262C50;
+  background-color: #17163E;
 }
 
 .arrowback {
@@ -196,7 +196,7 @@ nav {
   position: fixed;
   bottom: 0px;
   height: 9vh;
-  background-color: #262C50;
+  background-color: #17163E;
 }
 
 .navFlex {
