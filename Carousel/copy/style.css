@@ -974,3 +974,20 @@ bliver gemt, indtil der trykkes på den?) */
 }
 
 /*FLIPCARD END*/
+
+
+
+
+/* SPRITE */
+.sprite
+{
+  width: 800px;
+  height: 800px;
+  background: url('kat.png') 0 0;
+  animation: play 2s steps(40) infinite;
+}
+
+@keyframes play {
+  100% { background-position: -32000px; }
+}
+/* SPRITE */
