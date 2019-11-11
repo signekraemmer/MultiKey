@@ -276,7 +276,11 @@ ul li a:hover {
   height: 25px;
 }
 
-.home img {
+.home img{
+  height: 25px;
+  width: auto;
+}
+.noti img {
   width: 25px;
   height: 25px;
 }
