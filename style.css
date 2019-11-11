@@ -568,6 +568,7 @@ a:active {
   text-align: left;
   outline: none;
   font-size: 16px;
+  transform: none;
 }
 
 .active, .collapsible:hover {
@@ -578,7 +579,10 @@ a:active {
 
 .arrowfaq:hover {
   transform: scaleY(-1);
+}
 
+.collapsible display:none {
+  background-color: black;
 }
 
 .content {
