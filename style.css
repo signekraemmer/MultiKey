@@ -1201,6 +1201,7 @@ input:checked+.pullRight:before {
   width: 300px;
   height: 200px;
   top: 50%;
+  transition: ease 1s;
 }
 
 .posMT {
@@ -1208,6 +1209,7 @@ input:checked+.pullRight:before {
   width: 270px;
   height: 170px;
   top: 35%;
+  transition: ease 1s;
 }
 
 .posMB {
@@ -1215,6 +1217,7 @@ input:checked+.pullRight:before {
   width: 270px;
   height: 170px;
   top: 65%;
+  transition: ease 1s;
 }
 
 .posOT {
@@ -1222,6 +1225,7 @@ input:checked+.pullRight:before {
   width: 240px;
   height: 140px;
   top: 20%;
+  transition: ease 1s;
 }
 
 .posOB {
@@ -1229,13 +1233,15 @@ input:checked+.pullRight:before {
   width: 240px;
   height: 140px;
   top: 80%;
+  transition: ease 1s;
 }
 
 .posHidden {
-  z-index: 1;
+  z-index: -1;
   width: 0px;
   height: 140px;
-  top: 200%;
+  top: 50%;
+  transition: ease 1s;
 }
 
 .startIdentifier {
