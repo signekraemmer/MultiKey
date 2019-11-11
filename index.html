@@ -1,12 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title></title>
-  </head>
-  <body>
 
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title></title>
+</head>
+
+<body>
+  <!-- TOP BAR -->
+  <div class="top">
+    <h2>Multi<span style="color: #65C2C8">KEY</span></h2>
+  </div>
+
+
+
+
+
+  <a href="addkey.html">
+    <div class="newaddkey"> <br>
+      <h2 style="font-size: 18px">Add new key</h2>
+      <img src="images/icons/bigwhiteplus.png" alt="add new key">
+    </div>
+  </a>
+
+
+
+  <!-- MENU LINJE -->
+  <nav>
+
+    <div class="navFlex">
+
+      <!-- HOME MENU !-->
+      <div class="home">
+        <a href="index.html"><img src="images/logo/white.png" alt="logo button"></a>
+      </div>
+
+      <!-- NOTIFICATION MENU !-->
+      <div class="noti">
+        <img id="notificationBell" src="images/icons/alertwhiteout.png" alt="notifigation button">
+      </div>
+
+      <!-- PLUS MENU !-->
+      <a href="addkey.html">
+        <div class="plus">
+          <div class="line4"></div>
+          <div class="line5"></div>
+        </div>
+      </a>
+
+      <!-- BURGER MENU !-->
+      <div class="burger" onclick="myFunction(this)">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </div>
+
+    <!-- FOLD UD TEKST I BURGER MENU !-->
+
+    <div id="mySidenav" class="sidenav">
+
+      <div class="menubar">
+        <div class="toptext">
+          <a href="addkey.html"><img src="images/add.png" alt="add key button">Add key</a>
+          <a href="profil.html"><img src="images/profile.png" alt="profile button">Profile</a>
+        </div>
+
+        <div class="spaceline"></div>
+
+        <div class="middletext">
+          <a href="https://www.instagram.com"><img src="images/instagram.png" alt="instagram button">Instagram</a>
+          <a href="https://www.facebook.com"><img src="images/facebook.png" alt="facebook button">Facebook</a>
+        </div>
+
+        <div class="spaceline"></div>
+
+        <div class="bottomtext">
+          <a href="support.html"><img src="images/help.png" alt="support button">Support</a>
+          <a href="contact.html"><img src="images/contact.png" alt="contact button">Contact</a>
+          <a href="settings.html"><img src="images/settings.png" alt="settings button">Settings</a>
+          <a href="login.html"><img src="images/export.png" alt="logout button">Log out</a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <script src="javascript.js"></script>
+  </nav>
+
+  <!-- Notification slider -->
+  <div class="notificationContainer">
+    <div class="notificationCard">
+      <img class="notificationImage" src="images/miniUCL.png" alt="Miniature card">
+      <p class="notificationText">Your school key ran out</p>
+    </div>
+    <div class="notificationCard">
+      <img class="notificationImage" src="images/miniFitness.png" alt="Miniature card">
+      <p class="notificationText">Fitness World sent you a card</p>
+    </div>
+    <div class="notificationCard">
+      <img class="notificationImage" src="images/miniRejsekort.png" alt="Miniature card">
+      <p class="notificationText">Your funds are low</p>
+    </div>
+  </div>
+
+</body>
+
 </html>
