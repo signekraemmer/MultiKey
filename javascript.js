@@ -75,7 +75,7 @@ function activateNotification() {
 // Validates sign up checkbox //
 
 try {
-  document.getElementById("checkboxen").addEventListener("click", checkboxChecked);
+  document.getElementById("checkmark").addEventListener("click", checkboxChecked);
 } catch (e) {
   console.log(e);
 
@@ -141,3 +141,24 @@ main[0].classList.toggle("popupActive");
 }
 
 // PROFILE END
+
+try {
+
+  let checkCont = document.getElementById("termsConditions");
+
+  checkCont.addEventListener("click", showTerms);
+
+  document.getElementById("closeTermsButton").addEventListener("click", showTerms);
+
+
+} catch (e) {
+  console.log(e);
+} finally {
+  console.log("no sign up");
+}
+
+function showTerms() {
+let sign = document.getElementsByClassName('popupSign');
+
+sign[0].classList.toggle("popupActive");
+}
