@@ -8,7 +8,7 @@
 
 body {
   overflow: hidden;
-  background-image: url(images/backgrounds/backgroundDarkBlueLogo.png);
+  background-image: url(images/backgrounds/backgroundLogin2.png);
   background-size: 375px 812px;
 }
 
@@ -18,6 +18,7 @@ body {
   width: 100%;
   background-color: #17163E;
 }
+
 .arrowback {
   padding-top: 25px;
   padding-left: 25px;
@@ -35,8 +36,8 @@ h2 {
   left: 50%;
   transform: translateX(-50%);
 }
-/* TOP W. TITLE END */
 
+/* TOP W. TITLE END */
 /*FLIPCARD START*/
 /*Dette er kollonen til flip-kortene*/
 .cardcolumn {
@@ -44,7 +45,7 @@ h2 {
   display: inline-block;
   justify-content: center;
   flex-wrap: wrap;
-	max-width: 90%;
+  max-width: 90%;
   justify-content: center;
 }
 
@@ -52,8 +53,8 @@ h2 {
 .flipcard {
   max-width: 400px;
   max-height: 200px;
-	width: 90vw;
-	height: 27vh;
+  width: 90vw;
+  height: 27vh;
   border-radius: 10px;
   margin: 0 5% 0 5%;
   margin-bottom: -12vh;
@@ -69,30 +70,30 @@ h2 {
 }
 
 /*THOMASSSS!!!!!*/
-.flipcard:hover ~ .pic {
-    opacity: 80%
-   }
+.flipcard:hover~.pic {
+  opacity: 80%
+}
 
 .flipcardIn {
   position: relative;
-	width: 100%;
-	height: 100%;
-	border-radius: 10px;
-	text-align: center;
-	transition: 1.3s;
-	transform-style: preserve-3d;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  text-align: center;
+  transition: 1.3s;
+  transform-style: preserve-3d;
 }
 
 .flipcard:hover .flipcardIn:hover {
-	transform: rotateX(180deg);
+  transform: rotateX(180deg);
 }
 
 .flipcardFrontpage, .flipcardBack {
   position: absolute;
-	width: 100%;
-	height: 100%;
-	backface-visibility: hidden;
-	border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
   justify-content: center;
   background: white;
   border-radius: 10px;
@@ -102,8 +103,8 @@ h2 {
 .flipcardBack {
   max-width: 400px;
   max-height: 200px;
-	color: black;
-	transform: rotateX(180deg);
+  color: black;
+  transform: rotateX(180deg);
 }
 
 .flipcardBack img {
@@ -117,68 +118,69 @@ h2 {
 .contentcard {
   max-width: 400px;
   max-height: 200px;
-	padding: 2vh;
+  padding: 2vh;
   font-size: 12px;
   align: left;
 }
 
 /*Dette er knapperme på kort*/
 .cardbutton {
-    background-color: white;
-    border: 2px solid #65C2C8;
-    border-radius: 10px;
-    color: black;
-    width: 28vw;
-    padding: 1vh;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 18px;
-    margin: 1vh;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    cursor: pointer;
-    position: relative;
-    top: 60px;
-  }
+  background-color: white;
+  border: 2px solid #65C2C8;
+  border-radius: 10px;
+  color: black;
+  width: 28vw;
+  padding: 1vh;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 1vh;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  position: relative;
+  top: 60px;
+}
 
-  .cardbutton:hover {
-    background-color: #65C2C8;
-    color: white;
-  }
+.cardbutton:hover {
+  background-color: #65C2C8;
+  color: white;
+}
 
-  .cardbutton2 {
-    background-color: white;
-    color: black;
-    border: 2px solid #262C50;
-  }
+.cardbutton2 {
+  background-color: white;
+  color: black;
+  border: 2px solid #262C50;
+}
 
-  .cardbutton2:hover {
-    background-color: #262C50;
-    color: white;
-  }
+.cardbutton2:hover {
+  background-color: #262C50;
+  color: white;
+}
 
-  .cardbutton3 {
-    background-color: white;
-    color: black;
-    border: 2px solid #262C50;
-  }
+.cardbutton3 {
+  background-color: white;
+  color: black;
+  border: 2px solid #262C50;
+}
 
-  .cardbutton3:hover {
-    background-color: #262C50;
-    color: white;
-  }
+.cardbutton3:hover {
+  background-color: #262C50;
+  color: white;
+}
 
-  .cardbutton4 {
-    background-color: white;
-    color: black;
-    border: 2px solid #65C2C8;
-  }
+.cardbutton4 {
+  background-color: white;
+  color: black;
+  border: 2px solid #65C2C8;
+}
 
-  .cardbutton4:hover {
-    background-color: #65C2C8;
-    color: white;
-  }
+.cardbutton4:hover {
+  background-color: #65C2C8;
+  color: white;
+}
 
 .cardname {
   font-size: 2em;
@@ -187,8 +189,6 @@ h2 {
 }
 
 /*FLIPCARD END*/
-
-
 /* NAVIGATIONS BAR */
 nav {
   z-index: 2;
@@ -205,7 +205,8 @@ nav {
   margin-top: 1.5vh;
 }
 
-.line1, .line2, .line3 { /* The three lines in a burger menu */
+.line1, .line2, .line3 {
+  /* The three lines in a burger menu */
   z-index: 1;
   width: 25px;
   height: 3px;
@@ -221,14 +222,19 @@ nav {
   margin: 6px 0px;
 }
 
-.change .line1 { /* First line in burger menu is rotatet */
+.change .line1 {
+  /* First line in burger menu is rotatet */
   -webkit-transform: rotate(-45deg) translate(-5px, 6px);
   transform: rotate(-45deg) translate(-5px, 6px);
 }
-.change .line2 { /* Second line in burger menu is gone */
+
+.change .line2 {
+  /* Second line in burger menu is gone */
   opacity: 0;
 }
-.change .line3 { /* Threed line in burger menu is rotatet */
+
+.change .line3 {
+  /* Threed line in burger menu is rotatet */
   -webkit-transform: rotate(45deg) translate(-6px, -8px);
   transform: rotate(45deg) translate(-6px, -8px);
 }
@@ -251,6 +257,7 @@ nav {
   transform: translateX(0%);
   background-color: #17163E;
 }
+
 .sidenav a {
   padding: 10px;
   margin-left: 30px;
@@ -292,7 +299,8 @@ nav {
   transform: translateX(-50%);
   background-color: #ffffff;
 }
-.line5{
+
+.line5 {
   position: relative;
   width: 25px;
   height: 3px;
@@ -300,7 +308,8 @@ nav {
   transform: translateY(-50%);
   background-color: #ffffff;
 }
-.plus{
+
+.plus {
   width: 25px;
   height: 25px;
 }
@@ -324,14 +333,14 @@ nav {
 }
 
 .slideUp {
-    transform: translateY(0%);
+  transform: translateY(0%);
 }
 
 .notificationCard {
   display: flex;
   position: relative;
   flex: 1;
-  background-color: #E0E3E6;
+  background-color: #65C2C8;
   margin: 8px;
   max-height: 60px;
 }
@@ -350,32 +359,34 @@ nav {
   margin: 5px;
   max-height: 60px;
 }
-/* NOTIFICATION MENU END */
 
+/* NOTIFICATION MENU END */
 /* LOGIN SECTION */
 .loginback {
   width: 100%;
   height: 100vh;
   color: #ffffff;
-  background: linear-gradient(-45deg, #17163E, #17163E, #4155E0 ,#4155E0, white);
-  background-size: 200% 400%;
+  background: linear-gradient(-45deg, #17163E, #17163E, #262C50, #262C50);
+  background-size: 200% 300%;
   position: relative;
-  animation: change 4s ease-in-out infinite;
+  animation: change 4s ease-in;
 }
 
 @keyframes change {
-  0%{
+  0% {
     background-position: 0 50%
   }
-  50%{
+
+  50% {
     background-position: 50% 90%
   }
-  100%{
+
+  100% {
     background-position: 0 50%
   }
 }
-/* LOGIN SECTION END */
 
+/* LOGIN SECTION END */
 /* SIGN UP SECTION */
 section {
   display: flex;
@@ -387,8 +398,8 @@ section {
 }
 
 .signup_top {
-    flex: 1;
-    align-content: center;
+  flex: 1;
+  align-content: center;
 }
 
 .signup_top h1 {
@@ -396,7 +407,6 @@ section {
   padding: 20px 0px;
   font-size: 32px;
   top: 20%;
-
 }
 
 #frontPageHeader {
@@ -440,7 +450,6 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 form {
@@ -451,8 +460,9 @@ form {
 
 input {
   display: block;
-  width: 200px;
-  margin: 0px 0px  20px 0px ;
+  width: 250px;
+  height: 17px;
+  margin: 0px 0px 20px 0px;
   border: 3px solid #000000;
   border-radius: 10px;
   padding: 10px;
@@ -492,7 +502,7 @@ a:active {
 }
 
 #forgotPassword {
-  color: #dbdbdb;
+  color: #E0E3E6;
 }
 
 #passwordText {
@@ -501,18 +511,17 @@ a:active {
 }
 
 .button {
-    padding: 10px 5vw;
-    background-color: #b5b5b5;
-    border: 1px solid #000000;
-    border-radius:25px;
-    min-width: 100px;
-    max-width: 150px;
-    font-size: 18px;
-    margin-bottom: 30px;
+  padding: 10px 5vw;
+  background-color: #65C2C8;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  min-width: 100px;
+  max-width: 150px;
+  font-size: 18px;
+  margin-bottom: 30px;
 }
 
 /* Terms and conditions pop up */
-
 .popupSign {
   position: absolute;
   top: 0;
@@ -528,9 +537,8 @@ a:active {
 .signPop {
   font-weight: 200;
 }
+
 /* SIGN UP SECTION END */
-
-
 /* FAQ / HELP SECTION */
 .faqLine {
   font-size: 32px;
@@ -542,11 +550,14 @@ a:active {
   overflow: hidden;
   color: white;
 }
+
 .collapsible {
   display: flex;
   flex-direction: column;
-  background-color: #262C50; /* mørk blå */
-  color: white; /* hvid */
+  background-color: #262C50;
+  /* mørk blå */
+  color: white;
+  /* hvid */
   cursor: pointer;
   padding: 15px 18px 15px 18px;
   width: 375px;
@@ -557,15 +568,18 @@ a:active {
 }
 
 .active, .collapsible:hover {
-  background-color: #65C2C8; /* Mellemgrå */
-  color: black; /* Hvid */
+  background-color: #65C2C8;
+  /* Mellemgrå */
+  color: black;
+  /* Hvid */
 }
 
 .content {
   padding: 10px 10px;
   display: none;
   overflow-x: hidden;
-  background-color: #FFFFFF; /* Hvid */
+  background-color: #FFFFFF;
+  /* Hvid */
   width: 350px;
 }
 
@@ -577,16 +591,15 @@ a:active {
 .arrowturn {
   transform: rotate(180deg);
 }
+
 /* FAQ / HELP SECTION END */
-
 /* KEY CARD */
-
 .newaddkey {
   height: 25vh;
   width: 90vw;
   justify-content: space-evenly;
   border-radius: 30px;
-  background-color: #D8D8D8;
+  background-color: #E0E3E6;
   border: 3px dashed #808080;
   position: absolute;
   left: 50%;
@@ -601,11 +614,10 @@ a:active {
 }
 
 /* PROFILE */
-
 .top1 {
-height: 15.56vh;
-width: 100%;
-background-color: #262C50;
+  height: 15.56vh;
+  width: 100%;
+  background-color: #262C50;
 }
 
 .profilePen {
@@ -618,7 +630,7 @@ background-color: #262C50;
   margin: 10px auto;
   width: 150px;
   height: 150px;
-  border: 5px solid #000000;
+  border: 2px solid #000000;
   border-radius: 25px;
   margin-top: -6vh;
 }
@@ -635,7 +647,7 @@ background-color: #262C50;
 .profileInputs {
   display: block;
   width: 200px;
-  margin: 0px 20px  20px 15vw ;
+  margin: 0px 20px 20px 10vw;
   padding: 10px;
   text-align: left;
 }
@@ -666,18 +678,21 @@ background-color: #262C50;
 #overlay {
   position: absolute;
   background: black;
-  top: 0; left: 0; right: 0; bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   opacity: 50%;
   height: 100vh;
   width: 100vw;
 }
 
 #popup {
-  width:84%;
+  width: 84%;
   z-index: 2;
   background: white;
   border-radius: 8px;
-  margin:0 auto;
+  margin: 0 auto;
   text-align: center;
   box-sizing: border-box;
   position: absolute;
@@ -699,13 +714,13 @@ background-color: #262C50;
 #popup .button-holder a {
   color: #007AFF;
   text-decoration: none;
-  line-height:45px;
-  font-weight:bold;
+  line-height: 45px;
+  font-weight: bold;
   display: block;
   border-top: 1px solid #BABABA;
 }
 
-#popup .two-button a{
+#popup .two-button a {
   width: 50%;
   float: left;
   box-sizing: border-box;
@@ -718,10 +733,9 @@ background-color: #262C50;
 .popupActive {
   display: block;
 }
+
 /* PROFILE END*/
-
 /*SIGN UP CHECKBOX START*/
-
 /* The container with text */
 #checkContainer {
   display: block;
@@ -756,12 +770,12 @@ bliver gemt, indtil der trykkes på den?) */
 }
 
 /* ved hover, bliver boxen blå */
-#checkContainer:hover input ~ .checkmark {
+#checkContainer:hover input~.checkmark {
   background-color: green;
 }
 
 /* When the checkbox is checked, add a blue background */
-#checkContainer input:checked ~ .checkmark {
+#checkContainer input:checked~.checkmark {
   background-color: #65C2C8;
 }
 
@@ -773,7 +787,7 @@ bliver gemt, indtil der trykkes på den?) */
 }
 
 /* Show the checkmark when checked */
-#checkContainer input:checked ~ .checkmark:after {
+#checkContainer input:checked~.checkmark:after {
   display: block;
 }
 
@@ -791,10 +805,7 @@ bliver gemt, indtil der trykkes på den?) */
 }
 
 /*SIGN UP CHECKBOX END*/
-
-
 /* KEY CARD END*/
-
 @media only screen and (max-width: 320px) {
   #topAir {
     flex: 0;
@@ -802,7 +813,6 @@ bliver gemt, indtil der trykkes på den?) */
 }
 
 /*  Add Key Side START */
-
 .addkey_content {
   flex: 1;
   text-align: center;
@@ -830,7 +840,7 @@ bliver gemt, indtil der trykkes på den?) */
 .contentKey {
   max-width: 400px;
   max-height: 200px;
-	padding: 5vh;
+  padding: 5vh;
   font-size: 16px;
   align: left;
   display: inline-block;
@@ -842,7 +852,7 @@ bliver gemt, indtil der trykkes på den?) */
 }
 
 .keyname {
-  align:left;
+  align: left;
   justify: left;
   justify-content: left;
   margin-top: -1vh;
@@ -868,11 +878,9 @@ bliver gemt, indtil der trykkes på den?) */
   border: none;
   border-radius: 10px;
 }
+
 /* Add Key Side END */
-
-
 /* CONTACT SITE */
-
 .contactbox {
   width: 85%;
   height: 80%;
@@ -885,6 +893,7 @@ bliver gemt, indtil der trykkes på den?) */
   height: 17px;
   margin-right: 20px;
 }
+
 .hoursopen {
   display: flex;
 }
@@ -893,9 +902,7 @@ bliver gemt, indtil der trykkes på den?) */
   margin-right: 20px;
 }
 
-
 /* Setting START */
-
 .boxSwipe {
   width: 100%;
   height: 6vh;
@@ -908,40 +915,40 @@ bliver gemt, indtil der trykkes på den?) */
   margin-left: 4vw;
   font-size: 16px;
   color: white;
-  }
+}
 
 .swipeArrow {
   transform: scaleX(-1);
-    margin-left: 65vw;
-    margin-top: 1.8vh;
+  margin-left: 65vw;
+  margin-top: 1.8vh;
 }
 
 .swipeArrow1 {
   transform: scaleX(-1);
-    position: absolute;
-    margin-left: 51.5vw;
-    margin-top: 1.8vh;
+  position: absolute;
+  margin-left: 51.5vw;
+  margin-top: 1.8vh;
 }
 
 .swipeArrow2 {
-    transform: scaleX(-1);
-    position: absolute;
-    margin-left: 52.8vw;
-    margin-top: 1.9vh;
-  }
+  transform: scaleX(-1);
+  position: absolute;
+  margin-left: 52.8vw;
+  margin-top: 1.9vh;
+}
 
 .swipeArrow3 {
-    transform: scaleX(-1);
-    position: absolute;
-    margin-left: 25.6vw;
-    margin-top: 1.9vh;
-  }
+  transform: scaleX(-1);
+  position: absolute;
+  margin-left: 25.6vw;
+  margin-top: 1.9vh;
+}
 
 .swipeArrow4 {
-    transform: scaleX(-1);
-    position: absolute;
-    margin-left: 63.2vw;
-    margin-top: 1.9vh;
+  transform: scaleX(-1);
+  position: absolute;
+  margin-left: 63.2vw;
+  margin-top: 1.9vh;
 }
 
 .swipeSwitch {
@@ -952,7 +959,7 @@ bliver gemt, indtil der trykkes på den?) */
   margin: 0.9vh;
   float: right;
   margin-right: 4vw;
-  }
+}
 
 .swipeSwitch input {
   opacity: 0;
@@ -984,15 +991,15 @@ bliver gemt, indtil der trykkes på den?) */
   transition: .4s;
 }
 
-input:checked + .slider {
+input:checked+.slider {
   background-color: #65C2C8;
 }
 
-input:focus + .slider {
+input:focus+.slider {
   box-shadow: 0 0 1px #65C2C8;
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
@@ -1008,10 +1015,7 @@ input:checked + .slider:before {
 }
 
 /* Setting END */
-
-
 /* FLUEBEN ANIMARION */
-
 .flueani {
   width: 300px;
   height: 300px;
@@ -1020,18 +1024,24 @@ input:checked + .slider:before {
 }
 
 @keyframes play {
-  0%{background-position: 0px}
-  100%{background-position: -9000px}
+  0% {
+    background-position: 0px
+  }
+
+  100% {
+    background-position: -9000px
+  }
 }
 
 /* FLUEBEN ANIMARION END */
-
-
 /* SHARE KEY POP UP */
 #sharelay {
   position: absolute;
   background: black;
-  top: 0; left: 0; right: 0; bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   opacity: 50%;
   height: 100vh;
   width: 100vw;
@@ -1039,7 +1049,7 @@ input:checked + .slider:before {
 
 #shareup {
   width: 90vw;
-	height: 27vh;
+  height: 27vh;
   border-radius: 10px;
   margin: 0 5% 0 5%;
   z-index: 10;
@@ -1049,10 +1059,11 @@ input:checked + .slider:before {
   position: absolute;
   top: 35%;
 }
+
 .contentcard1 {
   max-width: 400px;
   max-height: 300px;
-	padding: 2vh;
+  padding: 2vh;
   font-size: 12px;
   align: left;
 }
@@ -1065,7 +1076,7 @@ input:checked + .slider:before {
   width: 79vw;
   height: 7vh;
   justify-content: center;
-  }
+}
 
 .slideSwitch input {
   opacity: 0;
@@ -1097,15 +1108,15 @@ input:checked + .slider:before {
   transition: .4s;
 }
 
-input:checked + .pullRight {
+input:checked+.pullRight {
   background-color: #4155E0;
 }
 
-input:focus + .pullRight {
+input:focus+.pullRight {
   box-shadow: 0 0 1px #4155E0;
 }
 
-input:checked + .pullRight:before {
+input:checked+.pullRight:before {
   -webkit-transform: translateX(64vw);
   -ms-transform: translateX(64vw);
   transform: translateX(64vw);
@@ -1119,4 +1130,5 @@ input:checked + .pullRight:before {
 .pullRight.round:before {
   border-radius: 50%;
 }
+
 /* SHARE KEY POP UP END*/
