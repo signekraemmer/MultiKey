@@ -8,7 +8,7 @@
 
 body {
   overflow: hidden;
-  background-image: url(images/backgrounds/backgroundLightBlueLogo.png);
+  background-image: url(images/backgrounds/backgroundDarkBlueLogo.png);
   background-size: 375px 812px;
 }
 
@@ -1163,7 +1163,7 @@ input:checked+.pullRight:before {
   position: absolute;
   height: 20px;
   width: 100px;
-  background-color: #17163E;
+  background-color: pink;
 }
 
 .topArrow {
