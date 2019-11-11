@@ -783,7 +783,7 @@ bliver gemt, indtil der trykkes på den?) */
 
 /* ved hover, bliver boxen blå */
 #checkContainer:hover input~.checkmark {
-  background-color: blue;
+  background-color: #65C2C8;
 }
 
 /* When the checkbox is checked, add a blue background */
