@@ -767,6 +767,7 @@ bliver gemt, indtil der trykkes på den?) */
   cursor: pointer;
   height: 0;
   width: 0;
+
 }
 
 /* Create a custom checkbox */
@@ -782,7 +783,7 @@ bliver gemt, indtil der trykkes på den?) */
 
 /* ved hover, bliver boxen blå */
 #checkContainer:hover input~.checkmark {
-  background-color: green;
+  background-color: blue;
 }
 
 /* When the checkbox is checked, add a blue background */
