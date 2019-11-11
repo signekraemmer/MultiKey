@@ -8,7 +8,7 @@ function openNav() {
   document.getElementById("mySidenav").classList.toggle("active");
 }
 
-// THOMAS HELP
+
 // FAQ / HELP SECTION
 var coll = document.getElementsByClassName("collapsible");
 var i;
@@ -16,7 +16,7 @@ var i;
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
-
+// for (i = 0; i < coll.length; i++) {
     var content = this.nextElementSibling;
 
     if (content.style.display === "block") {

@@ -539,6 +539,8 @@ a:active {
 }
 
 /* SIGN UP SECTION END */
+
+
 /* FAQ / HELP SECTION */
 .faqLine {
   font-size: 32px;
@@ -1232,10 +1234,10 @@ input:checked+.pullRight:before {
 }
 
 .posHidden {
-  z-index: 1;
+  z-index: -1;
   width: 0px;
   height: 140px;
-  top: 200%;
+  top: 50%;
 }
 
 .startIdentifier {
@@ -1247,4 +1249,5 @@ input:checked+.pullRight:before {
   border-radius: 10px;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: ease 1s;
 }
