@@ -1275,6 +1275,12 @@ input:checked+.pullRight:before {
 }
 
 /* FLIP THE CARD */
+.backsideCard {
+  width: 300px;
+  height: 200px;
+  top: 50%;
+
+}
 .backsideCard img {
   height: 23px;
   width: auto;
