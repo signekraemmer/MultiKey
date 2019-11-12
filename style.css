@@ -947,6 +947,9 @@ bliver gemt, indtil der trykkes på den?) */
   width: 100%;
   height: 6vh;
   background-color: #262C50;
+  border-style: solid;
+  border-width: thin;
+  border-color: #17163E;
 }
 
 .swipeText {
