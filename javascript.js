@@ -118,6 +118,28 @@ function validateCheckbox() {
     window.alert("You forgot to agree with terms");
   }
 }
+
+try {
+
+  let checkCont = document.getElementById("termsConditions");
+
+  checkCont.addEventListener("click", showTerms);
+
+  document.getElementById("closeTermsButton").addEventListener("click", showTerms);
+
+
+} catch (e) {
+  console.log(e);
+} finally {
+  console.log("no sign up");
+}
+
+function showTerms() {
+let sign = document.getElementsByClassName('popupSign');
+
+sign[0].classList.toggle("popupActive");
+}
+
 // Sign up END
 
 // PROFILE
@@ -142,26 +164,7 @@ main[0].classList.toggle("popupActive");
 
 // PROFILE END
 
-try {
 
-  let checkCont = document.getElementById("termsConditions");
-
-  checkCont.addEventListener("click", showTerms);
-
-  document.getElementById("closeTermsButton").addEventListener("click", showTerms);
-
-
-} catch (e) {
-  console.log(e);
-} finally {
-  console.log("no sign up");
-}
-
-function showTerms() {
-let sign = document.getElementsByClassName('popupSign');
-
-sign[0].classList.toggle("popupActive");
-}
 
 
 
