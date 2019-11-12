@@ -31,6 +31,10 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
+
+
+// FAQ / SUPPORT END //
+
 // Listen for clicks on "login button"
 try {
   document.getElementById("loginButton").addEventListener("click", validateUser);
