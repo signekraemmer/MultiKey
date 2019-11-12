@@ -93,9 +93,12 @@ let checkedboxen = document.getElementById("checkboxen");
 
 if (checkedboxen.value == "checked") {
   checkedboxen.value = ""
+
+  console.log("unchecked");
 }
 else {
   checkedboxen.value = "checked"
+  console.log("checked");
 }
 }
 
@@ -123,6 +126,7 @@ function validateCheckbox() {
   }
 }
 
+// terms popup //
 try {
 
   let checkCont = document.getElementById("termsConditions");
@@ -135,7 +139,7 @@ try {
 } catch (e) {
   console.log(e);
 } finally {
-  console.log("no sign up");
+  console.log("showing terms works");
 }
 
 function showTerms() {
