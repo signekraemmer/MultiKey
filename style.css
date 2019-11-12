@@ -1337,7 +1337,7 @@ input:checked+.pullRight:before {
   position: absolute;
   box-sizing: border-box;
   z-index: 2;
-  top: 1%;
+  top: 0%;
   backface-visibility: hidden;  /* W3C */
   -webkit-backface-visibility: hidden; /* Safari & Chrome */
   -moz-backface-visibility: hidden; /* Firefox */
