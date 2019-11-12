@@ -1216,7 +1216,6 @@ input:checked+.pullRight:before {
   position: absolute;
   height: 20px;
   width: 100px;
-  background-color: pink;
 }
 
 .topArrow {
