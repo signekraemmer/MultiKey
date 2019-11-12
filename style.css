@@ -578,14 +578,14 @@ a:active {
   background-color: #65C2C8;
   color: black;
   font-weight: bold;
+  transform: none;
+
 }
+
+
 
 .arrowfaq:hover {
   transform: scaleY(-1);
-}
-
-.collapsible display:none {
-  background-color: black;
 }
 
 .content {
@@ -600,7 +600,12 @@ a:active {
 .arrowfaq {
   position: absolute;
   margin-left: 80vw;
-  transform: none;
+}
+
+.arrowfaq1{
+  position: absolute;
+  margin-left: 80vw;
+  transform: scaleY(-1);
 }
 
 .arrowturn {
