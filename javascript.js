@@ -57,7 +57,7 @@ function validateUser() {
 
   if (userInputs[0].value == "12341234" && userInputs[1].value == "Duck") {
     console.log("succes");
-    window.location.href = "frontpage.html";
+    window.location.href = "index.html";
   }
 
   else {
