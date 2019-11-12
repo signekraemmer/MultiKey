@@ -766,9 +766,6 @@ a:active {
   position: relative;
   padding-left: 35px;
   margin-bottom: 12px;
-  /* deleting this comment will create a checkmark but break it as well
-  margin: 5px 5px 0px 5px;
-  padding: 5px; */
 }
 
 /* Der er 2 checkbokse,
@@ -780,7 +777,6 @@ bliver gemt, indtil der trykkes på den?) */
   cursor: pointer;
   height: 0;
   width: 0;
-
 }
 
 /* Create a custom checkbox */
@@ -790,17 +786,17 @@ bliver gemt, indtil der trykkes på den?) */
   left: 0;
   height: 25px;
   width: 25px;
-  background-color: #eee;
+  background-color: white;
   border-radius: 5px;
 }
 
 /* ved hover, bliver boxen blå */
-#checkContainer:hover input~.checkmark {
+#checkContainer:hover input ~.checkmark {
   background-color: #65C2C8;
 }
 
 /* When the checkbox is checked, add a blue background */
-#checkContainer input:checked~.checkmark {
+#checkContainer input:checked ~ .checkmark {
   background-color: #65C2C8;
 }
 
@@ -808,11 +804,10 @@ bliver gemt, indtil der trykkes på den?) */
 .checkmark:after {
   content: "";
   position: absolute;
-  display: none;
 }
 
 /* Show the checkmark when checked */
-#checkContainer input:checked~.checkmark:after {
+#checkContaine input:checked ~ .checkmark:after {
   display: block;
 }
 
