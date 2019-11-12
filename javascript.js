@@ -1,4 +1,4 @@
-//FOR BURGER MENU
+//FOR BURGER MENU - Henriette
 function myFunction(x) {
   x.classList.toggle("change");
     openNav();
@@ -9,7 +9,7 @@ function openNav() {
 }
 
 // THOMAS HELP
-// FAQ / HELP SECTION
+// FAQ / HELP SECTION - Signe
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
@@ -41,7 +41,7 @@ try {
   console.log("no login button");
 
 }
-// Validates the username and password
+// Validates the username and password - Henriette
 function validateUser() {
   let userInputs = document.getElementById("loginData");
 
@@ -72,7 +72,7 @@ function activateNotification() {
   console.log("notification activated");
 }
 
-// Validates sign up checkbox //
+// Validates sign up checkbox // - Charlotte
 
 try {
   document.getElementById("checkmark").addEventListener("click", checkboxChecked);
@@ -314,16 +314,55 @@ posMB[0].classList.remove("posMB");
 }
 
 // FLIP CARD
-document.getElementById("ghettoButton").addEventListener("click", flipCard);
-
-function flipCard() {
-  let card = document.getElementsByClassName("posMain")[0];
-  card.classList.toggle("rotateCard");
-}
+// document.getElementById("ghettoButton").addEventListener("click", flipCard);
+//
+// function flipCard() {
+//   let card = document.getElementsByClassName("posMain")[0];
+//   card.classList.toggle("flipped");
+// }
 
 
 //DELETE KEY
+try {
+
+  let del = document.getElementsByClassName("deleteButton");
+
+del[0].addEventListener("click", showPopup);
+console.log(del);
+
+} catch (e) {
+  console.log(e);
+} finally {
+  console.log("no sign up");
+}
+
+function showPopup() {
+  console.log("active");
+let delBox = document.getElementsByClassName('popupLayBox');
+
+delBox[0].classList.toggle("popupActive");
+}
 
 
 
 //SHARE KEY
+
+try {
+
+  let sha = document.getElementsByClassName("shareButton");
+
+sha[0].addEventListener("click", showPopup);
+console.log(del);
+
+} catch (e) {
+  console.log(e);
+} finally {
+  console.log("no sign up");
+}
+
+function showPopup() {
+  console.log("active");
+let shaBox = document.getElementsByClassName('popupLayBox');
+
+shaBox[0].classList.toggle("popupActive");
+}
