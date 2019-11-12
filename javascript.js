@@ -17,6 +17,12 @@ for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
 
+    for (var o = 0; o < coll.length; o++) {
+      coll[o].classList.remove("active");
+      var content = document.getElementsByClassName("content");
+      content[o].style.display = "none";
+    }
+
     var content = this.nextElementSibling;
 
     if (content.style.display === "block") {
