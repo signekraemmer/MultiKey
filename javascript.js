@@ -1,4 +1,4 @@
-//FOR BURGER MENU
+//FOR BURGER MENU - Henriette
 function myFunction(x) {
   x.classList.toggle("change");
     openNav();
@@ -9,13 +9,19 @@ function openNav() {
 }
 
 // THOMAS HELP
-// FAQ / HELP SECTION
+// FAQ / HELP SECTION - Signe
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
+
+    for (var o = 0; o < coll.length; o++) {
+      coll[o].classList.remove("active");
+      var content = document.getElementsByClassName("content");
+      content[o].style.display = "none";
+    }
 
     var content = this.nextElementSibling;
 
@@ -31,6 +37,10 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
+
+
+// FAQ / SUPPORT END //
+
 // Listen for clicks on "login button"
 try {
   document.getElementById("loginButton").addEventListener("click", validateUser);
@@ -41,7 +51,7 @@ try {
   console.log("no login button");
 
 }
-// Validates the username and password
+// Validates the username and password - Henriette
 function validateUser() {
   let userInputs = document.getElementById("loginData");
 
@@ -89,9 +99,12 @@ let checkedboxen = document.getElementById("checkboxen");
 
 if (checkedboxen.value == "checked") {
   checkedboxen.value = ""
+
+  console.log("unchecked");
 }
 else {
   checkedboxen.value = "checked"
+  console.log("checked");
 }
 }
 
@@ -119,6 +132,7 @@ function validateCheckbox() {
   }
 }
 
+// terms popup //
 try {
 
   let checkCont = document.getElementById("termsConditions");
@@ -131,7 +145,7 @@ try {
 } catch (e) {
   console.log(e);
 } finally {
-  console.log("no sign up");
+  console.log("showing terms works");
 }
 
 function showTerms() {
@@ -183,6 +197,7 @@ document.getElementById("arrowDown").addEventListener("click", carouselUp);
 // Slide up
 function carouselUp() {
   posOB_posMB();
+  flipBack();
 }
 
 // posOB -> posMB
@@ -253,6 +268,7 @@ document.getElementById("arrowUp").addEventListener("click", slideDown);
 // Slide down
 function slideDown() {
   posOB_posHidden();
+  flipBack();
 }
 
 // posOB -> posHidden
@@ -316,17 +332,64 @@ posMB[0].classList.add("posOB");
 posMB[0].classList.remove("posMB");
 }
 
-// FLIP CARD
-document.getElementById("ghettoButton").addEventListener("click", flipCard);
+function flipBack() {
+let card = document.getElementsByClassName("card");
 
-function flipCard() {
-  let card = document.getElementsByClassName("posMain")[0];
-  card.classList.toggle("rotateCard");
+  for (var i = 0; i < card.length; i++) {
+    card[i].classList.remove("flipped")
+  }
 }
+
+// FLIP CARD
+// document.getElementById("ghettoButton").addEventListener("click", flipCard);
+//
+// function flipCard() {
+//   let card = document.getElementsByClassName("posMain")[0];
+//   card.classList.toggle("flipped");
+// }
 
 
 //DELETE KEY
+try {
+
+  let del = document.getElementsByClassName("deleteButton");
+
+del[0].addEventListener("click", showPopup);
+console.log(del);
+
+} catch (e) {
+  console.log(e);
+} finally {
+  console.log("no sign up");
+}
+
+function showPopup() {
+  console.log("active");
+let delBox = document.getElementsByClassName('popupLayBox');
+
+delBox[0].classList.toggle("popupActive");
+}
 
 
 
 //SHARE KEY
+
+try {
+
+  let sha = document.getElementsByClassName("shareButton");
+
+sha[0].addEventListener("click", showPopup);
+console.log(del);
+
+} catch (e) {
+  console.log(e);
+} finally {
+  console.log("no sign up");
+}
+
+function showPopup() {
+  console.log("active");
+let shaBox = document.getElementsByClassName('popupLayBox');
+
+shaBox[0].classList.toggle("popupActive");
+}
