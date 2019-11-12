@@ -561,9 +561,7 @@ a:active {
   display: flex;
   flex-direction: column;
   background-color: #17163E;
-  /* mørk blå */
   color: white;
-  /* hvid */
   cursor: pointer;
   padding: 15px 70px 15px 18px;
   width: 375px;
@@ -571,18 +569,14 @@ a:active {
   text-align: left;
   outline: none;
   font-size: 16px;
-  transform: none;
+  transition: 0.2s;
 }
 
 .active, .collapsible:hover {
   background-color: #65C2C8;
   color: black;
   font-weight: bold;
-  transform: none;
-
 }
-
-
 
 .arrowfaq:hover {
   transform: scaleY(-1);
@@ -602,11 +596,7 @@ a:active {
   margin-left: 80vw;
 }
 
-.arrowfaq1{
-  position: absolute;
-  margin-left: 80vw;
-  transform: scaleY(-1);
-}
+
 
 .arrowturn {
   transform: rotate(180deg);
@@ -616,6 +606,7 @@ a:active {
 
 
 /* NEW USER CARD SITE */
+
 .newaddkey {
   z-index: 2;
   width: 300px;
@@ -645,6 +636,7 @@ a:active {
 }
 
 /* PROFILE */
+
 .top1 {
   height: 16vh;
   width: 100%;
@@ -767,6 +759,7 @@ a:active {
 /* PROFILE END*/
 
 /*SIGN UP CHECKBOX START*/
+
 /* The container with text */
 #checkContainer {
   display: block;
@@ -837,7 +830,10 @@ bliver gemt, indtil der trykkes på den?) */
 }
 
 /*SIGN UP CHECKBOX END*/
+
+
 /* KEY CARD END*/
+
 @media only screen and (max-width: 320px) {
   #topAir {
     flex: 0;
@@ -845,6 +841,7 @@ bliver gemt, indtil der trykkes på den?) */
 }
 
 /*  Add Key Side START */
+
 .addkey_content {
   flex: 1;
   text-align: center;
