@@ -197,6 +197,7 @@ document.getElementById("arrowDown").addEventListener("click", carouselUp);
 // Slide up
 function carouselUp() {
   posOB_posMB();
+  flipBack();
 }
 
 // posOB -> posMB
@@ -267,6 +268,7 @@ document.getElementById("arrowUp").addEventListener("click", slideDown);
 // Slide down
 function slideDown() {
   posOB_posHidden();
+  flipBack();
 }
 
 // posOB -> posHidden
@@ -328,6 +330,14 @@ let posMB = document.getElementsByClassName("posMB");
 
 posMB[0].classList.add("posOB");
 posMB[0].classList.remove("posMB");
+}
+
+function flipBack() {
+let card = document.getElementsByClassName("card");
+
+  for (var i = 0; i < card.length; i++) {
+    card[i].classList.remove("flipped")
+  }
 }
 
 // FLIP CARD
