@@ -72,7 +72,7 @@ function activateNotification() {
   console.log("notification activated");
 }
 
-// Validates sign up checkbox //
+// Validates sign up checkbox -  CHARLOTTE  //
 
 try {
   document.getElementById("checkmark").addEventListener("click", checkboxChecked);
@@ -140,7 +140,7 @@ let sign = document.getElementsByClassName('popupSign');
 sign[0].classList.toggle("popupActive");
 }
 
-// Sign up END
+// Sign up END - CHARLOTTE //
 
 // PROFILE
 try {
