@@ -17,6 +17,12 @@ for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
 
+    for (var o = 0; o < coll.length; o++) {
+      coll[o].classList.remove("active");
+      var content = document.getElementsByClassName("content");
+      content[o].style.display = "none";
+    }
+
     var content = this.nextElementSibling;
 
     if (content.style.display === "block") {
@@ -30,6 +36,10 @@ for (i = 0; i < coll.length; i++) {
       //turn[i].classList.toggle("arrowturn");
   });
 }
+
+
+
+// FAQ / SUPPORT END //
 
 // Listen for clicks on "login button"
 try {
@@ -72,7 +82,7 @@ function activateNotification() {
   console.log("notification activated");
 }
 
-// Validates sign up checkbox // - Charlotte
+// Validates sign up checkbox -  CHARLOTTE  //
 
 try {
   document.getElementById("checkmark").addEventListener("click", checkboxChecked);
@@ -89,9 +99,12 @@ let checkedboxen = document.getElementById("checkboxen");
 
 if (checkedboxen.value == "checked") {
   checkedboxen.value = ""
+
+  console.log("unchecked");
 }
 else {
   checkedboxen.value = "checked"
+  console.log("checked");
 }
 }
 
@@ -118,7 +131,30 @@ function validateCheckbox() {
     window.alert("You forgot to agree with terms");
   }
 }
-// Sign up END
+
+// terms popup //
+try {
+
+  let checkCont = document.getElementById("termsConditions");
+
+  checkCont.addEventListener("click", showTerms);
+
+  document.getElementById("closeTermsButton").addEventListener("click", showTerms);
+
+
+} catch (e) {
+  console.log(e);
+} finally {
+  console.log("showing terms works");
+}
+
+function showTerms() {
+let sign = document.getElementsByClassName('popupSign');
+
+sign[0].classList.toggle("popupActive");
+}
+
+// Sign up END - CHARLOTTE //
 
 // PROFILE
 try {
@@ -142,26 +178,7 @@ main[0].classList.toggle("popupActive");
 
 // PROFILE END
 
-try {
 
-  let checkCont = document.getElementById("termsConditions");
-
-  checkCont.addEventListener("click", showTerms);
-
-  document.getElementById("closeTermsButton").addEventListener("click", showTerms);
-
-
-} catch (e) {
-  console.log(e);
-} finally {
-  console.log("no sign up");
-}
-
-function showTerms() {
-let sign = document.getElementsByClassName('popupSign');
-
-sign[0].classList.toggle("popupActive");
-}
 
 
 
