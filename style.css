@@ -1402,7 +1402,7 @@ input:checked+.pullRight:before {
   box-sizing: border-box;
 }
 
-/* SHARE & DELETE POPUP MENU */
+/* DELETE POPUP MENU */
 .popupLayBox {
   position: absolute;
   top: 0;
