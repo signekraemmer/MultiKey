@@ -354,7 +354,7 @@ try {
 
   let del = document.getElementsByClassName("deleteButton");
 
-del[0].addEventListener("click", showPopup);
+del[0].addEventListener("click", delPopup);
 console.log(del);
 
 } catch (e) {
@@ -363,7 +363,7 @@ console.log(del);
   console.log("no sign up");
 }
 
-function showPopup() {
+function delPopup() {
   console.log("active");
 let delBox = document.getElementsByClassName('popupLayBox');
 
@@ -378,7 +378,7 @@ try {
 
   let sha = document.getElementsByClassName("shareButton");
 
-sha[0].addEventListener("click", showPopup);
+sha[0].addEventListener("click", sharePopup);
 console.log(del);
 
 } catch (e) {
@@ -387,7 +387,7 @@ console.log(del);
   console.log("no sign up");
 }
 
-function showPopup() {
+function sharePopup() {
   console.log("active");
 let shaBox = document.getElementsByClassName('popupLayBox');
 
