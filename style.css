@@ -1331,12 +1331,13 @@ input:checked+.pullRight:before {
 }
 .cardFlip .card .side {
   width: 300px;
-  height: 200px;
+  height: 190px;
   border-radius: 10px;
   cursor: pointer;
   position: absolute;
   box-sizing: border-box;
   z-index: 2;
+  top: 1%;
   backface-visibility: hidden;  /* W3C */
   -webkit-backface-visibility: hidden; /* Safari & Chrome */
   -moz-backface-visibility: hidden; /* Firefox */
@@ -1359,7 +1360,6 @@ input:checked+.pullRight:before {
   text-align: center;
   line-height: 200px;
   font-size: 50px;
-  background-color: #7030a0;
   color: white;
 }
 
