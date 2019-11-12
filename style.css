@@ -1264,14 +1264,14 @@ input:checked+.pullRight:before {
   z-index: -3;
   width: 240px;
   height: 140px;
-  top: 20%;
+  top: 25%;
 }
 
 .posOB {
   z-index: -3;
   width: 240px;
   height: 140px;
-  top: 80%;
+  top: 75%;
 }
 
 .posHidden {
