@@ -51,7 +51,8 @@ try {
   console.log("no login button");
 
 }
-// Validates the username and password - Henriette
+
+// Validates the username and password
 function validateUser() {
   let userInputs = document.getElementById("loginData");
 
@@ -64,7 +65,6 @@ function validateUser() {
     window.alert("Wrong username or password");
   }
 }
-
 try {
   document.getElementById("notificationBell").addEventListener("click", activateNotification);
 } catch (e) {
@@ -72,7 +72,6 @@ try {
 
 } finally {
   console.log("no comprende");
-
 }
 
 // Notifcation Bell
