@@ -413,3 +413,13 @@ function alertKeyDeclined() {
   alert("Key declined")
   window.location.href="addkey.html";
 }
+
+function alertDeleteKey() {
+  alert("Key deleted")
+  window.location.href="frontpage.html";
+}
+
+function alertShareKey() {
+  alert("Key shared")
+  window.location.href="frontpage.html";
+}
