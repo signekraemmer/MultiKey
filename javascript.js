@@ -51,7 +51,8 @@ try {
   console.log("no login button");
 
 }
-// Validates the username and password - Henriette
+
+// Validates the username and password
 function validateUser() {
   let userInputs = document.getElementById("loginData");
 
@@ -64,7 +65,6 @@ function validateUser() {
     window.alert("Wrong username or password");
   }
 }
-
 try {
   document.getElementById("notificationBell").addEventListener("click", activateNotification);
 } catch (e) {
@@ -72,7 +72,6 @@ try {
 
 } finally {
   console.log("no comprende");
-
 }
 
 // Notifcation Bell
@@ -125,6 +124,7 @@ function validateCheckbox() {
 
   if (checkboxInputs.value == "checked") {
     console.log("successfull");
+    alert("Sign up succesfull")
     window.location.href = "login.html";
   }
 
@@ -393,4 +393,33 @@ function sharePopup() {
 let shaBox = document.getElementsByClassName('popupLayBox');
 
 shaBox[0].classList.toggle("popupActive");
+}
+
+
+
+
+
+function alertSubmit() {
+  alert("Email successfully sent!")
+  window.location.href="login.html";
+}
+
+function alertKeyAdded() {
+  alert("Key added")
+  window.location.href="frontpage.html";
+}
+
+function alertKeyDeclined() {
+  alert("Key declined")
+  window.location.href="addkey.html";
+}
+
+function alertDeleteKey() {
+  alert("Key deleted")
+  window.location.href="frontpage.html";
+}
+
+function alertShareKey() {
+  alert("Key shared")
+  window.location.href="frontpage.html";
 }
