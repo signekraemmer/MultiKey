@@ -187,12 +187,6 @@ main[0].classList.toggle("popupActive");
 
 // CAROUSEL
 
-// Main card functionality
-function mainFunctionality () {
-
-}
-
-
 document.getElementById("arrowDown").addEventListener("click", carouselUp);
 
 // Slide up
