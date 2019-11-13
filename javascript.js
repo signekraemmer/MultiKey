@@ -96,9 +96,9 @@ function checkboxChecked() {
   console.log("checkboxChecked running");
 let checkedboxen = document.getElementById("checkboxen");
 
-if (checkedboxen.value == "")
+if (checkedboxen.value == "checked")
  {
-  checkedboxen.value = "checked"
+  checkedboxen.value = ""
 
   console.log("unchecked");
 }
