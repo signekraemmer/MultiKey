@@ -110,31 +110,140 @@
 
         <!-- </div> -->
 
-        <div class="testCard" id="ghettoButton"></div>
+        <!-- <div class="testCard" id="ghettoButton"></div> -->
 
-        <div class="testCard posHidden" style="background-color: turquoise;"></div>
+        <!-- CARD NO.1 -->
+        <div class="cardFlip posHidden">
+          <div class="card" onclick="this.classList.toggle('flipped');">
+            <div class="side front"></div>
+              <img src="images/rejsekort.png" alt="">
+            <div class="side back">
+              <h3 class="cardname">Rejsekort</h3>
+              <img src="images/icons/penBlack.png" alt="Edit icon">
+              <p></p>
+              <div class="buttonBox">
+                <div class="buttonForms two-button">
+                  <a class="shareButton">Share</a>
+                  <a class="deleteButton">Delete</a>
+                  <div style="clear: both"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+         </div>
 
-        <div class="testCard posOT" style="background-color: blue;"></div>
+        <!-- CARD NO.2 -->
+        <div class="cardFlip posOT">
+          <div class="card" onclick="this.classList.toggle('flipped');">
+            <div class="side front">Sarah School</div>
+            <img src="images/default3.png" alt="">
+            <div class="side back">
+              <h3 class="cardname">Sarah School</h3>
+              <img src="images/icons/penBlack.png" alt="Edit icon">
+              <p></p>
+              <div class="buttonBox">
+                <div class="buttonForms two-button">
+                  <a onclick="alertShareKey()" class="shareButton">Share</a>
+                  <a onclick="alertDeleteKey()" class="deleteButton">Delete</a>
+                  <div style="clear: both"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-        <div class="testCard posOB" style="background-color: purple;"></div>
+        <!-- CARD NO.3 -->
+        <div class="cardFlip posOB">
+          <div class="card" onclick="this.classList.toggle('flipped');">
+            <div class="side front">Work</div>
+              <img src="images/default2.png" alt="">
+            <div class="side back">
+              <h3 class="cardname">Work</h3>
+              <img src="images/icons/penBlack.png" alt="Edit icon">
+              <p></p>
+              <div class="buttonBox">
+                <div class="buttonForms two-button">
+                  <a onclick="alertShareKey()" class="shareButton">Share</a>
+                  <a onclick="alertDeleteKey()" class="deleteButton">Delete</a>
+                  <div style="clear: both"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-        <div class="testCard posMT" style="background-color: yellow;"></div>
+        <!-- CARD NO.4 -->
+        <div class="cardFlip posMT">
+          <div class="card" onclick="this.classList.toggle('flipped');">
+            <div class="side front">HOME</div>
+              <img src="images/default1.png" alt="">
+            <div class="side back">
+              <h3 class="cardname">HOME</h3>
+              <img src="images/icons/penBlack.png" alt="Edit icon">
+              <p></p>
+              <div class="buttonBox">
+                <div class="buttonForms two-button">
+                  <a onclick="alertShareKey()" class="shareButton">Share</a>
+                  <a onclick="alertDeleteKey()" class="deleteButton">Delete</a>
+                  <div style="clear: both"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-        <div class="testCard posMB" style="background-color: red;"></div>
+        <!-- CARD NO.5 -->
+        <div class="cardFlip posMB">
+          <div class="card" onclick="this.classList.toggle('flipped');">
+            <div class="side front"></div>
+              <img src="images/fitnessworld.png" alt="">
+            <div class="side back">
+              <h3 class="cardname">Fitness World</h3>
+              <img src="images/icons/penBlack.png" alt="Edit icon">
+              <p></p>
+              <div class="buttonBox">
+                <div class="buttonForms two-button">
+                  <a onclick="alertShareKey()" class="shareButton">Share</a>
+                  <a onclick="alertDeleteKey()" class="deleteButton">Delete</a>
+                  <div style="clear: both"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-        <div class="testCard posMain" style="background-color: green;"></div>
+        <!-- CARD NO.6 -->
+        <div class="cardFlip posMain">
+          <div class="card" onclick="this.classList.toggle('flipped');">
+            <div class="side front"></div>
+              <img src="images/ucl.png" alt="">
+            <div class="side back">
+              <h3 class="cardname">UCL</h3>
+              <img src="images/icons/penBlack.png" alt="Edit icon">
+              <p></p>
+              <div class="buttonBox">
+                <div class="buttonForms two-button">
+                  <a onclick="alertShareKey()" class="shareButton">Share</a>
+                  <a onclick="alertDeleteKey()" class="deleteButton">Delete</a>
+                  <div style="clear: both"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
       </div>
 
-      <div id="arrowUp" class="arrow topArrow"></div>
+      <div id="arrowUp" class="arrow topArrow"><img src="images/arrowWhiteUp.png" alt="arrow down"></div>
 
-      <div id="arrowDown" class="arrow bottomArrow"></div>
+      <div id="arrowDown" class="arrow bottomArrow"><img src="images/arrowWhiteDown.png" alt="arrow up"></div>
 
     </div>
 
   </div>
 
   <!-- CARD BACKSIDE -->
+  <!--
 <div class="carouselContainer backsideCard">
 
     <h4 class="cardname">UCL</h4>
@@ -143,15 +252,13 @@
     <button class="cardbutton deleteKey">Delete</button>
 
 </div>
+-->
 
-
-
-
-  <div class="popupMain">
-    <div id="overlay"></div>
-    <div id="popup">
-      <h3 id="titleDelete">DELETE KEY</h3>
-      <p id="sureNameDelete">Are you sure you want to delete your UCL key?</p>
+  <div class="popupLayBox">
+    <div id="overlayDelete"></div>
+    <div id="popupDelete">
+      <h3>DELETE KEY</h3>
+      <p>Are you sure you want to delete this key?</p>
       <div class="button-holder two-button">
         <a href="frontpage.html">Yes</a>
         <a href="frontpage.html">No</a>
@@ -161,8 +268,8 @@
   </div>
 
   <!-- POP UP SHARE KEY-->
-  <!--
-  <div class="popupMain">
+
+  <div class="popupLayBox">
     <div id="sharelay"></div>
     <div id="shareup">
       <div class="contentcard1">
@@ -179,7 +286,7 @@
 
     </div>
   </div>
-!-->
+
 
   <!-- MENU BAR -->
   <nav>
@@ -248,16 +355,8 @@
   <!-- Notification slider -->
   <div class="notificationContainer">
     <div class="notificationCard">
-      <img class="notificationImage" src="images/miniUCL.png" alt="Miniature card">
-      <p class="notificationText">Your school key ran out</p>
-    </div>
-    <div class="notificationCard">
-      <img class="notificationImage" src="images/miniFitness.png" alt="Miniature card">
-      <p class="notificationText">Fitness World sent you a card</p>
-    </div>
-    <div class="notificationCard">
-      <img class="notificationImage" src="images/miniRejsekort.png" alt="Miniature card">
-      <p class="notificationText">Your funds are low</p>
+      <img class="notificationImage" src="images/logocard.png" alt="Miniature card">
+      <p class="notificationText">Contact us</p>
     </div>
   </div>
 

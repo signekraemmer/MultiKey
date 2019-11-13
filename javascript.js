@@ -1,4 +1,4 @@
-//FOR BURGER MENU
+//FOR BURGER MENU - Henriette
 function myFunction(x) {
   x.classList.toggle("change");
     openNav();
@@ -9,13 +9,19 @@ function openNav() {
 }
 
 // THOMAS HELP
-// FAQ / HELP SECTION
+// FAQ / HELP SECTION - Signe
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
+
+    for (var o = 0; o < coll.length; o++) {
+      coll[o].classList.remove("active");
+      var content = document.getElementsByClassName("content");
+      content[o].style.display = "none";
+    }
 
     var content = this.nextElementSibling;
 
@@ -31,6 +37,10 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
+
+
+// FAQ / SUPPORT END //
+
 // Listen for clicks on "login button"
 try {
   document.getElementById("loginButton").addEventListener("click", validateUser);
@@ -41,20 +51,20 @@ try {
   console.log("no login button");
 
 }
+
 // Validates the username and password
 function validateUser() {
   let userInputs = document.getElementById("loginData");
 
   if (userInputs[0].value == "12341234" && userInputs[1].value == "Duck") {
     console.log("succes");
-    window.location.href = "frontpage.html";
+    window.location.href = "index.html";
   }
 
   else {
     window.alert("Wrong username or password");
   }
 }
-
 try {
   document.getElementById("notificationBell").addEventListener("click", activateNotification);
 } catch (e) {
@@ -62,7 +72,6 @@ try {
 
 } finally {
   console.log("no comprende");
-
 }
 
 // Notifcation Bell
@@ -72,7 +81,7 @@ function activateNotification() {
   console.log("notification activated");
 }
 
-// Validates sign up checkbox //
+// Validates sign up checkbox -  CHARLOTTE  //
 
 try {
   document.getElementById("checkmark").addEventListener("click", checkboxChecked);
@@ -87,11 +96,15 @@ function checkboxChecked() {
   console.log("checkboxChecked running");
 let checkedboxen = document.getElementById("checkboxen");
 
-if (checkedboxen.value == "checked") {
-  checkedboxen.value = ""
+if (checkedboxen.value == "")
+ {
+  checkedboxen.value = "checked"
+
+  console.log("unchecked");
 }
 else {
   checkedboxen.value = "checked"
+  console.log("checked");
 }
 }
 
@@ -111,6 +124,7 @@ function validateCheckbox() {
 
   if (checkboxInputs.value == "checked") {
     console.log("successfull");
+    alert("Sign up succesfull")
     window.location.href = "login.html";
   }
 
@@ -118,7 +132,30 @@ function validateCheckbox() {
     window.alert("You forgot to agree with terms");
   }
 }
-// Sign up END
+
+// terms popup //
+try {
+
+  let checkCont = document.getElementById("termsConditions");
+
+  checkCont.addEventListener("click", showTerms);
+
+  document.getElementById("closeTermsButton").addEventListener("click", showTerms);
+
+
+} catch (e) {
+  console.log(e);
+} finally {
+  console.log("showing terms works");
+}
+
+function showTerms() {
+let sign = document.getElementsByClassName('popupSign');
+
+sign[0].classList.toggle("popupActive");
+}
+
+// Sign up END - CHARLOTTE //
 
 // PROFILE
 try {
@@ -142,26 +179,7 @@ main[0].classList.toggle("popupActive");
 
 // PROFILE END
 
-try {
 
-  let checkCont = document.getElementById("termsConditions");
-
-  checkCont.addEventListener("click", showTerms);
-
-  document.getElementById("closeTermsButton").addEventListener("click", showTerms);
-
-
-} catch (e) {
-  console.log(e);
-} finally {
-  console.log("no sign up");
-}
-
-function showTerms() {
-let sign = document.getElementsByClassName('popupSign');
-
-sign[0].classList.toggle("popupActive");
-}
 
 
 
@@ -180,6 +198,7 @@ document.getElementById("arrowDown").addEventListener("click", carouselUp);
 // Slide up
 function carouselUp() {
   posOB_posMB();
+  flipBack();
 }
 
 // posOB -> posMB
@@ -250,6 +269,7 @@ document.getElementById("arrowUp").addEventListener("click", slideDown);
 // Slide down
 function slideDown() {
   posOB_posHidden();
+  flipBack();
 }
 
 // posOB -> posHidden
@@ -313,17 +333,93 @@ posMB[0].classList.add("posOB");
 posMB[0].classList.remove("posMB");
 }
 
-// FLIP CARD
-document.getElementById("ghettoButton").addEventListener("click", flipCard);
+function flipBack() {
+let card = document.getElementsByClassName("card");
 
-function flipCard() {
-  let card = document.getElementsByClassName("posMain")[0];
-  card.classList.toggle("rotateCard");
+  for (var i = 0; i < card.length; i++) {
+    card[i].classList.remove("flipped")
+  }
 }
+
+// FLIP CARD
+// document.getElementById("ghettoButton").addEventListener("click", flipCard);
+//
+// function flipCard() {
+//   let card = document.getElementsByClassName("posMain")[0];
+//   card.classList.toggle("flipped");
+// }
 
 
 //DELETE KEY
+try {
+
+  let del = document.getElementsByClassName("deleteButton");
+
+del[0].addEventListener("click", delPopup);
+console.log(del);
+
+} catch (e) {
+  console.log(e);
+} finally {
+  console.log("no sign up");
+}
+
+function delPopup() {
+  console.log("active");
+let delBox = document.getElementsByClassName('popupLayBox');
+
+delBox[0].classList.toggle("popupActive");
+}
 
 
 
 //SHARE KEY
+
+try {
+
+  let sha = document.getElementsByClassName("shareButton");
+
+sha[0].addEventListener("click", sharePopup);
+console.log(del);
+
+} catch (e) {
+  console.log(e);
+} finally {
+  console.log("no sign up");
+}
+
+function sharePopup() {
+  console.log("active");
+let shaBox = document.getElementsByClassName('popupLayBox');
+
+shaBox[0].classList.toggle("popupActive");
+}
+
+
+
+
+
+function alertSubmit() {
+  alert("Email successfully sent!")
+  window.location.href="login.html";
+}
+
+function alertKeyAdded() {
+  alert("Key added")
+  window.location.href="frontpage.html";
+}
+
+function alertKeyDeclined() {
+  alert("Key declined")
+  window.location.href="addkey.html";
+}
+
+function alertDeleteKey() {
+  alert("Key deleted")
+  window.location.href="frontpage.html";
+}
+
+function alertShareKey() {
+  alert("Key shared")
+  window.location.href="frontpage.html";
+}
