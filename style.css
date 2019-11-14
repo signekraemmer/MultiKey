@@ -584,10 +584,6 @@ a:active {
   transform: scaleY(-1);
 }
 
-.collapsible display:none {
-  background-color: black;
-}
-
 .content {
   padding: 15px 7px 15px 18px;
   display: none;
