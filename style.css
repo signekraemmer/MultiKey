@@ -8,7 +8,7 @@
 
 body {
   overflow: hidden;
-  background-image: url(images/backgrounds/backgroundGreyLogo.png);
+  background-image: url(images/backgrounds/backgroundDarkBlueLogo.png);
   background-size: 375px 812px;
 }
 
@@ -30,7 +30,7 @@ body {
 }
 
 h2 {
-  color: black;
+  color: white;
   font-size: 16px;
   font-weight: 400;
   position: absolute;
@@ -372,7 +372,7 @@ nav {
   width: 100%;
   height: 100vh;
   color: #ffffff;
-  background: white; linear-gradient(-45deg, grey, lightgrey, #262C50, white);
+  background: linear-gradient(-45deg, #262C50, #17163E, #262C50, #17163E);
   background-size: 200% 300%;
   position: relative;
   animation: change 4s ease-in;
@@ -420,7 +420,7 @@ section {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  color: black;
+  color: white;
 }
 
 .signup_top img {
@@ -510,17 +510,13 @@ a:active {
 }
 
 #forgotPassword {
-  color: darkgrey;
+  color: white;
 }
 
 #passwordText {
   text-align: center;
   margin: 15px 10vw;
-  color: black;
-}
-
-#password {
-  border: solid 1px black;
+  color: white;
 }
 
 .button {
@@ -563,7 +559,7 @@ a:active {
   justify-content: center;
   width: 355px;
   overflow: hidden;
-  color: black;
+  color: white;
 }
 
 .collapsible {
@@ -780,6 +776,7 @@ input {
   position: relative;
   padding-left: 35px;
   margin-bottom: 12px;
+  color: white;
   /* deleting this comment will create a checkmark but break it as well
   margin: 5px 5px 0px 5px;
   padding: 5px; */
@@ -871,12 +868,12 @@ bliver gemt, indtil der trykkes på den?) */
 
 .miniText {
   font-size: 16px;
-  color: black;
+  color: white;
 }
 
 .bigText {
   font-size: 18px;
-  color: black;
+  color: white;
 }
 
 .existingKey {
@@ -934,7 +931,7 @@ bliver gemt, indtil der trykkes på den?) */
   width: 85%;
   height: 80%;
   margin-left: 7vw;
-  color: black;
+  color: white;
 }
 
 .contactbox img {
