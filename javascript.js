@@ -8,20 +8,20 @@ function openNav() {
   document.getElementById("mySidenav").classList.toggle("active");
 }
 
-// THOMAS HELP
+
 // FAQ / HELP SECTION - Signe
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
 
     for (var o = 0; o < coll.length; o++) {
       coll[o].classList.remove("active");
       var content = document.getElementsByClassName("content");
       content[o].style.display = "none";
     }
+    this.classList.toggle("active");
 
     var content = this.nextElementSibling;
 
@@ -186,12 +186,6 @@ main[0].classList.toggle("popupActive");
 
 
 // CAROUSEL
-
-// Main card functionality
-function mainFunctionality () {
-
-}
-
 
 document.getElementById("arrowDown").addEventListener("click", carouselUp);
 
